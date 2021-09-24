@@ -1,19 +1,21 @@
 <template>
-  <nav>
-  <sui-menu :widths="3">
-    <sui-menu-item>Editorials</sui-menu-item>
-    <sui-menu-item>Reviews</sui-menu-item>
-    <sui-menu-item active>Upcoming Events</sui-menu-item>
-  </sui-menu>
-  </nav>
+  <div id="app">
+    <Header />
+    
+    <div id="content">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 
 export default {
   name: 'App',
 
   components: {
+    Header,
   },
 
   data: () => ({
