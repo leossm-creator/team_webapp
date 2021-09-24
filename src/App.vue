@@ -1,38 +1,19 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+  <nav>
+  <sui-menu :widths="3">
+    <sui-menu-item>Editorials</sui-menu-item>
+    <sui-menu-item>Reviews</sui-menu-item>
+    <sui-menu-item active>Upcoming Events</sui-menu-item>
+  </sui-menu>
+  </nav>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
   },
 
   data: () => ({
@@ -40,3 +21,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+  nav {
+    background-color: blueviolet !important;
+    width: 100%;
+  }
+</style>
