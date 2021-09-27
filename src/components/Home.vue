@@ -1,9 +1,9 @@
 <template>
   <div class="landing_container">
      <v-carousel
-      :continuous="false"
+      :continuous="true"
       :cycle="cycle"
-      :show-arrows="false"
+      :show-arrows="true"
       hide-delimiter-background
       delimiter-icon="mdi-minus"
       height="300"

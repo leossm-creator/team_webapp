@@ -32,7 +32,7 @@
     </v-app-bar>
     <!-- <v-progress-linear value="15"></v-progress-linear> -->
 
-    <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer">
+    <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="500px">
       <v-list-item>
         <!-- <img
           src="/img/header-logo.png"
@@ -54,7 +54,6 @@
       <v-divider></v-divider>
 
       <v-list
-        dense
         nav
       >
         <v-list-item
@@ -114,6 +113,9 @@ export default {
 }
 
 #navDrawer {
-  width: 500px !important;
+}
+
+.active {
+  color: #FFA726;
 }
 </style>

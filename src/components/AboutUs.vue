@@ -73,22 +73,26 @@ export default {
       years: [
         {
           color: 'cyan',
-          year: 'September 2020',
+          year: '2017',
         },
         {
           color: 'green',
-          year: '11 2020',
+          year: '2019',
         },
         {
           color: 'pink',
-          year: '08 2021',
+          year: '2020',
         },
         {
           color: 'amber',
-          year: '11 2021',
+          year: '2021',
         },
         {
           color: 'orange',
+          year: '2022',
+        },        
+        {
+          color: 'purple',
           year: 'Future',
         },
       ],
