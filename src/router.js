@@ -2,10 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import Home from "./components/Home";
-import Menu1 from "./components/AboutUs";
-import Menu2 from "./components/ContactUs";
-import Menu3 from "./components/OurWorks";
-import Menu4 from "./components/Partnerships";
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
+import OurWorks from "./components/OurWorks";
+import Partnerships from "./components/Partnerships";
 
 Vue.use(VueRouter);
 
@@ -18,24 +18,24 @@ const router = new VueRouter({
       component: Home
     },
     {
-      name: "menu1Page",
-      path: "/menu1",
-      component: Menu1
+      name: "AboutUs",
+      path: "/aboutUs",
+      component: AboutUs
     },
     {
-      name: "menu2Page",
-      path: "/menu2",
-      component: Menu2
+      name: "OurWorks",
+      path: "/ourWorks",
+      component: OurWorks
     },
     {
-      name: "menu3Page",
-      path: "/menu3",
-      component: Menu3
+      name: "Partnerships",
+      path: "/partnerships",
+      component: Partnerships
     },
     {
-      name: "menu4Page",
-      path: "/menu4",
-      component: Menu4
+      name: "contactUs",
+      path: "/ContactUs",
+      component: ContactUs
     }
   ],
 });
