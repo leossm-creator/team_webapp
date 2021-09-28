@@ -6,6 +6,7 @@
     <!-- Open R&D 소개 -->
     <v-container class="content_container" id="au_intro">
       <h2>Open R&D 소개</h2>
+      <!-- <v-divider style="margin-bottom: 16px"></v-divider> -->
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
@@ -58,11 +59,11 @@
               ></span>
             </template>
             <div class="py-4">
-              <h2 :class="`headline font-weight-light mb-4 ${year.color}--text`">
+              <h2 :class="`headline font-weight-normal mb-4 ${year.color}--text`">
                 {{year.title}}
               </h2>
               <div>
-                <p v-for="item in year.description" :key="item">
+                <p v-for="item in year.description" :key="item" class="font-weight-light">
                   {{item}}
                 </p>
               </div>
@@ -75,18 +76,18 @@
     <!-- 조직도 -->
     <v-container class="content_container" id="au_members">
       <h2>Members</h2> 
-
       <!-- Executive 멤버들: 카드 with image -->
       <v-row v-for="member in members.executives" :key="member.name">
-        <v-col cols="6" :style="member.style">
+        <v-col cols="5" :style="member.style">
           <v-card hover>
-            <div class="d-flex flex-no-wrap justify-space-between">
+            <div class="d-flex flex-no-wrap justify-space-between flex-column flex-md-row">
+            <!-- <div class="card_exac"> -->
               <v-avatar
                 class="profile"
                 tile
                 size="250"
               >
-                <v-img height="250" :src="member.image"></v-img>
+                <v-img max-height="250" :src="member.image"></v-img>
               </v-avatar>
 
               <div>
@@ -102,11 +103,10 @@
           </v-card>
         </v-col>
       </v-row>
-
       <!-- Team 멤버들: 카드 with text -->
       <v-row>
-        <v-col cols="6" v-for="member in members.managers" :key="member.name">
-          <v-card hover>
+        <v-col cols="6" v-for="member in members.managers" :key="member.name" style="padding-top: 30px; padding-bottom: 30px;">
+          <v-card hover class="card_man">
             <v-card-title class="font-weight-bold">
               {{member.name}}
             </v-card-title>
@@ -246,13 +246,14 @@ export default {
 };
 </script>
 <style scoped>
-.sub_heading {
-  margin: 50px 10%;
+
+.card_exac {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.content_container {
-  font-size: 1.15rem;
-  padding: 0 8%;
-  margin: 50px 0;
+.card_man {
+  /* max-width: 450px; */
 }
 </style>

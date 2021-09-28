@@ -1,6 +1,18 @@
+@import url("../../../node_modules/vuetify/src/styles/generic/_reset.scss");
+
+html,body
+{   
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
 // scroll bar settings
+
 ::-webkit-scrollbar {
   width: 14px;
+  display: none; // fix!
 }
 
 ::-webkit-scrollbar-track {
@@ -18,7 +30,6 @@
   display: none;
 }
 
-
 .page_container {
   height: 100%;
   padding: 2rem 1rem;
@@ -27,5 +38,15 @@
   .page_heading {
     text-align: center;
     font-size: 2.5rem !important;
+  }
+  
+  .content_container {
+    font-size: 1.15rem;
+    padding: 0 8%;
+    margin-top: 50px;
+
+    .sub_heading {
+      margin: 50px 10%;
+    }
   }
 }

@@ -33,4 +33,8 @@ export default {
     background-color: blueviolet !important;
     width: 100%;
   }
+
+  #app {
+    /* width: 100vw; */
+  }
 </style>
