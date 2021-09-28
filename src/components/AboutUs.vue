@@ -1,7 +1,15 @@
 <template>
   <div class="page_container">
-
     <h1 class="page_heading">About Us</h1>
+
+    <!-- <v-btn
+      v-model="fab"
+      color="blue darken-2"
+      dark
+      fab
+      @click="scrollTop" v-show="visible"
+    >
+    </v-btn> -->
 
     <!-- Open R&D 소개 -->
     <v-container class="content_container" id="au_intro">
@@ -59,12 +67,18 @@
               ></span>
             </template>
             <div class="py-4">
-              <h2 :class="`headline font-weight-normal mb-4 ${year.color}--text`">
-                {{year.title}}
+              <h2
+                :class="`headline font-weight-normal mb-4 ${year.color}--text`"
+              >
+                {{ year.title }}
               </h2>
               <div>
-                <p v-for="item in year.description" :key="item" class="font-weight-light">
-                  {{item}}
+                <p
+                  v-for="item in year.description"
+                  :key="item"
+                  class="font-weight-light"
+                >
+                  {{ item }}
                 </p>
               </div>
             </div>
@@ -72,21 +86,24 @@
         </v-timeline>
       </sui-container>
     </v-container>
-
     <!-- 조직도 -->
     <v-container class="content_container" id="au_members">
-      <h2>Members</h2> 
+      <h2>Members</h2>
       <!-- Executive 멤버들: 카드 with image -->
+      <h4>Executives</h4>
       <v-row v-for="member in members.executives" :key="member.name">
         <v-col cols="5" :style="member.style">
           <v-card hover>
-            <div class="d-flex flex-no-wrap justify-space-between flex-column flex-md-row">
-            <!-- <div class="card_exac"> -->
-              <v-avatar
-                class="profile"
-                tile
-                size="250"
-              >
+            <div
+              class="
+                d-flex
+                flex-no-wrap
+                justify-space-between
+                flex-column flex-md-row
+              "
+            >
+              <!-- <div class="card_exac"> -->
+              <v-avatar class="profile" tile size="250">
                 <v-img max-height="250" :src="member.image"></v-img>
               </v-avatar>
 
@@ -104,20 +121,36 @@
         </v-col>
       </v-row>
       <!-- Team 멤버들: 카드 with text -->
+      <h4>Managers</h4>
       <v-row>
-        <v-col cols="6" v-for="member in members.managers" :key="member.name" style="padding-top: 30px; padding-bottom: 30px;">
+        <v-col
+          cols="6"
+          v-for="member in members.managers"
+          :key="member.name"
+          style="padding-top: 30px; padding-bottom: 30px"
+        >
           <v-card hover class="card_man">
             <v-card-title class="font-weight-bold">
-              {{member.name}}
+              {{ member.name }}
             </v-card-title>
-            <v-card-subtitle>{{member.role}}</v-card-subtitle>
+            <v-card-subtitle>{{ member.role }}</v-card-subtitle>
             <v-card-text>
-              {{member.description}}
+              {{ member.description }}
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
+
+    <!-- <v-stepper vertical>
+        <v-stepper-step editable step="1">
+          Select campaign settings
+        </v-stepper-step>
+
+        <v-stepper-step editable step="2"> Create an ad group </v-stepper-step>
+
+        <v-stepper-step step="3" editable> Create an ad </v-stepper-step>
+    </v-stepper> -->
   </div>
 </template>
 <script>
@@ -125,6 +158,7 @@ export default {
   name: "AboutUs",
   data() {
     return {
+      visible: true,
       years: [
         {
           color: "cyan",
@@ -136,7 +170,11 @@ export default {
           color: "green",
           year: "2019",
           title: "Open Innovation",
-          description: ["1. Open R&D TF 출범", "2. 집중 3개 질환 선정", "3. 외부 협력 추진"],
+          description: [
+            "1. Open R&D TF 출범",
+            "2. 집중 3개 질환 선정",
+            "3. 외부 협력 추진",
+          ],
         },
         {
           color: "pink",
@@ -156,12 +194,6 @@ export default {
           title: "과제 고도화",
           description: ["1. 신약 파이프라인 확보", "2. Early Stage L/O"],
         },
-        // {
-        //   color: "purple",
-        //   year: "Future",
-        //   title: "Pilot Project",
-        //   description: "1. 신약 재창출 (DR)* \n 2. 이대 김완규 교수",
-        // },
       ],
       members: {
         executives: [
@@ -239,14 +271,35 @@ export default {
             style: "margin-right: auto;",
             image: "",
           },
-        ]
-      }
-    };
+        ],
+      },
+    }
   },
+
+
+  methods: {
+    scrollTop: function () {
+      this.intervalId = setInterval(() => {
+        if (window.pageYOffset === 0) {
+          clearInterval(this.intervalId)
+        }
+        window.scroll(0, window.pageYOffset - 50)
+      }, 20)
+    },
+    scrollListener: function () {
+      this.visible = window.scrollY > 150
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.scrollListener)
+  },
+  beforeDestroy: function () {
+    window.removeEventListener('scroll', this.scrollListener)
+  }
+  
 };
 </script>
 <style scoped>
-
 .card_exac {
   display: flex;
   flex-wrap: nowrap;
