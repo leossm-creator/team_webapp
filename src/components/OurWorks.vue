@@ -1,8 +1,8 @@
 <template>
   <div class="page_container">
     <h1 is="sui-header" class="page_heading">Our Works</h1>
-    <sui-container text>
-      <h2 is="sui-header">신약</h2>
+    <v-container class="content_container" id="ow_1">
+      <h2>신약</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
@@ -19,9 +19,9 @@
         imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
         nisi.
       </p>
-    </sui-container>
-    <sui-container text>
-      <h2 is="sui-header">공동연구</h2>
+    </v-container>
+    <v-container class="content_container" id="ow_2">
+      <h2>공동 연구</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
@@ -38,9 +38,9 @@
         imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
         nisi.
       </p>
-    </sui-container>
-    <sui-container text>
-      <h2 is="sui-header">투자</h2>
+    </v-container>
+    <v-container class="content_container" id="ow_3">
+      <h2>투자</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
@@ -57,7 +57,7 @@
         imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
         nisi.
       </p>
-    </sui-container>
+    </v-container>
   </div>
 </template>
 <script>

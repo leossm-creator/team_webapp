@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-footer padless>
-      <v-card flat tile class="orange lighten-1 white--text text-center">
+    <v-footer padless id="footer">
+      <v-card flat tile class="orange lighten-1 white--text text-center" style="width: 100%;">
         <v-card-text>
           <v-btn
             v-for="link in links"
@@ -16,16 +16,8 @@
         </v-card-text>
 
         <v-card-text class="white--text pt-0">
-          Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-          Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-          accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim
-          a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula
-          lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus
-          iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum
-          tempor vel ut orci. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus.
+          [13494] 경기도 성남시 분당구 판교로 310 TEL.02)2008-2008<br>SK케미칼(주) 대표이사 김철, 전광현 사업자등록번호 846-81-00915<br>Copyright(c) SK chemicals. All Right Reserved.
         </v-card-text>
-
         <v-divider></v-divider>
 
         <v-card-text class="white--text red darken-1">
@@ -49,5 +41,5 @@ export default {
 };
 </script>
 <style scoped>
-@import url("/node_modules/vuetify/dist/vuetify.min.css");
+
 </style>

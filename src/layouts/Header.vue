@@ -1,26 +1,5 @@
 <template>
   <div class="header">
-    <!-- <sui-menu attached="top" secondary>
-      <sui-menu-item name="Logo" position="left" href="/" link >
-        <sui-image src="/img/header-logo.png" size="small" />
-      </sui-menu-item>
-
-      <sui-menu-item name="AboutUs" link position="right" href="/aboutUs">
-        About Us
-      </sui-menu-item>
-
-      <sui-menu-item name="OurWorks" link href="/ourWorks" >
-        Our Works
-      </sui-menu-item>
-
-      <sui-menu-item name="Partnerships" link href="/partnerships">
-        Partnerships
-      </sui-menu-item>
-
-      <sui-menu-item name="ContactUs" link href="/contactUs">
-        Contact Us
-      </sui-menu-item>
-    </sui-menu> -->
     <v-app-bar flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <a href="/" style="margin-left: auto">
@@ -30,14 +9,14 @@
         ></v-img>
       </a>
     </v-app-bar>
-    <!-- <v-progress-linear value="15"></v-progress-linear> -->
 
     <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="500px">
       <v-list-item>
-        <!-- <img
+        <!-- <v-img
           src="/img/header-logo.png"
           alt="logo"
-        > -->
+          contain
+        ></v-img> -->
         <v-list-item-content>
           <v-list-item-title class="text-h6">
             SK Chemicals 평가분석팀
