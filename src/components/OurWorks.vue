@@ -2,6 +2,28 @@
   <div class="page_container">
     <h1 is="sui-header" class="page_heading">Our Works</h1>
     <v-container class="content_container" id="ow_1">
+      <v-sheet
+        color="white"
+      >
+        <v-sparkline
+          :value="value"
+          :gradient="gradient"
+          :smooth="radius || false"
+          :padding="padding"
+          :line-width="width"
+          :stroke-linecap="lineCap"
+          :gradient-direction="gradientDirection"
+          :fill="fill"
+          :type="type"
+          :auto-line-width="autoLineWidth"
+          auto-draw
+          :labels="value"
+          color="white"
+        ></v-sparkline>
+        <template v-slot:label="item">
+            {{ item.value }}
+        </template>
+      </v-sheet>
       <h2>신약</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -61,8 +83,41 @@
   </div>
 </template>
 <script>
+const gradients = [
+  ['#222'],
+  ['#42b3f4'],
+  ['red', 'orange', 'yellow'],
+  ['purple', 'violet'],
+  ['#00c6ff', '#F0F', '#FF0'],
+  ['#f72047', '#ffd200', '#1feaea'],
+]
 export default {
   name: "OurWorks",
+  data() {
+    return {
+      width: 2.5,
+      radius: 10,
+      padding: 10,
+      lineCap: 'round',
+      gradient: gradients[2],
+      value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 5, 9],
+      gradientDirection: 'top',
+      gradients,
+      fill: false,
+      type: 'trend',
+      autoLineWidth: false,
+      // labels: [
+      //   '12am',
+      //   '3am',
+      //   '6am',
+      //   '9am',
+      //   '12pm',
+      //   '3pm',
+      //   '6pm',
+      //   '9pm',
+      // ],
+    }
+  }
 }
 </script>
 <style scoped>
