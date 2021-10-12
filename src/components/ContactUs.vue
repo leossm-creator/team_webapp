@@ -30,7 +30,7 @@
                 <h2>Get In Touch</h2>
                 <v-text-field label="Title" v-model="title"></v-text-field>
                 <v-textarea label="Your Message" v-model="body"></v-textarea>
-                <a :href="`mailto:someone@example.com?cc=jones@yourcompany.com&subject=${title}&body=${body}`">Send Mail</a>
+                <a @click="mailTo">Send Mail</a>
               </v-container>
             </v-card>
           </v-tab-item>
@@ -92,10 +92,19 @@ export default {
       tab: null,
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     }
+  },
+  methods: {
+    mailTo() {
+      if (this.title === "연승주" && this.body === "no think." ) {
+        alert("Easter Egg")
+      } else {
+        location.href = `mailto:someone@example.com?cc=someone2@example.com&subject=${this.title}&body=${this.body}`;
+      }
+    },
   }
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
 #contact_us {
   min-height: calc(100vh - 250px);
 }

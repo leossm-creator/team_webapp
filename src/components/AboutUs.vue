@@ -49,6 +49,64 @@
       </p>
     </v-container>
 
+        <v-container id="au_diagram" class="content_container">
+      <v-row justify="center">
+          <v-avatar
+            color="red"
+            size="150"
+            class="diagram_icons"
+          >Open R&D</v-avatar>
+      </v-row>
+
+      <!-- <v-row justify="center" no-gutters>
+        <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
+        </div>
+      </v-row>
+      <v-row justify="center" no-gutters>
+        <div style="width: 35%; height: 3px; background-color: rgba(0,0,0,.12)">
+        </div>
+      </v-row>
+      <v-row justify="center" no-gutters>
+        <v-col style="display: flex; justify-content: center;" lg="3">
+          <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
+          </div>
+        </v-col>
+        <v-col style="display: flex; justify-content: center;" md="auto">
+          <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
+          </div>
+        </v-col>
+        <v-col style="display: flex; justify-content: center;" lg="3">
+          <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
+          </div>
+        </v-col>
+      </v-row> -->
+
+      
+      <v-row justify="center">
+        <v-col style="display: flex; justify-content: center;" lg="3">
+          <v-avatar
+            color="green"
+            size="100"
+            class="diagram_icons"
+          >신약</v-avatar>
+        </v-col>
+        <v-col style="display: flex; justify-content: center;" md="auto">
+          <v-avatar
+            color="orange"
+            size="100"
+            class="diagram_icons"
+          >투자</v-avatar>
+        </v-col>
+        <v-col style="display: flex; justify-content: center;" lg="3">
+          <v-avatar
+            color="blue"
+            size="100"
+            class="diagram_icons"
+          >AI</v-avatar>
+        </v-col>
+      </v-row>
+    </v-container>
+
     <!-- 성과 Timeline -->
     <v-container class="content_container" id="au_timeline">
       <h2>Timeline</h2>
@@ -86,28 +144,21 @@
         </v-timeline>
       </sui-container>
     </v-container>
+
     <!-- 조직도 -->
     <v-container class="content_container" id="au_members">
       <h2>Members</h2>
       <!-- Executive 멤버들: 카드 with image -->
       <h4>Executives</h4>
-      <v-row v-for="member in members.executives" :key="member.name">
-        <v-col cols="5" :style="member.style">
-          <v-card hover>
-            <div
-              class="
-                d-flex
-                flex-no-wrap
-                justify-space-between
-                flex-column flex-md-row
-              "
-            >
-              <!-- <div class="card_exac"> -->
-              <v-avatar class="profile" tile size="250">
-                <v-img max-height="250" :src="member.image"></v-img>
+      <v-row style="margin: 24px 0;">
+        <v-col v-for="member in members.executives" :key="member.name" style="display: flex; align-items: center; justify-content: center;">
+          <v-card hover width="300" style="padding: 12px; display: flex; flex-direction: column; justify-content:center; align-items: center;">
+              <v-avatar class="profile" size="200" color="#dedede" style="margin: 5% 0">
+                <!-- <v-img max-height="250" :src="member.image"></v-img> -->
+                <v-icon size="100">mdi-account</v-icon>
               </v-avatar>
 
-              <div>
+              <div style="display: flex; flex-direction: column; align-items: center">
                 <v-card-title class="font-weight-bold">{{
                   member.name
                 }}</v-card-title>
@@ -116,7 +167,7 @@
                   {{ member.description }}
                 </v-card-text>
               </div>
-            </div>
+            <!-- </div> -->
           </v-card>
         </v-col>
       </v-row>
@@ -124,7 +175,7 @@
       <h4>Managers</h4>
       <v-row>
         <v-col
-          cols="6"
+          cols="4"
           v-for="member in members.managers"
           :key="member.name"
           style="padding-top: 30px; padding-bottom: 30px"
@@ -197,28 +248,20 @@ export default {
       ],
       members: {
         executives: [
-          {
-            name: "김정훈",
-            role: "연구개발센터 센터장",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            image: "https://source.unsplash.com/c_GmwfHBDzk/",
-          },
+          // {
+          //   name: "김정훈",
+          //   role: "연구개발센터 센터장",
+          //   description:
+          //     "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          //   style: "margin-right: auto;",
+          //   image: "https://source.unsplash.com/c_GmwfHBDzk/",
+          // },
           {
             name: "이수민",
             role: "평가분석팀 팀장",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
-            image: "https://source.unsplash.com/c_GmwfHBDzk/",
-          },
-          {
-            name: "허지호",
-            role: "Pharma 기획팀 팀장",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
             image: "https://source.unsplash.com/c_GmwfHBDzk/",
           },
         ],
@@ -271,6 +314,22 @@ export default {
             style: "margin-right: auto;",
             image: "",
           },
+          {
+            name: "허지호",
+            role: "Pharma 기획팀 팀장",
+            description:
+              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+            style: "margin-right: auto;",
+            image: "https://source.unsplash.com/c_GmwfHBDzk/",
+          },
+          {
+            name: "최권희",
+            role: "평가분석팀",
+            description:
+              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+            style: "margin-right: auto;",
+            image: "https://source.unsplash.com/c_GmwfHBDzk/",
+          },
         ],
       },
     }
@@ -278,7 +337,7 @@ export default {
 
 
   methods: {
-    scrollTop: function () {
+    scrollTop: function () { 
       this.intervalId = setInterval(() => {
         if (window.pageYOffset === 0) {
           clearInterval(this.intervalId)
@@ -299,7 +358,7 @@ export default {
   
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
 .card_exac {
   display: flex;
   flex-wrap: nowrap;
@@ -308,5 +367,28 @@ export default {
 
 .card_man {
   /* max-width: 450px; */
+}
+
+#au_diagram {
+  justify-content: center;
+  align-items: center;
+
+  .diagram_icons {
+    color: white;
+    // font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  // &::before {
+  //   bottom: 0;
+  //   content: "";
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 2px;
+  //   background-color: rgba(151, 151, 151, 0);
+  //   left: calc(50% - 1px);
+  //   right: auto;
+  // };
 }
 </style>

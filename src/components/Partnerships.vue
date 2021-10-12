@@ -9,6 +9,6 @@ export default {
   name: "Partnerships",
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 
 </style>

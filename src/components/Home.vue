@@ -11,6 +11,7 @@
       <v-carousel-item
         v-for="(slide, i) in slides"
         :key="i"
+        style="height: 600px"
       >
         <v-sheet
           :color="colors[i]"
@@ -55,7 +56,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .landing_container {
   padding: 15px;
   height: calc(100vh - 64px);

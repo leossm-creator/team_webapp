@@ -85,7 +85,7 @@ export default {
 
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 
 .header {
   border-bottom: 3px solid #FFA726;
