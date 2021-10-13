@@ -109,16 +109,16 @@ export default {
     }
   },
   mounted() {
-    // if (window.kakao && window.kakao.maps) {
-    //   this.initMap();
-    // } else {
-    //   const script = document.createElement('script');
-    //   /* global kakao */
-    //   script.onload = () => kakao.maps.load(this.initMap);
-    //   script.src =
-    //     'http://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=카카오API_KEY';
-    //   document.head.appendChild(script);
-    // }
+    if (window.kakao && window.kakao.maps) {
+      this.initMap();
+    } else {
+      const script = document.createElement("script");
+      /* global kakao */
+      script.onload = () => kakao.maps.load(this.initMap);
+      script.src =
+        "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=91065be27665f7acc9f9ac538762ef60";
+      document.head.appendChild(script);
+    }
   },
   methods: {
     mailTo() {
@@ -129,13 +129,14 @@ export default {
       }
     },
     initMap() {
-      let mapContainer = document.getElementById('map'), // 지도를 표시할 div
-      mapOption = {
-        center: new kakao.maps.LatLng(37.564343, 126.947613), // 지도의 중심좌표
-        level: 3, // 지도의 확대 레벨
+      var container = document.getElementById('map');
+      var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
       };
 
-      this.map = new kakao.maps.Map(mapContainer, mapOption);
+      var map = new kakao.maps.Map(container, options);
+      map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
     },
   }
 };

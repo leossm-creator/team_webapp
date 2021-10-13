@@ -12,12 +12,14 @@
 
     <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="500px">
       <v-list-item>
-        <v-img
-          src="/img/header-logo.png"
-          alt="logo"
-          contain
-          max-width="100"
-        ></v-img>
+        <a href="/">
+          <v-img
+            src="/img/header-logo.png"
+            alt="logo"
+            contain
+            max-width="100"
+          ></v-img>
+        </a>
         <v-list-item-content style="margin-left: 12px; margin-right: 12px;">
           <v-list-item-title class="text-h6" style="text-align: right">
             SK Chemicals OPEN R&D Team
@@ -63,6 +65,7 @@ export default {
     return {
       drawer: false,
       items: [
+        { title: "Home", icon: 'mdi-home-variant', path: "/", id: "home"},
         { title: 'About Us', icon: 'mdi-account-group', path: "/aboutUs", id: "about_us"},
         { title: 'Our Works', icon: 'mdi-chart-areaspline', path: "/ourWorks", id: "our_works" },
         { title: 'Contact Us', icon: 'mdi-card-account-mail', path: "/contactUs", id: "contact_us" },
