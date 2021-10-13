@@ -12,17 +12,18 @@
 
     <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="500px">
       <v-list-item>
-        <!-- <v-img
+        <v-img
           src="/img/header-logo.png"
           alt="logo"
           contain
-        ></v-img> -->
-        <v-list-item-content>
-          <v-list-item-title class="text-h6">
-            SK Chemicals 평가분석팀
+          max-width="100"
+        ></v-img>
+        <v-list-item-content style="margin-left: 12px; margin-right: 12px;">
+          <v-list-item-title class="text-h6" style="text-align: right">
+            SK Chemicals OPEN R&D Team
           </v-list-item-title>
-          <v-list-item-subtitle>
-            subtext
+          <v-list-item-subtitle style="text-align: right">
+            공동연구, 투자, AI
           </v-list-item-subtitle>
         </v-list-item-content>
         <v-btn rounded icon @click.stop="drawer = false">
@@ -40,6 +41,7 @@
           :key="item.title"
           link
           :to="item.path"
+          :@click="toggleNav(item.id)"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -61,10 +63,10 @@ export default {
     return {
       drawer: false,
       items: [
-        { title: 'About Us', icon: 'mdi-account-group', path: "/aboutUs" },
-        { title: 'Our Works', icon: 'mdi-chart-areaspline', path: "/ourWorks" },
-        { title: 'Contact Us', icon: 'mdi-card-account-mail', path: "/contactUs" },
-        { title: 'Partnerships', icon: 'mdi-handshake', path: "/partnerships" },
+        { title: 'About Us', icon: 'mdi-account-group', path: "/aboutUs", id: "about_us"},
+        { title: 'Our Works', icon: 'mdi-chart-areaspline', path: "/ourWorks", id: "our_works" },
+        { title: 'Contact Us', icon: 'mdi-card-account-mail', path: "/contactUs", id: "contact_us" },
+        { title: 'Partnerships', icon: 'mdi-handshake', path: "/partnerships", id: "partnerships" },
       ],
       right: null,
 
@@ -78,8 +80,10 @@ export default {
   },
 
   methods: {
-    toggleNav(name) {
-      console.log(name);
+    toggleNav(id) {
+      // let elem = document.getElementById(id);
+      // elem.scrollTop();
+      console.log(id);
     }
   },
 
@@ -89,6 +93,7 @@ export default {
 
 .header {
   border-bottom: 3px solid #FFA726;
+  // width: 100vw;
 }
 
 #navDrawer {

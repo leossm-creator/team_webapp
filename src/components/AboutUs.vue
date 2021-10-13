@@ -1,6 +1,7 @@
 <template>
-  <div class="page_container">
-    <h1 class="page_heading">About Us</h1>
+  <div id="about_us">
+    <div class="page_container">
+      <h1 class="page_heading">About Us</h1>
 
     <!-- <v-btn
       v-model="fab"
@@ -12,186 +13,182 @@
     </v-btn> -->
 
     <!-- Open R&D 소개 -->
-    <v-container class="content_container" id="au_intro">
-      <h2>Open R&D 소개</h2>
-      <!-- <v-divider style="margin-bottom: 16px"></v-divider> -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-        vitae, justo. Nullam dictum felis eu pede
-        <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-        ultricies nisi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-        vitae, justo. Nullam dictum felis eu pede
-        <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-        ultricies nisi.
-      </p>
-    </v-container>
+      <v-container class="content_container" id="au_intro">
+        <h2>Open R&D 소개</h2>
+        <!-- <v-divider style="margin-bottom: 16px"></v-divider> -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+          ultricies nisi.
+        </p>
 
-        <v-container id="au_diagram" class="content_container">
-      <v-row justify="center">
-          <v-avatar
-            color="red"
-            size="150"
-            class="diagram_icons"
-          >Open R&D</v-avatar>
-      </v-row>
-
-      <!-- <v-row justify="center" no-gutters>
-        <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
+        <div id="au_diagram">
+          <v-img src="/img/diagram_1.png" max-width="700"></v-img>
         </div>
-      </v-row>
-      <v-row justify="center" no-gutters>
-        <div style="width: 35%; height: 3px; background-color: rgba(0,0,0,.12)">
-        </div>
-      </v-row>
-      <v-row justify="center" no-gutters>
-        <v-col style="display: flex; justify-content: center;" lg="3">
-          <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
-          </div>
-        </v-col>
-        <v-col style="display: flex; justify-content: center;" md="auto">
-          <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
-          </div>
-        </v-col>
-        <v-col style="display: flex; justify-content: center;" lg="3">
-          <div style="width: 3px; height: 50px; background-color: rgba(0,0,0,.12)">
-          </div>
-        </v-col>
-      </v-row> -->
 
-      
-      <v-row justify="center">
-        <v-col style="display: flex; justify-content: center;" lg="3">
-          <v-avatar
-            color="green"
-            size="100"
-            class="diagram_icons"
-          >신약</v-avatar>
-        </v-col>
-        <v-col style="display: flex; justify-content: center;" md="auto">
-          <v-avatar
-            color="orange"
-            size="100"
-            class="diagram_icons"
-          >투자</v-avatar>
-        </v-col>
-        <v-col style="display: flex; justify-content: center;" lg="3">
-          <v-avatar
-            color="blue"
-            size="100"
-            class="diagram_icons"
-          >AI</v-avatar>
-        </v-col>
-      </v-row>
-    </v-container>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+          ultricies nisi.
+        </p>
+      </v-container>
 
-    <!-- 성과 Timeline -->
-    <v-container class="content_container" id="au_timeline">
-      <h2>Timeline</h2>
-      <sui-container text>
-        <v-timeline>
-          <v-timeline-item
-            v-for="(year, i) in years"
-            :key="i"
-            :color="year.color"
-            small
-          >
-            <template v-slot:opposite>
-              <span
-                :class="`headline font-weight-bold ${year.color}--text`"
-                v-text="year.year"
-              ></span>
-            </template>
-            <div class="py-4">
-              <h2
-                :class="`headline font-weight-normal mb-4 ${year.color}--text`"
-              >
-                {{ year.title }}
-              </h2>
-              <div>
-                <p
-                  v-for="item in year.description"
-                  :key="item"
-                  class="font-weight-light"
+      <!-- 성과 Timeline -->
+      <v-container class="content_container" id="au_timeline">
+        <h2>Timeline</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+          ultricies nisi.
+        </p>
+        <sui-container text>
+          <v-timeline>
+            <v-timeline-item
+              v-for="(year, i) in years"
+              :key="i"
+              :color="year.color"
+              small
+            >
+              <template v-slot:opposite>
+                <span
+                  :class="`headline font-weight-bold ${year.color}--text`"
+                  v-text="year.year"
+                ></span>
+              </template>
+              <div class="py-4">
+                <h2
+                  :class="`headline font-weight-normal mb-4 ${year.color}--text`"
                 >
-                  {{ item }}
-                </p>
+                  {{ year.title }}
+                </h2>
+                <div>
+                  <p
+                    v-for="item in year.description"
+                    :key="item"
+                    class="font-weight-light"
+                  >
+                    {{ item }}
+                  </p>
+                </div>
               </div>
-            </div>
-          </v-timeline-item>
-        </v-timeline>
-      </sui-container>
-    </v-container>
+            </v-timeline-item>
+          </v-timeline>
+        </sui-container>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+          ultricies nisi.
+        </p>
+      </v-container>
 
-    <!-- 조직도 -->
-    <v-container class="content_container" id="au_members">
-      <h2>Members</h2>
-      <!-- Executive 멤버들: 카드 with image -->
-      <h4>Executives</h4>
-      <v-row style="margin: 24px 0;">
-        <v-col v-for="member in members.executives" :key="member.name" style="display: flex; align-items: center; justify-content: center;">
-          <v-card hover width="300" style="padding: 12px; display: flex; flex-direction: column; justify-content:center; align-items: center;">
-              <v-avatar class="profile" size="200" color="#dedede" style="margin: 5% 0">
-                <!-- <v-img max-height="250" :src="member.image"></v-img> -->
-                <v-icon size="100">mdi-account</v-icon>
-              </v-avatar>
+      <!-- 조직도 -->
+      <v-container class="content_container" id="au_members">
+        <h2>Members</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+          ultricies nisi.
+        </p>
+        <!-- Executive 멤버들: 카드 with image -->
+        <h4>Executives</h4>
+        <v-row style="margin: 24px 0;">
+          <v-col v-for="member in members.executives" :key="member.name" style="display: flex; align-items: center; justify-content: center;">
+            <v-card hover width="300" style="padding: 12px; display: flex; flex-direction: column; justify-content:center; align-items: center;">
+                <v-avatar class="profile" size="200" color="#dedede" style="margin: 5% 0">
+                  <!-- <v-img max-height="250" :src="member.image"></v-img> -->
+                  <v-icon size="100">mdi-account</v-icon>
+                </v-avatar>
 
-              <div style="display: flex; flex-direction: column; align-items: center">
-                <v-card-title class="font-weight-bold">{{
-                  member.name
-                }}</v-card-title>
-                <v-card-subtitle>{{ member.role }}</v-card-subtitle>
-                <v-card-text>
-                  {{ member.description }}
-                </v-card-text>
-              </div>
-            <!-- </div> -->
-          </v-card>
-        </v-col>
-      </v-row>
-      <!-- Team 멤버들: 카드 with text -->
-      <h4>Managers</h4>
-      <v-row>
-        <v-col
-          cols="4"
-          v-for="member in members.managers"
-          :key="member.name"
-          style="padding-top: 30px; padding-bottom: 30px"
-        >
-          <v-card hover class="card_man">
-            <v-card-title class="font-weight-bold">
-              {{ member.name }}
-            </v-card-title>
-            <v-card-subtitle>{{ member.role }}</v-card-subtitle>
-            <v-card-text>
-              {{ member.description }}
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+                <div style="display: flex; flex-direction: column; align-items: center">
+                  <v-card-title class="font-weight-bold">{{
+                    member.name
+                  }}</v-card-title>
+                  <v-card-subtitle>{{ member.role }}</v-card-subtitle>
+                  <v-card-text>
+                    {{ member.description }}
+                  </v-card-text>
+                </div>
+              <!-- </div> -->
+            </v-card>
+          </v-col>
+        </v-row>
+        <!-- Team 멤버들: 카드 with text -->
+        <h4>Managers</h4>
+        <v-row>
+          <v-col
+            cols="3"
+            v-for="member in members.managers"
+            :key="member.name"
+            style="padding-top: 30px; padding-bottom: 30px"
+          >
+            <v-card hover class="card_man">
+              <v-card-title class="font-weight-bold">
+                {{ member.name }}
+              </v-card-title>
+              <v-card-subtitle>{{ member.role }}</v-card-subtitle>
+              <v-card-text>
+                {{ member.description }}
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
 
     <!-- <v-stepper vertical>
         <v-stepper-step editable step="1">
@@ -202,11 +199,16 @@
 
         <v-stepper-step step="3" editable> Create an ad </v-stepper-step>
     </v-stepper> -->
+    <Footer />
   </div>
 </template>
 <script>
+import Footer from "../layouts/Footer.vue"
 export default {
   name: "AboutUs",
+  components: {
+    Footer,
+  },
   data() {
     return {
       visible: true,
@@ -258,7 +260,7 @@ export default {
           // },
           {
             name: "이수민",
-            role: "평가분석팀 팀장",
+            role: "Open R&D팀 팀장",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
@@ -268,7 +270,7 @@ export default {
         managers: [
           {
             name: "김종인",
-            role: "평가분석팀",
+            role: "Open R&D팀 매니저",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
@@ -276,7 +278,7 @@ export default {
           },
           {
             name: "김율담",
-            role: "평가분석팀",
+            role: "Open R&D팀 매니저",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
@@ -284,7 +286,7 @@ export default {
           },
           {
             name: "연승주",
-            role: "평가분석팀",
+            role: "Open R&D팀",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
@@ -292,7 +294,7 @@ export default {
           },
           {
             name: "구남진",
-            role: "평가분석팀",
+            role: "Open R&D팀",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
@@ -300,7 +302,7 @@ export default {
           },
           {
             name: "박지현",
-            role: "평가분석팀",
+            role: "Open R&D팀",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
@@ -308,7 +310,7 @@ export default {
           },
           {
             name: "김동혁",
-            role: "평가분석팀",
+            role: "Open R&D팀",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
@@ -324,7 +326,7 @@ export default {
           },
           {
             name: "최권희",
-            role: "평가분석팀",
+            role: "Open R&D팀",
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
@@ -370,6 +372,9 @@ export default {
 }
 
 #au_diagram {
+  display: flex;
+  // padding: 0 20%;
+  margin: 8% 0;
   justify-content: center;
   align-items: center;
 

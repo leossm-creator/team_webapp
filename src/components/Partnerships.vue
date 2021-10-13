@@ -1,5 +1,5 @@
 <template>
-  <div class="page_container">
+  <div class="page_container" id="partnerships">
     <h1 is="sui-header" class="page_heading">Partnerships</h1>
     <!-- <v-parallax src="https://source.unsplash.com/WCEOtVmk2VY/300" height="300"></v-parallax> -->
   </div>

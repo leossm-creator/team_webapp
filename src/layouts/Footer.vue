@@ -41,5 +41,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-
+  #footer {
+    bottom: 0;
+  }
 </style>

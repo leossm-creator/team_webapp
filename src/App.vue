@@ -5,7 +5,6 @@
     <div id="content">
       <router-view />
     </div>
-
     <Footer />
   </v-app>
 </template>
@@ -29,12 +28,9 @@ export default {
 </script>
 
 <style scoped>
-  nav {
-    background-color: blueviolet !important;
-    width: 100%;
-  }
-
-  #app {
+  #content {
     /* width: 100vw; */
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
   }
 </style>

@@ -1,88 +1,191 @@
 <template>
-  <div class="page_container">
-    <h1 is="sui-header" class="page_heading">Our Works</h1>
-    <v-container class="content_container" id="ow_1">
-      <v-sheet
-        color="white"
-      >
-        <v-sparkline
-          :value="value"
-          :gradient="gradient"
-          :smooth="radius || false"
-          :padding="padding"
-          :line-width="width"
-          :stroke-linecap="lineCap"
-          :gradient-direction="gradientDirection"
-          :fill="fill"
-          :type="type"
-          :auto-line-width="autoLineWidth"
-          auto-draw
-          :labels="value"
-          color="white"
-        ></v-sparkline>
-        <template v-slot:label="item">
-            {{ item.value }}
-        </template>
-      </v-sheet>
-      <h2>신약</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-        vitae, justo. Nullam dictum felis eu pede
-        <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-        nisi.
-      </p>
-    </v-container>
-    <v-container class="content_container" id="ow_2">
-      <h2>공동 연구</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-        vitae, justo. Nullam dictum felis eu pede
-        <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-        nisi.
-      </p>
-    </v-container>
-    <v-container class="content_container" id="ow_3">
-      <h2>투자</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-        vitae, justo. Nullam dictum felis eu pede
-        <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-        nisi.
-      </p>
-    </v-container>
+  <div id="our_works">
+    <div class="page_container">
+      <h1 is="sui-header" class="page_heading">Our Works</h1>
+      <v-container class="content_container" id="ow_1">
+        <h2>신약</h2>
+        <v-row class="img_box"> 
+          <v-col cols="6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+              consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+              vitae, justo. Nullam dictum felis eu pede
+              <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+              tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+              enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+              nisi.
+            </p>
+          </v-col>
+          <v-col cols="1"></v-col>
+          <v-col cols="5">
+            <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
+          </v-col>
+        </v-row>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+          nisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+        </p>
+        <v-lazy>
+          <v-sheet
+            color="white"
+          >
+            <v-sparkline
+              :value="value"
+              :gradient="gradient"
+              :smooth="radius || false"
+              :padding="padding"
+              :line-width="width"
+              :stroke-linecap="lineCap"
+              :gradient-direction="gradientDirection"
+              :fill="fill"
+              :type="type"
+              :auto-line-width="autoLineWidth"
+              auto-draw
+              :labels="value"
+              color="white"
+              auto-draw-duration="2500"
+              auto-draw-easing="ease"
+            ></v-sparkline>
+            <template v-slot:label="item">
+                {{ item.value }}
+            </template>
+          </v-sheet>
+        </v-lazy>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+          nisi.
+        </p>
+      </v-container>
+
+      <v-container class="content_container" id="ow_2">
+        <h2>공동 연구</h2>
+        <v-row class="img_box">
+          <v-col cols="5">
+            <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
+          </v-col>
+          <v-col cols="1"></v-col>
+          <v-col cols="6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+              consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+              vitae, justo. Nullam dictum felis eu pede
+              <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+              tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+              enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+              nisi.
+            </p>
+          </v-col>
+        </v-row>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+          nisi.
+        </p>
+      </v-container>
+      <v-container class="content_container" id="ow_3">
+        <h2>투자</h2>
+        <v-row class="img_box">
+          <v-col cols="6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+              consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+              vitae, justo. Nullam dictum felis eu pede
+              <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+              tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+              enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+              nisi.
+            </p>
+          </v-col>
+          <v-col cols="1"></v-col>
+          <v-col cols="5">
+            <v-img src="https://source.unsplash.com/EDj-oxXe4s8"></v-img>
+          </v-col>
+        </v-row>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
+          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+          nisi.
+        </p>
+      </v-container>
+    </div>
   </div>
 </template>
 <script>
+// import Footer from "../layouts/Footer.vue"
 const gradients = [
   ['#222'],
   ['#42b3f4'],
@@ -93,6 +196,9 @@ const gradients = [
 ]
 export default {
   name: "OurWorks",
+  // components: {
+  //   Footer,
+  // },
   data() {
     return {
       width: 2.5,
@@ -121,5 +227,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-
+  .img_box {
+    margin: 36px 0;
+  }
 </style>
