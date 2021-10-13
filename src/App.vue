@@ -30,7 +30,7 @@ export default {
 <style scoped>
   #content {
     /* width: 100vw; */
-    height: calc(100vh - 64px);
-    overflow-y: scroll;
+    /* height: calc(100vh - 64px);
+    overflow-y: scroll; */
   }
 </style>

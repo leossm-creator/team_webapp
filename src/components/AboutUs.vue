@@ -199,16 +199,11 @@
 
         <v-stepper-step step="3" editable> Create an ad </v-stepper-step>
     </v-stepper> -->
-    <Footer />
   </div>
 </template>
 <script>
-import Footer from "../layouts/Footer.vue"
 export default {
   name: "AboutUs",
-  components: {
-    Footer,
-  },
   data() {
     return {
       visible: true,

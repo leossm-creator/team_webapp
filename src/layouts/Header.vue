@@ -93,7 +93,6 @@ export default {
 
 .header {
   border-bottom: 3px solid #FFA726;
-  // width: 100vw;
 }
 
 #navDrawer {
