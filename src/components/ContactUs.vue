@@ -70,20 +70,6 @@
                     </v-list>
                   </v-col>
                 </v-row>
-                  <!-- <v-row justify="center">
-                    <v-col>
-                      <p>Phone</p>
-                      <v-icon x-large>mdi-phone</v-icon>
-                    </v-col>
-                    <v-col>
-                      <p>Email</p>
-                      <v-icon x-large>mdi-email</v-icon>
-                    </v-col>
-                    <v-col>
-                      <p>Address</p>
-                      <v-icon x-large>mdi-map-marker</v-icon>
-                    </v-col>
-                  </v-row> -->
               </v-container>
             </v-card>
           </v-tab-item>
