@@ -1,21 +1,11 @@
 <template>
   <div id="about_us">
-    <div class="page_container">
+    <div class="page_container" ref="au_container">
       <h1 class="page_heading">About Us</h1>
 
-    <!-- <v-btn
-      v-model="fab"
-      color="blue darken-2"
-      dark
-      fab
-      @click="scrollTop" v-show="visible"
-    >
-    </v-btn> -->
-
-    <!-- Open R&D 소개 -->
+      <!-- Open R&D 소개 -->
       <v-container class="content_container" id="au_intro">
         <h2>Open R&D 소개</h2>
-        <!-- <v-divider style="margin-bottom: 16px"></v-divider> -->
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
           ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
@@ -148,11 +138,13 @@
         <h4>Executives</h4>
         <v-row style="margin: 24px 0;">
           <v-col v-for="member in members.executives" :key="member.name" style="display: flex; align-items: center; justify-content: center;">
-            <v-card hover width="300" style="padding: 12px; display: flex; flex-direction: column; justify-content:center; align-items: center;">
+            <v-card hover width="300" style="padding: 12px;">
+              <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;">
                 <v-avatar class="profile" size="200" color="#dedede" style="margin: 5% 0">
                   <!-- <v-img max-height="250" :src="member.image"></v-img> -->
                   <v-icon size="100">mdi-account</v-icon>
                 </v-avatar>
+              </div>
 
                 <div style="display: flex; flex-direction: column; align-items: center">
                   <v-card-title class="font-weight-bold">{{
@@ -162,8 +154,11 @@
                   <v-card-text>
                     {{ member.description }}
                   </v-card-text>
+                  <v-card-text>
+                    <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
+                    <v-btn depressed >Contact</v-btn>
+                  </v-card-text>
                 </div>
-              <!-- </div> -->
             </v-card>
           </v-col>
         </v-row>
@@ -184,21 +179,44 @@
               <v-card-text>
                 {{ member.description }}
               </v-card-text>
+              <v-card-text>
+                <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
+                <v-btn depressed >Contact</v-btn>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
     </div>
 
-    <!-- <v-stepper vertical>
-        <v-stepper-step editable step="1">
-          Select campaign settings
-        </v-stepper-step>
 
-        <v-stepper-step editable step="2"> Create an ad group </v-stepper-step>
+    <v-navigation-drawer floating permanent ref="scrollspy">
+      <v-list-item-group>
+        <v-list-item @click="$vuetify.goTo(500, { container: this.$refs.au_container } )">
+            <v-list-item-content>
+              <v-list-item-title>Menu 1</v-list-item-title>
+            </v-list-item-content>
+        </v-list-item>
 
-        <v-stepper-step step="3" editable> Create an ad </v-stepper-step>
-    </v-stepper> -->
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>Menu 2</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>Menu 3</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>Menu 4</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-navigation-drawer>
   </div>
 </template>
 <script>
@@ -245,14 +263,6 @@ export default {
       ],
       members: {
         executives: [
-          // {
-          //   name: "김정훈",
-          //   role: "연구개발센터 센터장",
-          //   description:
-          //     "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-          //   style: "margin-right: auto;",
-          //   image: "https://source.unsplash.com/c_GmwfHBDzk/",
-          // },
           {
             name: "이수민",
             role: "Open R&D팀 팀장",
@@ -260,9 +270,26 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "https://source.unsplash.com/c_GmwfHBDzk/",
+            email: "mrlee@example.com",
           },
         ],
         managers: [
+          {
+            name: "허지호",
+            role: "Pharma 기획팀 팀장",
+            description:
+              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+            style: "margin-right: auto;",
+            email: "teammember@example.com",
+          },
+          {
+            name: "최권희",
+            role: "Open R&D팀",
+            description:
+              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+            style: "margin-right: auto;",
+            email: "teammember@example.com",
+          },
           {
             name: "김종인",
             role: "Open R&D팀 매니저",
@@ -270,6 +297,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "",
+            email: "teammember@example.com",
           },
           {
             name: "김율담",
@@ -278,6 +306,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
             image: "",
+            email: "teammember@example.com",
           },
           {
             name: "연승주",
@@ -286,6 +315,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "",
+            email: "teammember@example.com",
           },
           {
             name: "구남진",
@@ -294,6 +324,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
             image: "",
+            email: "teammember@example.com",
           },
           {
             name: "박지현",
@@ -302,6 +333,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "",
+            email: "teammember@example.com",
           },
           {
             name: "김동혁",
@@ -310,49 +342,20 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
             image: "",
-          },
-          {
-            name: "허지호",
-            role: "Pharma 기획팀 팀장",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            image: "https://source.unsplash.com/c_GmwfHBDzk/",
-          },
-          {
-            name: "최권희",
-            role: "Open R&D팀",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            image: "https://source.unsplash.com/c_GmwfHBDzk/",
+            email: "teammember@example.com",
           },
         ],
       },
+
+      container: null,
+
     }
   },
 
 
   methods: {
-    scrollTop: function () { 
-      this.intervalId = setInterval(() => {
-        if (window.pageYOffset === 0) {
-          clearInterval(this.intervalId)
-        }
-        window.scroll(0, window.pageYOffset - 50)
-      }, 20)
-    },
-    scrollListener: function () {
-      this.visible = window.scrollY > 150
-    }
+
   },
-  mounted () {
-    window.addEventListener('scroll', this.scrollListener)
-  },
-  beforeDestroy: function () {
-    window.removeEventListener('scroll', this.scrollListener)
-  }
-  
 };
 </script>
 <style scoped lang="scss">
@@ -390,5 +393,9 @@ export default {
   //   left: calc(50% - 1px);
   //   right: auto;
   // };
+}
+
+#about_us {
+  display: flex;
 }
 </style>

@@ -10,7 +10,7 @@
       </a>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="500px">
+    <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="400px">
       <v-list-item>
         <a href="/">
           <v-img
@@ -22,10 +22,10 @@
         </a>
         <v-list-item-content style="margin-left: 12px; margin-right: 12px;">
           <v-list-item-title class="text-h6" style="text-align: right">
-            SK Chemicals OPEN R&D Team
+            Open R&D Team
           </v-list-item-title>
           <v-list-item-subtitle style="text-align: right">
-            공동연구, 투자, AI
+            SK Chemicals Open Innovation
           </v-list-item-subtitle>
         </v-list-item-content>
         <v-btn rounded icon @click.stop="drawer = false">
@@ -65,20 +65,13 @@ export default {
     return {
       drawer: false,
       items: [
-        { title: "Home", icon: 'mdi-home-variant', path: "/", id: "home"},
+        // { title: "Home", icon: 'mdi-home-variant', path: "/", id: "home"},
         { title: 'About Us', icon: 'mdi-account-group', path: "/aboutUs", id: "about_us"},
         { title: 'Our Works', icon: 'mdi-chart-areaspline', path: "/ourWorks", id: "our_works" },
         { title: 'Contact Us', icon: 'mdi-card-account-mail', path: "/contactUs", id: "contact_us" },
         { title: 'Partnerships', icon: 'mdi-handshake', path: "/partnerships", id: "partnerships" },
       ],
       right: null,
-
-
-      sections: [
-        { key: 'home', content: 'Home', link: true },
-        { key: 'store', content: 'Store', link: true },
-        { key: 'tshirt', content: 'T-Shirt', active: true },
-      ],
     };  
   },
 
