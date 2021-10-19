@@ -7,7 +7,7 @@
     <v-tabs v-model="tab" centered icons-and-text color="#3b3b3b">
       <v-tabs-slider></v-tabs-slider>
 
-      <v-tab href="#tab-1">
+      <v-tab href="#tab-1" dark>
         Get In Touch
         <v-icon>mdi-phone</v-icon>
       </v-tab>

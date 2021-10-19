@@ -3,14 +3,17 @@
     <v-app-bar flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <a href="/" style="margin-left: auto">
-        <v-img
-          src="/img/header-logo.png"
-          max-width="120"
-        ></v-img>
+        <v-img src="/img/header-logo.png" max-width="120"></v-img>
       </a>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary id="navDrawer" width="400px">
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+      id="navDrawer"
+      width="400px"
+    >
       <v-list-item>
         <a href="/">
           <v-img
@@ -20,7 +23,7 @@
             max-width="100"
           ></v-img>
         </a>
-        <v-list-item-content style="margin-left: 12px; margin-right: 12px;">
+        <v-list-item-content style="margin-left: 12px; margin-right: 12px">
           <v-list-item-title class="text-h6" style="text-align: right">
             Open R&D Team
           </v-list-item-title>
@@ -35,9 +38,7 @@
 
       <v-divider></v-divider>
 
-      <v-list
-        nav
-      >
+      <v-list nav>
         <v-list-item
           v-for="item in items"
           :key="item.title"
@@ -55,7 +56,7 @@
         </v-list-item>
       </v-list>
       <template v-slot:append>
-        <div class="pa-2">
+        <!-- <div class="pa-2">
           <v-btn>
             <v-icon>mdi-web</v-icon>
             EN
@@ -64,6 +65,10 @@
             <v-icon>mdi-web</v-icon>
             KR
           </v-btn>
+        </div> -->
+        <div class="pa-2">
+          <v-switch v-model="switchMe" prepend-icon="mdi-web" label="EN">
+          </v-switch>
         </div>
       </template>
     </v-navigation-drawer>
@@ -78,13 +83,33 @@ export default {
       drawer: false,
       items: [
         // { title: "Home", icon: 'mdi-home-variant', path: "/", id: "home"},
-        { title: 'About Us', icon: 'mdi-account-group', path: "/aboutUs", id: "about_us"},
-        { title: 'Our Works', icon: 'mdi-chart-areaspline', path: "/ourWorks", id: "our_works" },
-        { title: 'Contact Us', icon: 'mdi-card-account-mail', path: "/contactUs", id: "contact_us" },
-        { title: 'Partnerships', icon: 'mdi-handshake', path: "/partnerships", id: "partnerships" },
+        {
+          title: "About Us",
+          icon: "mdi-account-group",
+          path: "/aboutUs",
+          id: "about_us",
+        },
+        {
+          title: "Our Works",
+          icon: "mdi-chart-areaspline",
+          path: "/ourWorks",
+          id: "our_works",
+        },
+        {
+          title: "Contact Us",
+          icon: "mdi-card-account-mail",
+          path: "/contactUs",
+          id: "contact_us",
+        },
+        {
+          title: "Partnerships",
+          icon: "mdi-handshake",
+          path: "/partnerships",
+          id: "partnerships",
+        },
       ],
       right: null,
-    };  
+    };
   },
 
   methods: {
@@ -92,14 +117,13 @@ export default {
       // let elem = document.getElementById(id);
       // elem.scrollTop();
       console.log(id);
-    }
+    },
   },
-}
+};
 </script>
 <style scoped lang="scss">
-
 .header {
-  border-bottom: 3px solid #FFA726;
+  border-bottom: 3px solid #ffa726;
   // position: absolute;
   // width: 100%;
 }
@@ -108,6 +132,6 @@ export default {
 }
 
 .active {
-  color: #FFA726;
+  color: #ffa726;
 }
 </style>

@@ -136,7 +136,7 @@
           ultricies nisi.
         </p>
         <!-- Executive 멤버들: 카드 with image -->
-        <h4>Executives</h4>
+        <h4 id="members_executives">Executives</h4>
         <v-row style="margin: 24px 0;">
           <v-col v-for="member in members.executives" :key="member.name" style="display: flex; align-items: center; justify-content: center;">
             <v-card hover width="300" style="padding: 12px;">
@@ -164,7 +164,7 @@
           </v-col>
         </v-row>
         <!-- Team 멤버들: 카드 with text -->
-        <h4>Managers</h4>
+        <h4 id="members_managers">Managers</h4>
         <v-row>
           <v-col
             cols="3"
@@ -190,45 +190,59 @@
       </v-container>
     </div>
 
-    <template>
-      <!-- <v-navigation-drawer floating permanent ref="scrollspy">
+    <template ref="scrollspy" class="scrollspy">
+      <v-navigation-drawer floating permanent>
         <v-list>
           <v-list-item @click="scrollTo($refs.au_intro)">
             <v-list-item-content>
-              <v-list-item-title >Introduction</v-list-item-title>
+              <v-list-item-title class="pl-0">Introduction</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item @click="scrollTo($refs.au_timeline)">
             <v-list-item-content>
-              <v-list-item-title>Timeline</v-list-item-title>
+              <v-list-item-title class="pl-0">Timeline</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-group
-            :value="true"
-          >
-            <template v-slot:activator>
-              <v-list-item-title>Members</v-list-item-title>
-            </template>
-            <v-list-item @click="scrollTo(300)">
-                <v-list-item-content>
-                  <v-list-item-title >Menu 3</v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title>Menu 4</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list-group>
+          <v-list-item @click="scrollTo($refs.au_members)">
+            <v-list-item-content>
+              <v-list-item-title class="pl-0">Members</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item @click="scrollTo('#members_executives')">
+            <v-list-item-content>
+              <v-list-item-title class="pl-6">Executives</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item @click="scrollTo('#members_managers')">
+            <v-list-item-content>
+              <v-list-item-title class="pl-6">Managers</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
-      </v-navigation-drawer> -->
-    </template>
+        <!-- <ul class="mb-6">
+          <li class="pl-3 text-body-2 py-1 font-weight-regular">
+            <a href="#au_timeline" class="d-block transition-swing text-decoration-none">Timeline</a>
+          </li>
+        </ul> -->
+      </v-navigation-drawer>
+      <!-- <navscroll 
+        class="nav-scroll-items"
+        container="#my-scrollable-container"
+        item-selector=".item"
+        active-class="active-element">
 
-    <!-- <v-btn @click="scrollTo(300)">scroll</v-btn> -->
+        <a 
+          v-for="(entry,i) of entries" 
+          :key="i"
+          :href="'#'+entry.target"
+          class="item">{{entry.title}}</a>
+      </navscroll> -->
+    </template>
   </div>
 </template>
 <script>
 import * as easings from 'vuetify/lib/services/goto/easing-patterns'
+// import NavScroll from 'navscroll'
 export default {
   name: "AboutUs",
   data() {
@@ -357,11 +371,28 @@ export default {
       },
       container: null,
       easings: Object.keys(easings),
+      entries: [
+        {
+          title: "Introduction",
+          target: "au_intro",
+        },
+        {
+          title: "Timeline",
+          target: "au_timeline",
+        },
+        {
+          title: "Members",
+          target: "au_members",
+        },
+      ],
     }
   },
+  mounted() {
+  },
+
   methods: {
     scrollTo(target) {
-      this.$vuetify.goTo(target, {container: '#content'})
+      this.$vuetify.goTo(target, {container: '#content', duration: 800, offset: 30, easing: 'easeInOutCubic'})
     },
   },
 };
@@ -386,19 +417,14 @@ export default {
     // font-weight: 500;
     font-size: 1.2rem;
   }
-  // &::before {
-  //   bottom: 0;
-  //   content: "";
-  //   height: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   width: 2px;
-  //   background-color: rgba(151, 151, 151, 0);
-  //   left: calc(50% - 1px);
-  //   right: auto;
-  // };
 }
 #about_us {
-  display: flex;
+  // display: flex;
+  // max-height: 100vh;
+  // overflow-y: scroll;
+}
+
+.scrollspy {
+  position: fixed;
 }
 </style>

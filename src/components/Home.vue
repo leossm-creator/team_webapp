@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="landing_container">
     <v-carousel
       :continuous="true"
       :cycle="cycle"
       :show-arrows="true"
       hide-delimiter-background
       delimiter-icon="mdi-minus"
-      height="700"
+      height="600"
     >
       <v-carousel-item
         v-for="(slide, i) in slides"
