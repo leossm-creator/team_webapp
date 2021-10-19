@@ -1,11 +1,10 @@
 <template>
   <v-app id="app">
     <Header />
-    
     <div id="content">
       <router-view />
+      <Footer />
     </div>
-    <Footer />
   </v-app>
 </template>
 
@@ -27,10 +26,9 @@ export default {
 };
 </script>
 
-<style scoped>
-  #content {
-    /* width: 100vw; */
-    /* height: calc(100vh - 64px);
-    overflow-y: scroll; */
-  }
+<style lang="scss" scoped>
+#content {
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+}
 </style>
