@@ -54,6 +54,18 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <template v-slot:append>
+        <div class="pa-2">
+          <v-btn>
+            <v-icon>mdi-web</v-icon>
+            EN
+          </v-btn>
+          <v-btn>
+            <v-icon>mdi-web</v-icon>
+            KR
+          </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
   </div>
 </template>
@@ -82,7 +94,6 @@ export default {
       console.log(id);
     }
   },
-
 }
 </script>
 <style scoped lang="scss">

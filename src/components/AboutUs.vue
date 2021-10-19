@@ -191,7 +191,7 @@
     </div>
 
     <template>
-      <v-navigation-drawer floating permanent ref="scrollspy">
+      <!-- <v-navigation-drawer floating permanent ref="scrollspy">
         <v-list>
           <v-list-item @click="scrollTo($refs.au_intro)">
             <v-list-item-content>
@@ -221,7 +221,7 @@
             </v-list-item>
           </v-list-group>
         </v-list>
-      </v-navigation-drawer>
+      </v-navigation-drawer> -->
     </template>
 
     <!-- <v-btn @click="scrollTo(300)">scroll</v-btn> -->
