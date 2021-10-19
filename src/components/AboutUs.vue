@@ -1,10 +1,11 @@
+
 <template>
-  <div id="about_us">
+  <div id="about_us" ref="about_us">
     <div class="page_container" ref="au_container">
       <h1 class="page_heading">About Us</h1>
 
       <!-- Open R&D 소개 -->
-      <v-container class="content_container" id="au_intro">
+      <v-container class="content_container" id="au_intro" ref="au_intro">
         <h2>Open R&D 소개</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -23,7 +24,7 @@
           ultricies nisi.
         </p>
 
-        <div id="au_diagram">
+        <div id="au_diagram" ref="au_diagram">
           <v-img src="/img/diagram_1.png" max-width="700"></v-img>
         </div>
 
@@ -46,7 +47,7 @@
       </v-container>
 
       <!-- 성과 Timeline -->
-      <v-container class="content_container" id="au_timeline">
+      <v-container class="content_container" id="au_timeline" ref="au_timeline">
         <h2>Timeline</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -116,7 +117,7 @@
       </v-container>
 
       <!-- 조직도 -->
-      <v-container class="content_container" id="au_members">
+      <v-container class="content_container" id="au_members" ref="au_members">
         <h2>Members</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -189,37 +190,45 @@
       </v-container>
     </div>
 
-
-    <v-navigation-drawer floating permanent ref="scrollspy">
-      <v-list-item-group>
-        <v-list-item @click="$vuetify.goTo(500, { container: this.$refs.au_container } )">
+    <template>
+      <v-navigation-drawer floating permanent ref="scrollspy">
+        <v-list>
+          <v-list-item @click="scrollTo($refs.au_intro)">
             <v-list-item-content>
-              <v-list-item-title>Menu 1</v-list-item-title>
+              <v-list-item-title >Introduction</v-list-item-title>
             </v-list-item-content>
-        </v-list-item>
+          </v-list-item>
+          <v-list-item @click="scrollTo($refs.au_timeline)">
+            <v-list-item-content>
+              <v-list-item-title>Timeline</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-group
+            :value="true"
+          >
+            <template v-slot:activator>
+              <v-list-item-title>Members</v-list-item-title>
+            </template>
+            <v-list-item @click="scrollTo(300)">
+                <v-list-item-content>
+                  <v-list-item-title >Menu 3</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>Menu 4</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-group>
+        </v-list>
+      </v-navigation-drawer>
+    </template>
 
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Menu 2</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Menu 3</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Menu 4</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list-item-group>
-    </v-navigation-drawer>
+    <!-- <v-btn @click="scrollTo(300)">scroll</v-btn> -->
   </div>
 </template>
 <script>
+import * as easings from 'vuetify/lib/services/goto/easing-patterns'
 export default {
   name: "AboutUs",
   data() {
@@ -346,15 +355,14 @@ export default {
           },
         ],
       },
-
       container: null,
-
+      easings: Object.keys(easings),
     }
   },
-
-
   methods: {
-
+    scrollTo(target) {
+      this.$vuetify.goTo(target, {container: '#content'})
+    },
   },
 };
 </script>
@@ -364,24 +372,20 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-
 .card_man {
   /* max-width: 450px; */
 }
-
 #au_diagram {
   display: flex;
   // padding: 0 20%;
   margin: 8% 0;
   justify-content: center;
   align-items: center;
-
   .diagram_icons {
     color: white;
     // font-weight: 500;
     font-size: 1.2rem;
   }
-
   // &::before {
   //   bottom: 0;
   //   content: "";
@@ -394,7 +398,6 @@ export default {
   //   right: auto;
   // };
 }
-
 #about_us {
   display: flex;
 }
