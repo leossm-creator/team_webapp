@@ -36,6 +36,7 @@
     </v-carousel>
     <div class="content_container">
       <h1 class="page_heading">OPEN R&D</h1>
+      <h1>{{ $t('welcomeMsg') }}</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque

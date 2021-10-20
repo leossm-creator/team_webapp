@@ -23,7 +23,7 @@
               nisi.
             </p>
           </v-col>
-          <v-col cols="1"></v-col>
+          <v-spacer></v-spacer>
           <v-col cols="5">
             <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
           </v-col>

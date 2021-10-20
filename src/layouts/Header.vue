@@ -56,26 +56,28 @@
         </v-list-item>
       </v-list>
       <template v-slot:append>
-        <!-- <div class="pa-2">
-          <v-btn>
+        <div class="pa-2">
+          <v-btn @click="changeLocale('en')">
             <v-icon>mdi-web</v-icon>
             EN
           </v-btn>
-          <v-btn>
+          <v-btn @click="changeLocale('kr')">
             <v-icon>mdi-web</v-icon>
             KR
           </v-btn>
-        </div> -->
-        <div class="pa-2">
+        </div>
+        <!-- <div class="pa-2">
           <v-switch v-model="switchMe" prepend-icon="mdi-web" label="EN">
           </v-switch>
-        </div>
+        </div> -->
       </template>
     </v-navigation-drawer>
   </div>
 </template>
 
 <script>
+import i18n from '@/plugins/i18n';
+
 export default {
   name: "Header",
   data() {
@@ -117,6 +119,9 @@ export default {
       // let elem = document.getElementById(id);
       // elem.scrollTop();
       console.log(id);
+    },
+    changeLocale(locale) {
+      i18n.locale = locale;
     },
   },
 };
