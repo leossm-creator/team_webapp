@@ -15,7 +15,7 @@
       width="400px"
     >
       <v-list-item>
-        <a href="/">
+        <a>
           <v-img
             src="/img/header-logo.png"
             alt="logo"

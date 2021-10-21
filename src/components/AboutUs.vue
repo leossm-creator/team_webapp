@@ -224,6 +224,7 @@
         v-on:itemchanged="onItemChanged"
       >
         <v-list>
+          <h3>Contents</h3>
           <v-list-item>
             <v-list-item-content>
               <v-list-item-title class="pl-0"><a href="#au_intro" class="scrollactive-item">Introduction</a></v-list-item-title>

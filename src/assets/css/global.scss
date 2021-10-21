@@ -30,6 +30,7 @@ body::-webkit-scrollbar {
   min-height: calc(100vh - 272px);
   padding: 3rem 1rem;
   width: calc(100% - 180px);
+  
   .page_heading {
     text-align: center;
     font-size: 2.5rem !important;
@@ -47,16 +48,24 @@ body::-webkit-scrollbar {
 
   .scrollspy {
     position: absolute;
-    top: 67px;
+    // top: 67px;
+    top: 115px;
     right: 14px;
     width: 180px;
+    
+    .v-list-item {
+      min-height: 36px !important;
+    }
 
     .scrollactive-item {
+      width: 100%;
       color: #757575;
+      // border-left: 2px solid gray;
     
       &.active {
         color: #E53935;
         font-weight: 500;
+        // border-left: 2px solid orange;
       }
     }
   }
