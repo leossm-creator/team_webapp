@@ -8,20 +8,20 @@
       <v-container class="content_container" id="au_intro" ref="au_intro">
         <h2>Open R&D 소개</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-          vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-          ultricies nisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer
+          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+          augue. Curabitur ullamcorper ultricies nisi.
         </p>
 
         <div id="au_diagram" ref="au_diagram">
@@ -29,20 +29,20 @@
         </div>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-          vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-          ultricies nisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer
+          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+          augue. Curabitur ullamcorper ultricies nisi.
         </p>
       </v-container>
 
@@ -50,20 +50,20 @@
       <v-container class="content_container" id="au_timeline" ref="au_timeline">
         <h2>Timeline</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-          vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-          ultricies nisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer
+          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+          augue. Curabitur ullamcorper ultricies nisi.
         </p>
         <sui-container text>
           <v-timeline>
@@ -99,20 +99,20 @@
           </v-timeline>
         </sui-container>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-          vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-          ultricies nisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer
+          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+          augue. Curabitur ullamcorper ultricies nisi.
         </p>
       </v-container>
 
@@ -120,46 +120,68 @@
       <v-container class="content_container" id="au_members" ref="au_members">
         <h2>Members</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-          vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-          enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-          imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-          ultricies nisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          <a href="javascript:void 0">link</a> mollis pretium. Integer
+          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+          augue. Curabitur ullamcorper ultricies nisi.
         </p>
         <!-- Executive 멤버들: 카드 with image -->
         <h4 id="members_executives">Executives</h4>
-        <v-row style="margin: 24px 0;">
-          <v-col v-for="member in members.executives" :key="member.name" style="display: flex; align-items: center; justify-content: center;">
-            <v-card hover width="300" style="padding: 12px;">
-              <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;">
-                <v-avatar class="profile" size="200" color="#dedede" style="margin: 5% 0">
+        <v-row style="margin: 24px 0">
+          <v-col
+            v-for="member in members.executives"
+            :key="member.name"
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <v-card hover width="300" style="padding: 12px">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <v-avatar
+                  class="profile"
+                  size="200"
+                  color="#dedede"
+                  style="margin: 5% 0"
+                >
                   <!-- <v-img max-height="250" :src="member.image"></v-img> -->
                   <v-icon size="100">mdi-account</v-icon>
                 </v-avatar>
               </div>
 
-                <div style="display: flex; flex-direction: column; align-items: center">
-                  <v-card-title class="font-weight-bold">{{
-                    member.name
-                  }}</v-card-title>
-                  <v-card-subtitle>{{ member.role }}</v-card-subtitle>
-                  <v-card-text>
-                    {{ member.description }}
-                  </v-card-text>
-                  <v-card-text>
-                    <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
-                    <v-btn depressed >Contact</v-btn>
-                  </v-card-text>
-                </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <v-card-title class="font-weight-bold">{{
+                  member.name
+                }}</v-card-title>
+                <v-card-subtitle>{{ member.role }}</v-card-subtitle>
+                <v-card-text>
+                  {{ member.description }}
+                </v-card-text>
+                <v-card-text>
+                  <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
+                  <v-btn depressed>Contact</v-btn>
+                </v-card-text>
+              </div>
             </v-card>
           </v-col>
         </v-row>
@@ -182,69 +204,67 @@
               </v-card-text>
               <v-card-text>
                 <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
-                <v-btn depressed >Contact</v-btn>
+                <v-btn depressed>Contact</v-btn>
               </v-card-text>
             </v-card>
           </v-col>
         </v-row>
       </v-container>
-    </div>
 
-    <template ref="scrollspy" class="scrollspy">
-      <v-navigation-drawer floating permanent>
+      <!-- ScrollSpy -->
+      <scrollactive
+        class="scrollspy"
+        active-class="active"
+        :offset="50"
+        :duration="600"
+        bezier-easing-value=".5,0,.35,1"
+        scrollContainerSelector="#content"
+        alwaysTrack
+        :modifyUrl="false"
+        v-on:itemchanged="onItemChanged"
+      >
         <v-list>
-          <v-list-item @click="scrollTo($refs.au_intro)">
+          <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-0">Introduction</v-list-item-title>
+              <v-list-item-title class="pl-0"><a href="#au_intro" class="scrollactive-item">Introduction</a></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item @click="scrollTo($refs.au_timeline)">
+          <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-0">Timeline</v-list-item-title>
+              <v-list-item-title class="pl-0"><a href="#au_timeline" class="scrollactive-item">Timeline</a></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item @click="scrollTo($refs.au_members)">
+          <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-0">Members</v-list-item-title>
+              <v-list-item-title class="pl-0"><a href="#au_members" class="scrollactive-item">Members</a></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item @click="scrollTo('#members_executives')">
+          <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6">Executives</v-list-item-title>
+              <v-list-item-title class="pl-6"><a href="#members_executives" class="scrollactive-item">Executives</a></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item @click="scrollTo('#members_managers')">
+          <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6">Managers</v-list-item-title>
+              <v-list-item-title class="pl-6"><a href="#members_managers" class="scrollactive-item">Managers</a></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
-        <!-- <ul class="mb-6">
-          <li class="pl-3 text-body-2 py-1 font-weight-regular">
-            <a href="#au_timeline" class="d-block transition-swing text-decoration-none">Timeline</a>
-          </li>
-        </ul> -->
-      </v-navigation-drawer>
-      <!-- <navscroll 
-        class="nav-scroll-items"
-        container="#my-scrollable-container"
-        item-selector=".item"
-        active-class="active-element">
+      </scrollactive>
+    </div>
 
-        <a 
-          v-for="(entry,i) of entries" 
-          :key="i"
-          :href="'#'+entry.target"
-          class="item">{{entry.title}}</a>
-      </navscroll> -->
-    </template>
+    <Footer></Footer>
   </div>
 </template>
 <script>
-import * as easings from 'vuetify/lib/services/goto/easing-patterns'
-// import NavScroll from 'navscroll'
+import * as easings from "vuetify/lib/services/goto/easing-patterns";
+import Footer from "../layouts/Footer.vue";
+
 export default {
   name: "AboutUs",
+  components: {
+    Footer,
+  },
   data() {
     return {
       visible: true,
@@ -385,15 +405,22 @@ export default {
           target: "au_members",
         },
       ],
-    }
+    };
   },
-  mounted() {
-  },
+  mounted() {},
 
   methods: {
     scrollTo(target) {
-      this.$vuetify.goTo(target, {container: '#content', duration: 800, offset: 30, easing: 'easeInOutCubic'})
+      this.$vuetify.goTo(target, {
+        container: "#content",
+        duration: 800,
+        offset: 30,
+        easing: "easeInOutCubic",
+      });
     },
+    // onItemChanged(event, currentItem, lastActiveItem) {
+    //   alert(event, currentItem, lastActiveItem)
+    // },
   },
 };
 </script>
@@ -422,9 +449,5 @@ export default {
   // display: flex;
   // max-height: 100vh;
   // overflow-y: scroll;
-}
-
-.scrollspy {
-  position: fixed;
 }
 </style>

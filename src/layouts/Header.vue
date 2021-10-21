@@ -44,7 +44,6 @@
           :key="item.title"
           link
           :to="item.path"
-          :@click="toggleNav(item.id)"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -115,10 +114,10 @@ export default {
   },
 
   methods: {
-    toggleNav(id) {
+    toggleNav() {
       // let elem = document.getElementById(id);
       // elem.scrollTop();
-      console.log(id);
+      // console.log(id);
     },
     changeLocale(locale) {
       i18n.locale = locale;
