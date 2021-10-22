@@ -191,7 +191,7 @@
       <scrollactive
         class="scrollspy"
         active-class="active"
-        :offset="50"
+        :offset="70"
         :duration="600"
         bezier-easing-value=".5,0,.35,1"
         scrollContainerSelector="#content"
@@ -252,6 +252,7 @@ const gradients = [
   ["purple", "violet"],
   ["#00c6ff", "#F0F", "#FF0"],
   ["#f72047", "#ffd200", "#1feaea"],
+  ["#03A9F4", "#80DEEA", "#CDDC39"],
 ];
 export default {
   name: "OurWorks",
@@ -264,7 +265,7 @@ export default {
       radius: 10,
       padding: 10,
       lineCap: "round",
-      gradient: gradients[2],
+      gradient: gradients[6],
       value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 5, 9],
       gradientDirection: "top",
       gradients,

@@ -116,11 +116,51 @@
         </v-tab-item>
       </v-tabs-items>
     </div>
+    <v-dialog
+      v-model="easterEgg.show"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+    >
+      <v-card>
+        <v-toolbar dark color="primary">
+          <v-btn icon dark @click="easterEgg.show = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Easter Egg</v-toolbar-title>
+        </v-toolbar>
+        <div id="ocean">
+          <div class="fish">
+            <div class="fish-body">
+              <div class="eye">
+                <div class="pupil"></div>
+              </div>
+            </div>
+            <div class="fin"></div>
+            <div class="fin fin-bottom"></div>
+          </div>
+        </div>
+      </v-card>
+    </v-dialog>
     <Footer></Footer>
+    <v-snackbar v-model="easterEgg.snackbar" :timeout="3000" color="orange" text>
+      Welcome {{ easterEgg.username }}!
+      <template v-slot:action="{ attrs }">
+        <v-btn
+          color="blue"
+          text
+          v-bind="attrs"
+          @click="easterEgg.snackbar = false"
+        >
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </div>
 </template>
 <script>
 import Footer from "../layouts/Footer.vue";
+
 export default {
   name: "ContactUs",
   components: {
@@ -129,9 +169,10 @@ export default {
   data() {
     return {
       mailData: {
-        title: "",
-        body: "",
-        subject: "",
+        // Fix!
+        title: "연승주",
+        body: "show me the fishes",
+        subject: "etc",
       },
       tab: null,
 
@@ -150,6 +191,13 @@ export default {
         },
       ],
       // valid: true,
+
+      easterEgg: {
+        snackbar: false,
+        show: false,
+        username: "",
+        fishNum: 10,
+      },
     };
   },
 
@@ -157,11 +205,16 @@ export default {
     mailTo() {
       if (this.$refs.mailTo.validate()) {
         if (
-          this.mailData.title === "연승주" &&
-          this.mailData.body === "선생님" &&
-          this.mailData.subject === "etc"
+          this.mailData.title === "연승주" ||
+          this.mailData.title === "김동혁" ||
+          (this.mailData.title === "박지현" &&
+            this.mailData.body === "show me the fishes" &&
+            this.mailData.subject === "etc")
         ) {
-          alert("Easter Egg");
+          // alert("Easter Egg");
+          this.easterEgg.username = this.mailData.title;
+          this.easterEgg.snackbar = true;
+          this.easterEgg.show = true;
         } else {
           let address;
           let cc;
@@ -179,6 +232,7 @@ export default {
         }
       }
     },
+    showFishes() {},
   },
 };
 </script>
@@ -189,5 +243,68 @@ export default {
 
 .page_container {
   width: 100% !important;
+}
+
+.fish {
+  width: 150px;
+  height: 100px;
+  animation: swim 3s infinite;
+}
+
+/* Franklin */
+.fish-body {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 150px;
+  height: 100px;
+}
+
+.eye {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.pupil {
+  position: absolute;
+  z-index: 2;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.fin {
+  margin-top: -100px;
+  background-color: orange;
+  border-radius: 100%;
+  transform: rotate(40deg);
+  width: 100px;
+  height: 50px;
+}
+
+.fin-bottom {
+  margin-top: -10px;
+  transform: rotate(-40deg);
+}
+
+#ocean {
+  width: 100%;
+  height: calc(100vh - 64px);
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  background-color: rgb(16, 59, 114);
+  padding: 20px;
 }
 </style>

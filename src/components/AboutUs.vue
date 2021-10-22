@@ -215,7 +215,7 @@
       <scrollactive
         class="scrollspy"
         active-class="active"
-        :offset="50"
+        :offset="70"
         :duration="600"
         bezier-easing-value=".5,0,.35,1"
         scrollContainerSelector="#content"
@@ -227,27 +227,47 @@
           <h3>Contents</h3>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-0"><a href="#au_intro" class="scrollactive-item">Introduction</a></v-list-item-title>
+              <v-list-item-title class="pl-0"
+                ><a href="#au_intro" class="scrollactive-item"
+                  >Introduction</a
+                ></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-0"><a href="#au_timeline" class="scrollactive-item">Timeline</a></v-list-item-title>
+              <v-list-item-title class="pl-0"
+                ><a href="#au_timeline" class="scrollactive-item"
+                  >Timeline</a
+                ></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-0"><a href="#au_members" class="scrollactive-item">Members</a></v-list-item-title>
+              <v-list-item-title class="pl-0"
+                ><a href="#au_members" class="scrollactive-item"
+                  >Members</a
+                ></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6"><a href="#members_executives" class="scrollactive-item">Executives</a></v-list-item-title>
+              <v-list-item-title class="pl-6"
+                ><a href="#members_executives" class="scrollactive-item"
+                  >Executives</a
+                ></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6"><a href="#members_managers" class="scrollactive-item">Managers</a></v-list-item-title>
+              <v-list-item-title class="pl-6"
+                ><a href="#members_managers" class="scrollactive-item"
+                  >Managers</a
+                ></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -408,7 +428,9 @@ export default {
       ],
     };
   },
-  mounted() {},
+  mounted() {
+    // this.$refs.content.scrollTo(0, 0)
+  },
 
   methods: {
     scrollTo(target) {
