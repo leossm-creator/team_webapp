@@ -2,15 +2,14 @@
 @import url("../../../node_modules/vuetify/src/styles/generic/_reset.scss");
 
 // 한글 font
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
-body
-{   
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   // overflow-y: hidden;
   // overflow-y: auto;
 }
@@ -30,12 +29,13 @@ body::-webkit-scrollbar {
   min-height: calc(100vh - 272px);
   padding: 3rem 1rem;
   width: calc(100% - 180px);
-  
+  // margin: 50px 0;
+
   .page_heading {
     text-align: center;
     font-size: 2.5rem !important;
   }
-  
+
   .content_container {
     font-size: 1.15rem;
     padding: 0 6%;
@@ -52,18 +52,20 @@ body::-webkit-scrollbar {
     top: 115px;
     right: 14px;
     width: 180px;
-    
+
     .v-list-item {
       min-height: 36px !important;
+      // border-left: 2px solid gray;
     }
 
     .scrollactive-item {
       width: 100%;
       color: #757575;
       // border-left: 2px solid gray;
-    
+
       &.active {
-        color: #E53935;
+        // color: #E53935;
+        color: #e0002a;
         font-weight: 500;
         // border-left: 2px solid orange;
       }

@@ -68,7 +68,7 @@
               auto-draw
               :labels="value"
               color="white"
-              auto-draw-duration="2500"
+              :auto-draw-duration="2500"
               auto-draw-easing="ease"
             ></v-sparkline>
             <template v-slot:label="item">
@@ -197,7 +197,6 @@
         scrollContainerSelector="#content"
         alwaysTrack
         :modifyUrl="false"
-        v-on:itemchanged="onItemChanged"
       >
         <v-list>
           <h3>Contents</h3>

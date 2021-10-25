@@ -221,7 +221,6 @@
         scrollContainerSelector="#content"
         alwaysTrack
         :modifyUrl="false"
-        v-on:itemchanged="onItemChanged"
       >
         <v-list>
           <h3>Contents</h3>
@@ -272,6 +271,35 @@
           </v-list-item>
         </v-list>
       </scrollactive>
+<!-- 
+      <scrollactive
+        class="scrollspy"
+        active-class="active"
+        :offset="70"
+        :duration="600"
+        bezier-easing-value=".5,0,.35,1"
+        scrollContainerSelector="#content"
+        alwaysTrack
+        :modifyUrl="false"
+      >
+        <ul>
+          <li class="pl-0"> 
+            <a href="#au_intro" class="scrollactive-item">Introduction</a>
+          </li>
+          <li class="pl-0"> 
+            <a href="#au_timeline" class="scrollactive-item">Timeline</a>
+          </li>
+          <li class="pl-0"> 
+            <a href="#au_members" class="scrollactive-item">Members</a>
+          </li>
+          <li class="pl-3"> 
+            <a href="#members_executives" class="scrollactive-item">Executives</a>
+          </li>
+          <li class="pl-3"> 
+            <a href="#members_managers" class="scrollactive-item">Managers</a>
+          </li>
+        </ul>
+      </scrollactive> -->
     </div>
 
     <Footer></Footer>
@@ -473,4 +501,17 @@ export default {
   // max-height: 100vh;
   // overflow-y: scroll;
 }
+
+// .scrollspy {
+//   ul {
+//     list-style: none;
+//     font-size: 1.1rem;
+//     padding: 0;
+
+//     li {
+//       padding: 6px;
+
+//     }
+//   }
+// }
 </style>

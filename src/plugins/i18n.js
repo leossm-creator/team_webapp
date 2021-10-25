@@ -13,6 +13,7 @@ const messages = {
 };
 
 const i18n = new VueI18n({
+  silentTranslationWarn: true,
   locale: 'kr', // set locale
   fallbackLocale: 'en', // set fallback locale
   messages, // set locale messages
