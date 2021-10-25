@@ -211,7 +211,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6"
+              <v-list-item-title class="pl-3"
                 ><a href="#ow_sparkline" class="scrollactive-item"
                   >sparkline</a
                 ></v-list-item-title

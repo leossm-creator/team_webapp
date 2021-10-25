@@ -253,7 +253,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6"
+              <v-list-item-title class="pl-3"
                 ><a href="#members_executives" class="scrollactive-item"
                   >Executives</a
                 ></v-list-item-title
@@ -262,7 +262,7 @@
           </v-list-item>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title class="pl-6"
+              <v-list-item-title class="pl-3"
                 ><a href="#members_managers" class="scrollactive-item"
                   >Managers</a
                 ></v-list-item-title
@@ -271,7 +271,7 @@
           </v-list-item>
         </v-list>
       </scrollactive>
-<!-- 
+  <!-- 
       <scrollactive
         class="scrollspy"
         active-class="active"
@@ -458,6 +458,7 @@ export default {
   },
   mounted() {
     // this.$refs.content.scrollTo(0, 0)
+    // this.$refs.content.scrollY = 0;
   },
 
   methods: {

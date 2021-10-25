@@ -15,7 +15,7 @@
       width="400px"
     >
       <v-list-item>
-        <a>
+        <a href="/">
           <v-img
             src="/img/header-logo.png"
             alt="logo"
@@ -38,12 +38,16 @@
 
       <v-divider></v-divider>
 
-      <v-list nav>
-        <v-list-item
+      <v-list nav
+      >
+        <v-list-item-group
+        active-class="active"
+        >
+          <v-list-item
           v-for="item in items"
           :key="item.title"
           link
-          :to="item.path"
+          :to="item.path" 
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -53,6 +57,7 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        </v-list-item-group>
       </v-list>
       <template v-slot:append>
         <div class="pa-2">
@@ -136,6 +141,7 @@ export default {
 }
 
 .active {
-  color: #ffa726;
+  color: #ff9900 !important;
+  caret-color: #ff9900 !important;
 }
 </style>

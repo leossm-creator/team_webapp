@@ -2,7 +2,12 @@
   <div id="contact_us">
     <div class="page_container" id="contact_us">
       <h1 class="page_heading">Contact Us</h1>
-      <v-container class="content_container" id="cu" ref="cu" style="margin-bottom: 50px;">
+      <v-container
+        class="content_container"
+        id="cu"
+        ref="cu"
+        style="margin-bottom: 50px"
+      >
         <v-tabs v-model="tab" centered icons-and-text color="#93bc3b">
           <v-tabs-slider></v-tabs-slider>
 
@@ -132,6 +137,42 @@
           <v-toolbar-title>Easter Egg</v-toolbar-title>
         </v-toolbar>
         <div id="ocean">
+          <div class="fish medium">
+            <div class="fish-body">
+              <div class="eye">
+                <div class="pupil"></div>
+              </div>
+            </div>
+            <div class="fin"></div>
+            <div class="fin fin-bottom"></div>
+          </div>
+          <div class="fish small">
+            <div class="fish-body">
+              <div class="eye">
+                <div class="pupil"></div>
+              </div>
+            </div>
+            <div class="fin"></div>
+            <div class="fin fin-bottom"></div>
+          </div>
+          <div class="fish">
+            <div class="fish-body">
+              <div class="eye">
+                <div class="pupil"></div>
+              </div>
+            </div>
+            <div class="fin"></div>
+            <div class="fin fin-bottom"></div>
+          </div>
+          <div class="fish">
+            <div class="fish-body">
+              <div class="eye">
+                <div class="pupil"></div>
+              </div>
+            </div>
+            <div class="fin"></div>
+            <div class="fin fin-bottom"></div>
+          </div>
           <div class="fish">
             <div class="fish-body">
               <div class="eye">
@@ -256,53 +297,51 @@ export default {
   width: 150px;
   height: 100px;
   animation: swim 3s infinite;
-}
 
-/* Franklin */
-.fish-body {
-  position: relative;
-  margin-top: 30px;
-  margin-left: 40px;
-  background-color: orange;
-  border-radius: 50%;
-  width: 150px;
-  height: 100px;
-}
+  .fish-body {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+    .eye {
+      position: absolute;
+      margin-left: 100px;
+      margin-top: 20px;
+      z-index: 1;
+      background-color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
 
-.eye {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 20px;
-  z-index: 1;
-  background-color: white;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-}
+      .pupil {
+        position: absolute;
+        z-index: 2;
+        margin-left: 5px;
+        margin-top: 5px;
+        background-color: black;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
 
-.pupil {
-  position: absolute;
-  z-index: 2;
-  margin-left: 5px;
-  margin-top: 5px;
-  background-color: black;
-  border-radius: 50%;
-  height: 10px;
-  width: 10px;
-}
+  .fin {
+    margin-top: -100px;
+    background-color: orange;
+    border-radius: 100%;
+    transform: rotate(40deg);
+    width: 100px;
+    height: 50px;
+  }
 
-.fin {
-  margin-top: -100px;
-  background-color: orange;
-  border-radius: 100%;
-  transform: rotate(40deg);
-  width: 100px;
-  height: 50px;
-}
-
-.fin-bottom {
-  margin-top: -10px;
-  transform: rotate(-40deg);
+  .fin-bottom {
+    margin-top: -10px;
+    transform: rotate(-40deg);
+  }
 }
 
 #ocean {

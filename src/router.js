@@ -12,14 +12,13 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   mode: "history",
-  scrollBehavior: (to, from, savedPosition) => {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
-    }
-    // return { x:0, y:0}
-  },
+  // scrollBehavior: (to, from, savedPosition) => {
+  //   // if (savedPosition) {
+  //   //   return savedPosition
+  //   // } else {
+  //   //   return { x: 0, y: 0 }
+  //   // }
+  // },
   routes: [
     {
       name: "homePage",
