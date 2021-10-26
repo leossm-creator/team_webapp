@@ -271,36 +271,23 @@
           </v-list-item>
         </v-list>
       </scrollactive>
-  <!-- 
-      <scrollactive
-        class="scrollspy"
-        active-class="active"
-        :offset="70"
-        :duration="600"
-        bezier-easing-value=".5,0,.35,1"
-        scrollContainerSelector="#content"
-        alwaysTrack
-        :modifyUrl="false"
-      >
-        <ul>
-          <li class="pl-0"> 
-            <a href="#au_intro" class="scrollactive-item">Introduction</a>
-          </li>
-          <li class="pl-0"> 
-            <a href="#au_timeline" class="scrollactive-item">Timeline</a>
-          </li>
-          <li class="pl-0"> 
-            <a href="#au_members" class="scrollactive-item">Members</a>
-          </li>
-          <li class="pl-3"> 
-            <a href="#members_executives" class="scrollactive-item">Executives</a>
-          </li>
-          <li class="pl-3"> 
-            <a href="#members_managers" class="scrollactive-item">Managers</a>
-          </li>
-        </ul>
-      </scrollactive> -->
     </div>
+
+    <v-fab-transition>
+      <v-btn
+        v-show="!hidden"
+        color="#FFA726"
+        dark
+        absolute
+        fab
+        class="scroll_up_btn"
+        @click="scrollTo(0)"
+        transition="fab-transition"
+        v-scroll:#content="onScroll"
+      >
+        <v-icon>mdi-chevron-up</v-icon>
+      </v-btn>
+    </v-fab-transition>
 
     <Footer></Footer>
   </div>
@@ -454,6 +441,7 @@ export default {
           target: "au_members",
         },
       ],
+      hidden: true,
     };
   },
   mounted() {
@@ -465,10 +453,14 @@ export default {
     scrollTo(target) {
       this.$vuetify.goTo(target, {
         container: "#content",
-        duration: 800,
+        duration: 500,
         offset: 30,
         easing: "easeInOutCubic",
       });
+    },
+    onScroll(e) {
+      let top = e.target.scrollTop;
+      this.hidden = top < 100;
     },
     // onItemChanged(event, currentItem, lastActiveItem) {
     //   alert(event, currentItem, lastActiveItem)

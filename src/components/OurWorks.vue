@@ -239,6 +239,23 @@
         </v-list>
       </scrollactive>
     </div>
+
+    <v-fab-transition>
+      <v-btn
+        v-show="!hidden"
+        color="#FFA726"
+        dark
+        absolute
+        fab
+        class="scroll_up_btn"
+        @click="scrollTo(0)"
+        transition="fab-transition"
+        v-scroll:#content="onScroll"
+      >
+        <v-icon>mdi-chevron-up</v-icon>
+      </v-btn>
+    </v-fab-transition>
+
     <Footer></Footer>
   </div>
 </template>
@@ -263,6 +280,7 @@ export default {
       width: 2.5,
       radius: 10,
       padding: 10,
+      hidden: true,
       lineCap: "round",
       gradient: gradients[6],
       value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 5, 9],
@@ -294,10 +312,14 @@ export default {
     scrollTo(target) {
       this.$vuetify.goTo(target, {
         container: "#content",
-        duration: 800,
+        duration: 500,
         offset: 30,
         easing: "easeInOutCubic",
       });
+    },
+    onScroll(e) {
+      let top = e.target.scrollTop;
+      this.hidden = top < 100;
     },
   },
 };
