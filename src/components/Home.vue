@@ -8,6 +8,7 @@
         hide-delimiter-background
         delimiter-icon="mdi-minus"
         height="600"
+        show-arrows-on-hover
       >
         <v-carousel-item
           v-for="(slide, i) in slides"
