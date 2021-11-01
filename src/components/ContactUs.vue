@@ -30,10 +30,8 @@
                   <h2>Get In Touch</h2>
                   <v-row>
                     <v-col>
-                      <p class="title">
-                        SK케미칼 이용약관
-                      </p>
-                      <ul style="padding: 0 !important;">
+                      <p class="title">SK케미칼 이용약관</p>
+                      <ul style="padding: 0 !important">
                         <li class="list">
                           <p class="label">
                             수집하는 개인정보 항목 및 수집방법
@@ -178,14 +176,15 @@
       hide-overlay
       transition="dialog-bottom-transition"
     >
-      <v-card>
+      <v-card id="easterEgg_modal">
         <v-toolbar dark color="primary">
           <v-btn icon dark @click="easterEgg.show = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
           <v-toolbar-title>Easter Egg</v-toolbar-title>
         </v-toolbar>
-        <div id="ocean">
+        <!-- <div id="ocean">
+          <div class="fishes">
           <div class="fish medium">
             <div class="fish-body">
               <div class="eye">
@@ -231,11 +230,11 @@
             <div class="fin"></div>
             <div class="fin fin-bottom"></div>
           </div>
-        </div>
+          </div>
+        </div> -->
+        <canvas id="ocean" ref="ocean"></canvas>
       </v-card>
-    </v-dialog>
-    <Footer></Footer>
-    <v-snackbar
+          <v-snackbar
       v-model="easterEgg.snackbar"
       :timeout="3000"
       color="orange"
@@ -253,6 +252,8 @@
         </v-btn>
       </template>
     </v-snackbar>
+    </v-dialog>
+    <Footer></Footer>
   </div>
 </template>
 <script>
@@ -312,6 +313,7 @@ export default {
           this.easterEgg.username = this.mailData.title;
           this.easterEgg.snackbar = true;
           this.easterEgg.show = true;
+          this.showFishes();
         } else {
           let address;
           let cc;
@@ -329,7 +331,52 @@ export default {
         }
       }
     },
-    showFishes() {},
+    showFishes() {
+      this.$nextTick(() => {
+      // const canvas = document.getElementById("ocean");
+      let canvas = this.$refs.ocean;
+      var context = canvas.getContext("2d");
+      context.globalAlpha = 1;
+
+      const mouse = {
+        x: innerWidth / 2,
+        y: innerHeight / 2,
+      };
+
+      // context.beginPath();
+      // context.moveTo(400,200);
+      // context.lineTo(200,200);
+      // context.lineTo(400,600);
+      // context.fillStyle = "orange";
+      // context.fill();
+
+      // context.beginPath();
+      // context.moveTo(400,400);
+      // context.lineTo(500,300);
+      // context.lineTo(500,500);
+      // context.fillStyle = "orange";
+      // context.fill();
+
+
+      setSize();
+
+      window.onmousemove = (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      };
+
+      window.onresize = () => {
+        setSize();
+      }
+
+      function setSize() {
+        canvas.height = innerHeight;
+        canvas.width = innerWidth;
+      }
+
+
+      })
+    },
   },
 };
 </script>
@@ -346,64 +393,182 @@ export default {
   }
 }
 
-.fish {
-  width: 150px;
-  height: 100px;
-  animation: swim 3s infinite;
+#easterEgg_modal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
-  .fish-body {
-    position: relative;
-    margin-top: 30px;
-    margin-left: 40px;
-    background-color: orange;
-    border-radius: 50%;
-    width: 150px;
-    height: 100px;
-    .eye {
+  #ocean {
+    width: 100%;
+    height: calc(100vh - 64px);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    background-color: rgb(16, 59, 114);
+    // padding: 20px;
+    // animation: wave 3s infinite alternate;
+
+    .fishes {
       position: absolute;
-      margin-left: 100px;
-      margin-top: 20px;
-      z-index: 1;
-      background-color: white;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
+      animation: swim 20s;
+      -webkit-animation: swim 20s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+    }
 
-      .pupil {
-        position: absolute;
-        z-index: 2;
-        margin-left: 5px;
-        margin-top: 5px;
-        background-color: black;
+    .fish {
+      width: 150px;
+      height: 100px;
+
+      &.small {
+        transform: scale(0.5) !important;
+        top: 30%;
+
+      }
+
+      &.medium {
+        transform: scale(0.75) !important;
+        top: 50%;
+      }
+
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+
+      .fish-body {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 40px;
+        background-color: orange;
         border-radius: 50%;
-        height: 10px;
-        width: 10px;
+        width: 150px;
+        height: 100px;
+        .eye {
+          position: absolute;
+          margin-left: 100px;
+          margin-top: 20px;
+          z-index: 1;
+          background-color: white;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+
+          .pupil {
+            position: absolute;
+            z-index: 2;
+            margin-left: 5px;
+            margin-top: 5px;
+            background-color: black;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+
+      .fin {
+        margin-top: -100px;
+        background-color: orange;
+        border-radius: 100%;
+        transform: rotate(40deg);
+        width: 100px;
+        height: 50px;
+      }
+
+      .fin-bottom {
+        margin-top: -10px;
+        transform: rotate(-40deg);
       }
     }
   }
+}
 
-  .fin {
-    margin-top: -100px;
-    background-color: orange;
-    border-radius: 100%;
-    transform: rotate(40deg);
-    width: 100px;
-    height: 50px;
+// @keyframes wave {
+//   from {
+//     background-color: rgb(16, 59, 114);
+//   } to {
+//     background-color: #21315B;
+//   }
+// }
+
+@-webkit-keyframes swim {
+  0% {
+    margin-left: -235px;
   }
-
-  .fin-bottom {
-    margin-top: -10px;
-    transform: rotate(-40deg);
+  90% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
   }
 }
 
-#ocean {
-  width: 100%;
-  height: calc(100vh - 64px);
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  background-color: rgb(16, 59, 114);
-  padding: 20px;
+@keyframes swim {
+  0% {
+    margin-left: -235px;
+  }
+  70% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  50%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
 }
 </style>

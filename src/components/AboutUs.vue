@@ -25,7 +25,7 @@
         </p>
 
         <div id="au_diagram" ref="au_diagram">
-          <v-img src="/img/diagram_1.png" max-width="700"></v-img>
+          <v-img src="/img/diagram_1.png" max-width="700" ></v-img>
         </div>
 
         <p>
@@ -213,7 +213,7 @@
 
       <!-- ScrollSpy -->
       <scrollactive
-        class="scrollspy"
+        class="scrollspy d-none d-md-flex"
         active-class="active"
         :offset="70"
         :duration="600"
@@ -507,4 +507,9 @@ export default {
 //     }
 //   }
 // }
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto\9 !important;
+}
 </style>

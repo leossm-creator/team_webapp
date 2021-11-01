@@ -78,3 +78,9 @@ body::-webkit-scrollbar {
   right: 30px;
   bottom: 30px;
 }
+
+@media (max-width: 960px) {
+  .page_container {
+    width: 100%;
+  }
+}

@@ -24,8 +24,7 @@
               ultricies nisi.
             </p>
           </v-col>
-          <v-spacer></v-spacer>
-          <v-col cols="5">
+          <v-col cols="6">
             <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
           </v-col>
         </v-row>
@@ -97,10 +96,9 @@
       <v-container class="content_container" id="ow_research" ref="ow_research">
         <h2>공동 연구</h2>
         <v-row class="img_box">
-          <v-col cols="5">
+          <v-col cols="6">
             <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
           </v-col>
-          <v-col cols="1"></v-col>
           <v-col cols="6">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -164,8 +162,7 @@
               ultricies nisi.
             </p>
           </v-col>
-          <v-col cols="1"></v-col>
-          <v-col cols="5">
+          <v-col cols="6">
             <v-img src="https://source.unsplash.com/EDj-oxXe4s8"></v-img>
           </v-col>
         </v-row>
@@ -189,7 +186,7 @@
 
       <!-- ScrollSpy -->
       <scrollactive
-        class="scrollspy"
+        class="scrollspy d-none d-md-flex"
         active-class="active"
         :offset="70"
         :duration="600"
