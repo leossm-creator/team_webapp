@@ -5,7 +5,7 @@
       <v-container class="content_container" id="ow_pharma" ref="ow_pharma">
         <h2>신약</h2>
         <v-row class="img_box">
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
@@ -24,7 +24,7 @@
               ultricies nisi.
             </p>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
           </v-col>
         </v-row>
@@ -96,10 +96,10 @@
       <v-container class="content_container" id="ow_research" ref="ow_research">
         <h2>공동 연구</h2>
         <v-row class="img_box">
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
@@ -143,7 +143,7 @@
       >
         <h2>투자</h2>
         <v-row class="img_box">
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
@@ -162,7 +162,7 @@
               ultricies nisi.
             </p>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <v-img src="https://source.unsplash.com/EDj-oxXe4s8"></v-img>
           </v-col>
         </v-row>
