@@ -204,6 +204,7 @@ export default {
       .slide {
         width: 100%;
         height: 100%;
+        margin: -15px;
 
         .slide_content {
           padding: 0 !important;
@@ -213,7 +214,7 @@ export default {
           .content_box {
             position: relative;
             top: 25%;
-            left: 5%;
+            left: 7.5%;
             z-index: 25;
             .slide_heading {
               font-size: 78px;
