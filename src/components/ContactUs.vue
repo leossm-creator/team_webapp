@@ -183,7 +183,7 @@
           </v-btn>
           <v-toolbar-title>Easter Egg</v-toolbar-title>
         </v-toolbar>
-        <!-- <div id="ocean">
+        <div id="ocean">
           <div class="fishes">
           <div class="fish medium">
             <div class="fish-body">
@@ -231,7 +231,7 @@
             <div class="fin fin-bottom"></div>
           </div>
           </div>
-        </div> -->
+        </div>
         <canvas id="ocean" ref="ocean"></canvas>
       </v-card>
           <v-snackbar
@@ -343,19 +343,19 @@ export default {
         y: innerHeight / 2,
       };
 
-      // context.beginPath();
-      // context.moveTo(400,200);
-      // context.lineTo(200,200);
-      // context.lineTo(400,600);
-      // context.fillStyle = "orange";
-      // context.fill();
+      context.beginPath();
+      context.moveTo(400,200);
+      context.lineTo(200,200);
+      context.lineTo(400,600);
+      context.fillStyle = "orange";
+      context.fill();
 
-      // context.beginPath();
-      // context.moveTo(400,400);
-      // context.lineTo(500,300);
-      // context.lineTo(500,500);
-      // context.fillStyle = "orange";
-      // context.fill();
+      context.beginPath();
+      context.moveTo(400,400);
+      context.lineTo(500,300);
+      context.lineTo(500,500);
+      context.fillStyle = "orange";
+      context.fill();
 
 
       setSize();

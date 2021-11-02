@@ -4,6 +4,9 @@
 // 한글 font
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+html {
+  overflow-y: auto;
+}
 body {
   width: 100%;
   height: 100%;
@@ -11,7 +14,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   // overflow-y: hidden;
-  // overflow-y: auto;
+  overflow-y: auto;
 }
 
 // scroll bar settings

@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 #content {
-  height: calc(100vh - 64px);
+  height: calc(100vh - 67px);
   overflow-y: scroll;
 }
 </style>

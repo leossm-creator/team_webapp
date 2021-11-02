@@ -69,6 +69,7 @@
               color="white"
               :auto-draw-duration="2500"
               auto-draw-easing="ease"
+              height="100"
             ></v-sparkline>
             <template v-slot:label="item">
               {{ item.value }}
