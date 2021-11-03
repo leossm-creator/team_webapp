@@ -4,15 +4,26 @@
       <swiper class="swiper" :options="swiperOption" ref="landingSwiper">
         <swiper-slide>
           <v-row class="slide">
-            <v-col cols="4" class="slide_content">
+            <v-col cols="5" class="slide_content">
               <div class="content_box">
-                <p class="slide_heading">
+                <p
+                  class="slide_heading an_con"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
+                >
                   SK Chemicals
                   <br />
                   <span>Open Innovation Team</span>
                 </p>
-                <p>
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업
+                <p
+                  class="an_con"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="750"
+                >
+                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
+                  기업
                   <br />
                   SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
@@ -20,8 +31,13 @@
             </v-col>
             <v-col class="slide_img">
               <div
-                class="bg_img"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-1.jpeg)"
+                data-aos="slide-left"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="2000"
+                data-aos-once="false"
+                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
           </v-row>
@@ -32,8 +48,10 @@
               <div
                 class="bg_img"
                 style="background-image: url(/img/main-bg-2.jpeg)"
+                data-aos="fade-right"
+                data-aos-duration="5000"
               ></div>
-            </v-col> 
+            </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p class="slide_heading animate__animated">
@@ -42,7 +60,8 @@
                   Irrelevant Image
                 </p>
                 <p class="animate__animated">
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업
+                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
+                  기업
                   <br />
                   SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
@@ -60,7 +79,8 @@
                   <span>많이 하고 있습니다</span>
                 </p>
                 <p>
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업
+                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
+                  기업
                   <br />
                   SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
@@ -81,7 +101,7 @@
                 class="bg_img"
                 style="background-image: url(/img/main-bg-4.jpeg)"
               ></div>
-            </v-col> 
+            </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p class="slide_heading">
@@ -90,7 +110,8 @@
                   <span>백신 개발도 하고 있습니다</span>
                 </p>
                 <p>
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업
+                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
+                  기업
                   <br />
                   SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
@@ -99,7 +120,6 @@
           </v-row>
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-play-stop"></div>
       </swiper>
 
       <!-- <div class="landing_content_container">
@@ -131,7 +151,9 @@
 <script>
 // import Footer from "../layouts/Footer.vue";
 import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
+import AOS from "aos";
 import "swiper/css/swiper.css";
+import "aos/dist/aos.css";
 import "animate.css";
 
 export default {
@@ -145,16 +167,9 @@ export default {
     swiper: directive,
   },
   data() {
+    // let self = this;
     return {
-      colors: [
-        "green",
-        "secondary",
-        "yellow darken-4",
-        "red lighten-2",
-        "orange darken-1",
-      ],
-      cycle: true,
-      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+      swiper: null,
       images: [
         "https://source.unsplash.com/WCEOtVmk2VY/1600x900",
         "https://source.unsplash.com/pwcKF7L4-no/",
@@ -174,18 +189,43 @@ export default {
         // },
         autoplay: false,
         mousewheel: {},
+        on: {
+          slideChange: function () {
+            // console.log("slide change")
+            AOS.init();
+          },
+          slideChangeTransitionStart: function () {
+            // console.log(this.realIndex)
+            let activeSlide = document.querySelector(".swiper-slide-active");
+            console.log(activeSlide)
+          },
+        },
       },
     };
   },
   computed: {
-    swiper() {
-      return this.$refs.landingSwiper.$swipers;
+    getSwiper() {
+      return this.$refs.landingSwiper.$swiper;
     },
+  },
+  mounted() {
+    this.swiper = this.getSwiper;
+  },
+  methods: {
+    // animate() {
+    //   document.querySelectorAll(".an_con").forEach((element) => {
+    //     element.classList.add("aos-animate")
+    //   })
+    // },
+    // deanimate() {
+    //   document.querySelectorAll(".an_con").forEach((element) => {
+    //     element.classList.remove("aos-animate")
+    //   })
+    // }
   },
 };
 </script>
 <style scoped lang="scss">
-
 .landing_container {
   // padding: 15px;
   height: calc(100vh - 67px);
@@ -210,12 +250,14 @@ export default {
           padding: 0 !important;
           width: 100%;
           height: 100%;
+          text-align: left;
 
           .content_box {
             position: relative;
-            top: 25%;
-            left: 7.5%;
+            top: 15%;
+            left: 15%;
             z-index: 25;
+            // padding: 15%;
             .slide_heading {
               font-size: 78px;
               padding-bottom: 84px;

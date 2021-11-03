@@ -24,7 +24,7 @@
           augue. Curabitur ullamcorper ultricies nisi.
         </p>
 
-        <div id="au_diagram" ref="au_diagram">
+        <div id="au_diagram" ref="au_diagram" >
           <v-img src="/img/diagram_1.png" max-width="700" ></v-img>
         </div>
 

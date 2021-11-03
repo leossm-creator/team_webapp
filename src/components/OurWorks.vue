@@ -4,6 +4,7 @@
       <h1 is="sui-header" class="page_heading">Our Works</h1>
       <v-container class="content_container" id="ow_pharma" ref="ow_pharma">
         <h2>신약</h2>
+        <LineChart />
         <v-row class="img_box">
           <v-col cols="12" md="6">
             <p>
@@ -27,7 +28,9 @@
           <v-col cols="12" md="6">
             <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
           </v-col>
+
         </v-row>
+
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
@@ -259,6 +262,8 @@
 </template>
 <script>
 import Footer from "../layouts/Footer.vue";
+import LineChart from '../charts/Chart_01.vue';
+
 const gradients = [
   ["#222"],
   ["#42b3f4"],
@@ -272,6 +277,7 @@ export default {
   name: "OurWorks",
   components: {
     Footer,
+    LineChart,
   },
   data() {
     return {
