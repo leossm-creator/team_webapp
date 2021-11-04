@@ -184,6 +184,9 @@
           <v-toolbar-title>Easter Egg</v-toolbar-title>
         </v-toolbar>
         <div id="ocean">
+          <div id="sketch-holder">
+            <!-- Our sketch will go here! -->
+          </div>
           <div class="fishes">
             <div class="fish" id="fish_01">
               <div class="fish-body">
@@ -258,6 +261,7 @@
 </template>
 <script>
 import Footer from "../layouts/Footer.vue";
+// import "../sketch";
 
 export default {
   name: "ContactUs",

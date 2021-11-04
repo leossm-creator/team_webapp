@@ -10,7 +10,7 @@
                   class="slide_heading an_con"
                   data-aos="fade-up"
                   data-aos-duration="1500"
-                  data-aos-delay="500"
+                  data-aos-delay="1000"
                 >
                   SK Chemicals
                   <br />
@@ -20,7 +20,7 @@
                   class="an_con"
                   data-aos="fade-up"
                   data-aos-duration="1500"
-                  data-aos-delay="750"
+                  data-aos-delay="1500"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -48,8 +48,11 @@
               <div
                 class="bg_img an_con"
                 style="background-image: url(/img/main-bg-2.jpeg)"
-                data-aos="fade-right"
-                data-aos-duration="5000"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
             <v-col cols="6" class="slide_content">
