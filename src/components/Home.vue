@@ -33,7 +33,7 @@
               <div
                 class="bg_img an_con"
                 style="background-image: url(/img/main-bg-1.jpeg)"
-                data-aos="slide-left"
+                data-aos="fade-left"
                 data-aos-easing="ease-in-out"
                 data-aos-duration="2000"
                 data-aos-once="false"
@@ -46,7 +46,7 @@
           <v-row class="slide">
             <v-col class="slide_img">
               <div
-                class="bg_img"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-2.jpeg)"
                 data-aos="fade-right"
                 data-aos-duration="5000"
@@ -54,12 +54,22 @@
             </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
-                <p class="slide_heading animate__animated">
-                  <span class="animate__animated">This is an</span>
+                <p
+                  class="slide_heading an_con"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
+                >
+                  <span class="">This is an</span>
                   <br />
                   Irrelevant Image
                 </p>
-                <p class="animate__animated">
+                <p
+                  class="an_con"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="750"
+                >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
                   <br />
@@ -73,12 +83,22 @@
           <v-row class="slide">
             <v-col cols="6" class="slide_content">
               <div class="content_box">
-                <p class="slide_heading">
+                <p
+                  class="slide_heading an_con"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
+                >
                   Research and Development
                   <br />
                   <span>많이 하고 있습니다</span>
                 </p>
-                <p>
+                <p
+                  class="an_con"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                  data-aos-delay="750"
+                >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
                   <br />
@@ -88,8 +108,13 @@
             </v-col>
             <v-col class="slide_img">
               <div
-                class="bg_img"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-3.jpeg)"
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="2000"
+                data-aos-once="false"
+                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
           </v-row>
@@ -98,18 +123,33 @@
           <v-row class="slide">
             <v-col class="slide_img">
               <div
-                class="bg_img"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-4.jpeg)"
+                data-aos="fade-down"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="2000"
+                data-aos-once="false"
+                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
-                <p class="slide_heading">
+                <p
+                  class="slide_heading an_con"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
+                >
                   COVID 19
                   <br />
                   <span>백신 개발도 하고 있습니다</span>
                 </p>
-                <p>
+                <p
+                  class="an_con"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="750"
+                >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
                   <br />
@@ -151,7 +191,7 @@
 <script>
 // import Footer from "../layouts/Footer.vue";
 import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
-import AOS from "aos";
+// import AOS from "aos";
 import "swiper/css/swiper.css";
 import "aos/dist/aos.css";
 import "animate.css";
@@ -190,14 +230,47 @@ export default {
         autoplay: false,
         mousewheel: {},
         on: {
-          slideChange: function () {
-            // console.log("slide change")
-            AOS.init();
+          afterInit() {
+            let slides = document.querySelectorAll(".swiper-slide");
+            slides.forEach((slide) => {
+              slide.classList.remove("aos-animate")
+            })
           },
-          slideChangeTransitionStart: function () {
-            // console.log(this.realIndex)
-            let activeSlide = document.querySelector(".swiper-slide-active");
-            console.log(activeSlide)
+          slideNextTransitionStart: function() {
+            let prevElems = document.querySelectorAll(".swiper-slide-prev .an_con");
+            console.log("active",prevElems)
+            prevElems.forEach((elem) => {
+              elem.classList.remove("aos-animate")
+            })
+            let elems = document.querySelectorAll(".swiper-slide-active .an_con")
+            console.log("end active", elems)
+            elems.forEach((elem) => {
+              elem.classList.add("aos-animate")
+            })
+          },
+          slideNextTransitionEnd: function() {
+            let nextElems = document.querySelectorAll(".swiper-slide-next .an_con");
+            nextElems.forEach((elem) => {
+              elem.classList.remove("aos-animate");
+            })
+          },
+          slidePrevTransitionStart: function() {
+            let nextElems = document.querySelectorAll(".swiper-slide-next .an_con");
+            nextElems.forEach((elem) => {
+              elem.classList.remove("aos-animate");
+            })
+            let elems = document.querySelectorAll(".swiper-slide-active .an_con")
+            console.log("end active", elems)
+            elems.forEach((elem) => {
+              elem.classList.add("aos-animate")
+            })
+          },
+          slidePrevTransitionEnd: function() {
+            let prevElems = document.querySelectorAll(".swiper-slide-prev .an_con");
+            console.log("active",prevElems)
+            prevElems.forEach((elem) => {
+              elem.classList.remove("aos-animate")
+            })
           },
         },
       },
