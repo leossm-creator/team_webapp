@@ -43,7 +43,7 @@
         <v-list-item-group
         active-class="active"
         >
-          <v-list-item
+          <!-- <v-list-item
           v-for="item in items"
           :key="item.title"
           link
@@ -56,13 +56,14 @@
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
-          </v-list-item>
-          <!-- <v-list-item
-          link
-          to="/aboutUs"
+          </v-list-item> -->
+          
+          <v-list-item
+          disabled
+          class="nav_titles"
           >
             <v-list-item-icon>
-              <v-icon>
+              <v-icon color="">
                 mdi-account-group
               </v-icon>
             </v-list-item-icon>
@@ -71,7 +72,118 @@
                 About Us
               </v-list-item-title>
             </v-list-item-content>
-          </v-list-item> -->
+          </v-list-item>
+
+          <v-list-item link
+          to="/aboutUs/intro">
+            <v-list-item-icon>
+              <v-icon>
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="pl-3">Introduction</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link
+          to="/aboutUs/timeline">
+            <v-list-item-icon>
+              <v-icon>
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="pl-3">Timeline</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link
+          to="/aboutUs/members">
+            <v-list-item-icon>
+              <v-icon>
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="pl-3">Members</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item
+          disabled
+          class="nav_titles"
+          >
+            <v-list-item-icon>
+              <v-icon>
+                mdi-chart-areaspline
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>
+                Our Works
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item link
+          to="/ourWorks/pharma">
+            <v-list-item-icon>
+              <v-icon>
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="pl-3">Pharma</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link
+          to="/ourWorks/research">
+            <v-list-item-icon>
+              <v-icon>
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="pl-3">Research</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item           link
+          to="/ourWorks/investments">
+            <v-list-item-icon>
+              <v-icon>
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="pl-3">Investments</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item
+          link
+          to="/contactUs"
+          >
+            <v-list-item-icon>
+              <v-icon>
+                mdi-card-account-mail
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>
+                Contact Us
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item
+          link
+          to="/partnerships"
+          >
+            <v-list-item-icon>
+              <v-icon>
+                mdi-handshake
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>
+                PartnerShips
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
         </v-list-item-group>
       </v-list>
       <template v-slot:append>
@@ -158,5 +270,11 @@ export default {
 .active {
   color: #ff9900 !important;
   caret-color: #ff9900 !important;
+}
+
+.nav_titles {
+  color: black !important;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 </style>

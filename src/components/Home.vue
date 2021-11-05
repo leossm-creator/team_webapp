@@ -7,20 +7,14 @@
             <v-col cols="5" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="1000"
+                  class="slide_heading an_con animate__fadeInUp animate__slow"
                 >
                   SK Chemicals
                   <br />
                   <span>Open Innovation Team</span>
                 </p>
                 <p
-                  class="an_con"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="1500"
+                  class="an_con animate__fadeInUp animate__slow"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -31,13 +25,8 @@
             </v-col>
             <v-col class="slide_img">
               <div
-                class="bg_img an_con"
+                class="bg_img an_con animate__fadeInRight animate__slow"
                 style="background-image: url(/img/main-bg-1.jpeg)"
-                data-aos="fade-left"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="2000"
-                data-aos-once="false"
-                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
           </v-row>
@@ -49,29 +38,19 @@
                 class="bg_img an_con"
                 style="background-image: url(/img/main-bg-2.jpeg)"
                 data-aos="fade-left"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-                data-aos-once="false"
-                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="500"
+                  class="slide_heading an_con animate__fadeInUp"
                 >
                   <span class="">This is an</span>
                   <br />
                   Irrelevant Image
                 </p>
                 <p
-                  class="an_con"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="750"
+                  class="an_con animate__fadeInUp"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -87,20 +66,14 @@
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con"
-                  data-aos="fade-right"
-                  data-aos-duration="1500"
-                  data-aos-delay="500"
+                  class="slide_heading an_con animate__fadeInLeft"
                 >
                   Research and Development
                   <br />
                   <span>많이 하고 있습니다</span>
                 </p>
                 <p
-                  class="an_con"
-                  data-aos="fade-right"
-                  data-aos-duration="1500"
-                  data-aos-delay="750"
+                  class="an_con animate__fadeInLeft"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -111,13 +84,8 @@
             </v-col>
             <v-col class="slide_img">
               <div
-                class="bg_img an_con"
+                class="bg_img an_con animate__fadeInRight"
                 style="background-image: url(/img/main-bg-3.jpeg)"
-                data-aos="fade-left"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="2000"
-                data-aos-once="false"
-                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
           </v-row>
@@ -126,32 +94,21 @@
           <v-row class="slide">
             <v-col class="slide_img">
               <div
-                class="bg_img an_con"
+                class="bg_img an_con animate__fadeInDown"
                 style="background-image: url(/img/main-bg-4.jpeg)"
-                data-aos="fade-down"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="2000"
-                data-aos-once="false"
-                data-aos-anchor-placement="bottom-left"
               ></div>
             </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="500"
+                  class="slide_heading an_con animate__fadeInUp"
                 >
                   COVID 19
                   <br />
                   <span>백신 개발도 하고 있습니다</span>
                 </p>
                 <p
-                  class="an_con"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="750"
+                  class="an_con animate__fadeInUp"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -194,6 +151,7 @@
 <script>
 // import Footer from "../layouts/Footer.vue";
 import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
+// import anime from "animejs";
 // import AOS from "aos";
 import "swiper/css/swiper.css";
 import "aos/dist/aos.css";
@@ -234,46 +192,36 @@ export default {
         mousewheel: {},
         on: {
           afterInit() {
-            let slides = document.querySelectorAll(".swiper-slide");
-            slides.forEach((slide) => {
-              slide.classList.remove("aos-animate")
-            })
+            // let slides = document.querySelectorAll(".swiper-slide");
+            // slides.forEach((slide) => {
+            //   slide.classList.remove("aos-animate")
+            // })
+          },
+          slideChangeTransitionStart: function() {
+            // let prev = document.querySelectorAll(".swiper-slide-prev .an_con");
+            // prev.forEach((elems) => {
+              
+            //   elems.classList.remove("animate__animated")
+            // })
+            // let active = document.querySelectorAll(".swiper-slide-active .an_con");
+            // active.forEach((elems) => {
+            //   // console.log(elems)
+            //   elems.classList.add("animate__animated")
+            // })
+            // anime({
+            // targets: '.swiper-slide-active .slide_heading',
+            // translateY: '250px',
+            // duration: 4000,
+            // delay: 1000
+            // })
           },
           slideNextTransitionStart: function() {
-            let prevElems = document.querySelectorAll(".swiper-slide-prev .an_con");
-            console.log("active",prevElems)
-            prevElems.forEach((elem) => {
-              elem.classList.remove("aos-animate")
-            })
-            let elems = document.querySelectorAll(".swiper-slide-active .an_con")
-            console.log("end active", elems)
-            elems.forEach((elem) => {
-              elem.classList.add("aos-animate")
-            })
           },
           slideNextTransitionEnd: function() {
-            let nextElems = document.querySelectorAll(".swiper-slide-next .an_con");
-            nextElems.forEach((elem) => {
-              elem.classList.remove("aos-animate");
-            })
           },
           slidePrevTransitionStart: function() {
-            let nextElems = document.querySelectorAll(".swiper-slide-next .an_con");
-            nextElems.forEach((elem) => {
-              elem.classList.remove("aos-animate");
-            })
-            let elems = document.querySelectorAll(".swiper-slide-active .an_con")
-            console.log("end active", elems)
-            elems.forEach((elem) => {
-              elem.classList.add("aos-animate")
-            })
           },
           slidePrevTransitionEnd: function() {
-            let prevElems = document.querySelectorAll(".swiper-slide-prev .an_con");
-            console.log("active",prevElems)
-            prevElems.forEach((elem) => {
-              elem.classList.remove("aos-animate")
-            })
           },
         },
       },
@@ -305,7 +253,7 @@ export default {
 .landing_container {
   // padding: 15px;
   height: calc(100vh - 67px);
-
+  
   .swiper {
     height: 100%;
     width: 100%;

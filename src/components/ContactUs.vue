@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/vue-p5"></script>
 <template>
   <div id="contact_us">
     <div class="page_container" id="contact_us">
