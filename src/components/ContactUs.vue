@@ -257,17 +257,16 @@
         </template>
       </v-snackbar>
     </v-dialog>
-    <Footer></Footer>
   </div>
 </template>
 <script>
-import Footer from "../layouts/Footer.vue";
+// import Footer from "../layouts/Footer.vue";
 // import "../sketch";
 
 export default {
   name: "ContactUs",
   components: {
-    Footer,
+    // Footer,
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <v-app-bar flat>
+    <v-app-bar flat id="appBar" height="64">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <a href="/" style="margin-left: auto">
         <v-img src="/img/header-logo.png" max-width="120"></v-img>
@@ -254,17 +254,21 @@ export default {
     changeLocale(locale) {
       i18n.locale = locale;
     },
-  },
+  }
 };
 </script>
 <style scoped lang="scss">
 .header {
-  border-bottom: 3px solid #ffa726;
-  // position: absolute;
-  // width: 100%;
-}
+  #appBar {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 3px solid #ffa726;
+  }
 
-#navDrawer {
+  #navDrawer {
+    z-index: 101;
+  } 
 }
 
 .active {

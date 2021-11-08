@@ -251,8 +251,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .landing_container {
-  // padding: 15px;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 64px);
   
   .swiper {
     height: 100%;

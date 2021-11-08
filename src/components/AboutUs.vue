@@ -479,15 +479,9 @@ export default {
 }
 #au_diagram {
   display: flex;
-  // padding: 0 20%;
-  margin: 8% 0;
+
   justify-content: center;
   align-items: center;
-  .diagram_icons {
-    color: white;
-    // font-weight: 500;
-    font-size: 1.2rem;
-  }
 }
 #about_us {
   // display: flex;

@@ -4,8 +4,8 @@
     <div id="content" ref="content">
       <router-view>
       </router-view>
+      <Footer v-if="$route.path != '/'"></Footer>
     </div>
-    <Footer v-if="$route.path != '/'"></Footer>
   </v-app>
 </template>
 
@@ -25,8 +25,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#content {
-  height: calc(100vh - 67px);
-  overflow-y: scroll;
+#app {
+  height: 100%;
+  width: 100%;
+  // overflow-y: scroll;
+  #content {
+    position: absolute;
+    top: 64px;
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+    width: 100%;
+  }
 }
 </style>
