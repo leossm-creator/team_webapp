@@ -29,6 +29,12 @@ body::-webkit-scrollbar {
 
 .thumbnail {
   height: 300px;
+
+  .pageTitle {
+    font-size: 2.5rem;
+    float: right;
+    padding: 40px;
+  }
 }
 
 .page_container {

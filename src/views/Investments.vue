@@ -2,12 +2,12 @@
   <div>
     <v-card flat tile class="thumbnail">
       <v-img
-        src=""
+        src="/img/sub_thumbnail-06.png"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title >Investments</v-card-title>
+        <v-card-title class="pageTitle">Investments</v-card-title>
       </v-img>
     </v-card>
     <div class="page_container">

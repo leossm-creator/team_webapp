@@ -7,14 +7,24 @@
             <v-col cols="5" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con animate__fadeInUp animate__slow"
+                  class="slide_heading an_con"
+                  data-swiper-animation="animate__fadeInUp" 
+                  data-duration="1.5s" 
+                  data-delay="1.5s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   SK Chemicals
                   <br />
                   <span>Open Innovation Team</span>
                 </p>
                 <p
-                  class="an_con animate__fadeInUp animate__slow"
+                  class="an_con"
+                  data-swiper-animation="animate__fadeInUp" 
+                  data-duration="1.5s" 
+                  data-delay="2s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -25,32 +35,50 @@
             </v-col>
             <v-col class="slide_img">
               <div
-                class="bg_img an_con animate__fadeInRight animate__slow"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-1.jpeg)"
+                data-swiper-animation="animate__fadeInRight" 
+                data-duration="2.5s" 
+                data-swiper-out-animation="animate__fadeOut"
+                data-out-duration="0.5s"
               ></div>
             </v-col>
           </v-row>
         </swiper-slide>
+
         <swiper-slide>
           <v-row class="slide">
             <v-col class="slide_img">
               <div
                 class="bg_img an_con"
                 style="background-image: url(/img/main-bg-2.jpeg)"
-                data-aos="fade-left"
+                data-swiper-animation="animate__slideInDown" 
+                data-duration="1.5s" 
+                data-swiper-out-animation="animate__fadeOut"
+                data-out-duration="0.5s"
               ></div>
             </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con animate__fadeInUp"
+                  class="slide_heading an_con"
+                  data-swiper-animation="animate__fadeInRight" 
+                  data-duration="1.5s" 
+                  data-delay="1s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   <span class="">This is an</span>
                   <br />
                   Irrelevant Image
                 </p>
                 <p
-                  class="an_con animate__fadeInUp"
+                  class="an_con"
+                  data-swiper-animation="animate__fadeInRight" 
+                  data-duration="1s" 
+                  data-delay="1.5s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -61,19 +89,30 @@
             </v-col>
           </v-row>
         </swiper-slide>
+
         <swiper-slide>
           <v-row class="slide">
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con animate__fadeInLeft"
+                  class="slide_heading an_con"
+                  data-swiper-animation="animate__fadeInUp" 
+                  data-duration="1.5s" 
+                  data-delay="1s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   Research and Development
                   <br />
                   <span>많이 하고 있습니다</span>
                 </p>
                 <p
-                  class="an_con animate__fadeInLeft"
+                  class="an_con"
+                  data-swiper-animation="animate__fadeInUp" 
+                  data-duration="1.5s" 
+                  data-delay="1.5s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -84,31 +123,50 @@
             </v-col>
             <v-col class="slide_img">
               <div
-                class="bg_img an_con animate__fadeInRight"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-3.jpeg)"
+                data-swiper-animation="animate__backInRight" 
+                data-duration="1s" 
+                data-swiper-out-animation="animate__fadeOut"
+                data-out-duration="0.5s"
               ></div>
             </v-col>
           </v-row>
         </swiper-slide>
+
         <swiper-slide>
           <v-row class="slide">
             <v-col class="slide_img">
               <div
-                class="bg_img an_con animate__fadeInDown"
+                class="bg_img an_con"
                 style="background-image: url(/img/main-bg-4.jpeg)"
+                data-swiper-animation="animate__fadeInLeft" 
+                data-duration="1s" 
+                data-swiper-out-animation="animate__fadeOut"
+                data-out-duration="0.5s"
               ></div>
             </v-col>
             <v-col cols="6" class="slide_content">
               <div class="content_box">
                 <p
-                  class="slide_heading an_con animate__fadeInUp"
+                  class="slide_heading an_con"
+                  data-swiper-animation="animate__fadeInDown" 
+                  data-duration="1.5s" 
+                  data-delay="1s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   COVID 19
                   <br />
                   <span>백신 개발도 하고 있습니다</span>
                 </p>
                 <p
-                  class="an_con animate__fadeInUp"
+                  class="an_con"
+                  data-swiper-animation="animate__fadeInDown" 
+                  data-duration="1.5s" 
+                  data-delay="1.5s" 
+                  data-swiper-out-animation="animate__fadeOut"
+                  data-out-duration="0.5s"
                 >
                   환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
                   기업
@@ -145,17 +203,17 @@
         </div>
       </div> -->
     </div>
-    <!-- <Footer></Footer> -->
   </div>
 </template>
 <script>
-// import Footer from "../layouts/Footer.vue";
 import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
-// import anime from "animejs";
-// import AOS from "aos";
 import "swiper/css/swiper.css";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import "animate.css";
+
+import SwiperAnimation from '@cycjimmy/swiper-animation';
+
+const swiperAnimation = new SwiperAnimation();
 
 export default {
   name: "Home",
@@ -171,6 +229,7 @@ export default {
     // let self = this;
     return {
       swiper: null,
+      swiperAnimation: null,
       images: [
         "https://source.unsplash.com/WCEOtVmk2VY/1600x900",
         "https://source.unsplash.com/pwcKF7L4-no/",
@@ -185,35 +244,23 @@ export default {
         loop: true,
         speed: 1750,
         pagination: { el: ".swiper-pagination", clickable: true },
-        // autoplay: {
-        //   delay: 5000,
-        // },
-        autoplay: false,
+        autoplay: {
+          delay: 8000,
+        },
+        // autoplay: false,
         mousewheel: {},
         on: {
+          init: function() {
+            swiperAnimation.init(this).animate();
+          },
+          slideChange: function() {
+            swiperAnimation.init(this).animate();
+          },
           afterInit() {
-            // let slides = document.querySelectorAll(".swiper-slide");
-            // slides.forEach((slide) => {
-            //   slide.classList.remove("aos-animate")
-            // })
           },
           slideChangeTransitionStart: function() {
-            // let prev = document.querySelectorAll(".swiper-slide-prev .an_con");
-            // prev.forEach((elems) => {
-              
-            //   elems.classList.remove("animate__animated")
-            // })
-            // let active = document.querySelectorAll(".swiper-slide-active .an_con");
-            // active.forEach((elems) => {
-            //   // console.log(elems)
-            //   elems.classList.add("animate__animated")
-            // })
-            // anime({
-            // targets: '.swiper-slide-active .slide_heading',
-            // translateY: '250px',
-            // duration: 4000,
-            // delay: 1000
-            // })
+          },
+          slideChangeTransitionEnd: function() {
           },
           slideNextTransitionStart: function() {
           },
@@ -234,6 +281,7 @@ export default {
   },
   mounted() {
     this.swiper = this.getSwiper;
+    // this.swiperAnimation = new SwiperAnimation();
   },
   methods: {
     // animate() {

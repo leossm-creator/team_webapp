@@ -59,6 +59,22 @@
           </v-list-item> -->
           
           <v-list-item
+          link
+          to="/"
+          >
+            <v-list-item-icon>
+              <v-icon color="">
+                mdi-home
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>
+                Home
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item
           disabled
           class="nav_titles"
           >

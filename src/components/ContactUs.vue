@@ -1,8 +1,18 @@
 <script src="https://unpkg.com/vue-p5"></script>
 <template>
   <div id="contact_us">
+    <v-card flat tile class="thumbnail">
+      <v-img
+        src="/img/sub_thumbnail-07.png"
+        class="white--text align-end"
+        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+        height="100%"
+      >
+        <v-card-title class="pageTitle">Contact Us</v-card-title>
+      </v-img>
+    </v-card>
     <div class="page_container" id="contact_us">
-      <h1 class="page_heading">Contact Us</h1>
+      <!-- <h1 class="page_heading">Contact Us</h1> -->
       <v-container
         class="content_container"
         id="cu"

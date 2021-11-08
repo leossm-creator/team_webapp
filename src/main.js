@@ -6,17 +6,17 @@ import router from './router';
 import i18n from '@/plugins/i18n';
 import VueScrollactive from 'vue-scrollactive';
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import AOS from 'aos';
-import anime from 'animejs/lib/anime.es.js'
+// import AOS from 'aos';
+// import anime from 'animejs/lib/anime.es.js'
 // import * as VueAos from 'vue-aos'
 
 import "./assets/css/global.scss";
 import 'vuetify/dist/vuetify.min.css';
 import 'swiper/css/swiper.css';
 import 'animate.css';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 
-Vue.prototype.$anime = anime;
+// Vue.prototype.$anime = anime;
 
 Vue.use(vuetify);
 Vue.use(SuiVue);
@@ -28,9 +28,6 @@ Vue.config.productionTip = false
 
 
 new Vue({
-  created() {
-    AOS.init();
-  },
   vuetify,
   router,
   i18n,
