@@ -289,17 +289,14 @@
       </v-btn>
     </v-fab-transition>
 
-    <Footer></Footer>
   </div>
 </template>
 <script>
 import * as easings from "vuetify/lib/services/goto/easing-patterns";
-import Footer from "../layouts/Footer.vue";
 
 export default {
   name: "AboutUs",
   components: {
-    Footer,
   },
   data() {
     return {

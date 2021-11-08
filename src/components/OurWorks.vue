@@ -256,12 +256,9 @@
         <v-icon>mdi-chevron-up</v-icon>
       </v-btn>
     </v-fab-transition>
-
-    <Footer></Footer>
   </div>
 </template>
 <script>
-import Footer from "../layouts/Footer.vue";
 import LineChart from '../charts/Chart_01.vue';
 
 const gradients = [
@@ -276,7 +273,6 @@ const gradients = [
 export default {
   name: "OurWorks",
   components: {
-    Footer,
     LineChart,
   },
   data() {

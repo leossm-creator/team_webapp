@@ -10,7 +10,10 @@
         <v-card-title class="pageTitle">Introduction</v-card-title>
       </v-img>
     </v-card>
-
+    <v-breadcrumbs
+      :items="breadcrumbs"
+      divider=" "
+    ></v-breadcrumbs>
     <div class="page_container">
       <h1 class="page_heading">About Us</h1>
 
@@ -62,7 +65,25 @@
 export default {
   name: "Introduction",
   data() {
-    return {};
+    return {
+      breadcrumbs: [
+        {
+          text: 'Home',
+          disabled: false,
+          href: '/',
+        },
+        {
+          text: 'Link 1',
+          disabled: false,
+          href: '/aboutUs',
+        },
+        {
+          text: 'Link 2',
+          disabled: true,
+          href: '/aboutUs/intro',
+        },
+      ],
+    };
   },
 
   methods: {},
