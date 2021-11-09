@@ -97,7 +97,7 @@
                 <p
                   class="slide_heading an_con"
                   data-swiper-animation="animate__fadeInUp" 
-                  data-duration="1.5s" 
+                  data-duration="1.5s"  
                   data-delay="1s" 
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
@@ -126,7 +126,8 @@
                 class="bg_img an_con"
                 style="background-image: url(/img/main-bg-3.jpeg)"
                 data-swiper-animation="animate__backInRight" 
-                data-duration="1s" 
+                data-duration="1s"
+                data-delay="1.5s" 
                 data-swiper-out-animation="animate__fadeOut"
                 data-out-duration="0.5s"
               ></div>
@@ -247,7 +248,6 @@ export default {
         autoplay: {
           delay: 8000,
         },
-        // autoplay: false,
         mousewheel: {},
         on: {
           init: function() {
