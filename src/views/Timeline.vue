@@ -11,6 +11,7 @@
         <v-card-title class="pageTitle">Timeline</v-card-title>
       </v-img>
     </v-card>
+    <Dropdown />
     <div class="page_container">
       <!-- 성과 Timeline -->
       <v-container class="content_container" id="au_timeline" ref="au_timeline">
@@ -85,10 +86,11 @@
   </div>
 </template>
 <script>
+import Dropdown from "../components/Dropdown.vue"
 export default {
   name: "Timeline",
   components: {
-
+    Dropdown,
   },
   data() {
     return {

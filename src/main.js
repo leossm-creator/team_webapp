@@ -9,6 +9,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import AOS from 'aos';
 // import anime from 'animejs/lib/anime.es.js'
 // import * as VueAos from 'vue-aos'
+// import VueBreadcrumbs from 'vue-2-breadcrumbs';
 
 import "./assets/css/global.scss";
 import 'vuetify/dist/vuetify.min.css';
@@ -23,6 +24,18 @@ Vue.use(SuiVue);
 Vue.use(VueScrollactive);
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 // Vue.use(VueAos)
+// Vue.use(VueBreadcrumbs, 
+// // {
+// //   template:
+// //     '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
+// //     '            <ol class="breadcrumb">\n' +
+// //     '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
+// //     '                    <router-link :to="{ path: getPath(crumb) }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
+// //     '                </li>\n' +
+// //     '            </ol>\n' +
+// //     '        </nav>'
+// // }
+// );
 
 Vue.config.productionTip = false
 

@@ -10,6 +10,7 @@
         <v-card-title class="pageTitle">Members</v-card-title>
       </v-img>
     </v-card>
+    <Breadcrumb />
     <div class="page_container">
       <!-- 조직도 -->
       <v-container class="content_container" id="au_members" ref="au_members">
@@ -109,8 +110,12 @@
   </div>
 </template>
 <script>
+import Breadcrumb from "../components/Breadcrumb.vue";
 export default {
   name: "Members",
+  components: {
+    Breadcrumb
+  },
   data() {
     return {
       members: {

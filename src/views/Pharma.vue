@@ -10,6 +10,7 @@
         <v-card-title class="pageTitle">Pharma</v-card-title>
       </v-img>
     </v-card>
+    <Breadcrumb />
     <div class="page_container">
       <v-container class="content_container" id="ow_pharma" ref="ow_pharma">
         <h2>신약</h2>
@@ -108,6 +109,7 @@
   </div>
 </template>
 <script>
+import Breadcrumb from "../components/Breadcrumb.vue"
 const gradients = [
   ["#222"],
   ["#42b3f4"],
@@ -120,6 +122,9 @@ const gradients = [
 
 export default {
   name: "Pharma",
+  components: {
+    Breadcrumb,
+  },
   data() {
     return {
       width: 2.5,

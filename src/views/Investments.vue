@@ -10,6 +10,7 @@
         <v-card-title class="pageTitle">Investments</v-card-title>
       </v-img>
     </v-card>
+    <Breadcrumb />
     <div class="page_container">
       <v-container
         class="content_container"
@@ -64,10 +65,12 @@
 </template>
 <script>
 import LineChart from "../charts/Chart_01.vue";
+import Breadcrumb from "../components/Breadcrumb.vue"
 export default {
   name: "Investments",
   components: {
     LineChart,
+    Breadcrumb
   },
   data() {
     return {};

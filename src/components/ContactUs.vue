@@ -11,6 +11,7 @@
         <v-card-title class="pageTitle">Contact Us</v-card-title>
       </v-img>
     </v-card>
+    <Breadcrumbs/>
     <div class="page_container" id="contact_us">
       <!-- <h1 class="page_heading">Contact Us</h1> -->
       <v-container

@@ -10,6 +10,7 @@
         <v-card-title class="pageTitle">Research</v-card-title>
       </v-img>
     </v-card>
+    <Breadcrumb />
     <div class="page_container">
       <v-container class="content_container" id="ow_research" ref="ow_research">
         <h2>공동 연구</h2>
@@ -58,8 +59,12 @@
   </div>
 </template>
 <script>
+import Breadcrumb from "../components/Breadcrumb.vue"
 export default {
   name: "Research",
+  components: {
+    Breadcrumb,
+  },
   data() {
     return {
     };

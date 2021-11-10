@@ -23,61 +23,241 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   mode: "history",
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  },
   routes: [
     {
       name: "Home",
       path: "/",
-      component: Home
+      component: Home,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home'
+          }
+        ]
+      }
     },
     {
-      name: "aboutUs",
+      name: "About Us",
       path: "/aboutUs",
-      component: AboutUs
+      component: AboutUs,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'About Us',
+          }
+        ]
+      }
     },
     {
       name: "ourWorks",
       path: "/ourWorks",
-      component: OurWorks
+      component: OurWorks,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'Our Works',
+          }
+        ]
+      }
     },
     {
       name: "Introduction",
       path: "/aboutUs/intro",
-      component: Introduction
+      component: Introduction,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'About Us',
+            to: {
+              name: "About Us"
+            }
+          },
+          {
+            text: 'Introduction',
+          },
+        ]
+      }
     },
     {
-      name: "Introduction",
+      name: "Timeline",
       path: "/aboutUs/timeline",
-      component: Timeline
+      component: Timeline,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'About Us',
+            to: {
+              name: "About Us"
+            }
+          },
+          {
+            text: 'Timeline',
+          },
+        ]
+      }
     },
     {
-      name: "Introduction",
+      name: "Members",
       path: "/aboutUs/members",
-      component: Members
+      component: Members,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'About Us',
+            to: {
+              name: "About Us"
+            }
+          },
+          {
+            text: 'Members',
+          },
+        ]
+      }
     },
     {
       name: "Pharma",
       path: "/ourWorks/pharma",
-      component: Pharma
+      component: Pharma,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'Our Works',
+            to: {
+              name: "Our Works"
+            }
+          },
+          {
+            text: 'Pharma',
+          },
+        ]
+      }
     },
     {
       name: "Research",
       path: "/ourWorks/research",
-      component: Research
+      component: Research,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'Our Works',
+            to: {
+              name: "Our Works"
+            }
+          },
+          {
+            text: 'Research',
+          },
+        ]
+      }
     },
     {
       name: "Investments",
       path: "/ourWorks/investments",
-      component: Investments
+      component: Investments,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'Our Works',
+            to: {
+              name: "Our Works"
+            }
+          },
+          {
+            text: 'Investments',
+          },
+        ]
+      }
     },
     {
       name: "Partnerships",
       path: "/partnerships",
-      component: Partnerships
+      component: Partnerships,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'Partnerships',
+          },
+        ]
+      }
     },
     {
-      name: "contactUs",
+      name: "Contact Us",
       path: "/ContactUs",
-      component: ContactUs
+      component: ContactUs,
+      meta: {
+        breadCrumb: [
+          {
+            text: 'Home',
+            to: {
+              name: "Home"
+            }
+          },
+          {
+            text: 'Contact Us',
+          },
+        ]
+      }
     }
   ],
 });

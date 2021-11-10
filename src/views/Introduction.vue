@@ -10,8 +10,8 @@
         <v-card-title class="pageTitle">Introduction</v-card-title>
       </v-img>
     </v-card>
-    <!-- <v-breadcrumbs :items="breadcrumbs" divider=" "></v-breadcrumbs> -->
-    <breadcrumb />
+    <!-- <Breadcrumbs /> -->
+    <Breadcrumb />
     <div class="page_container">
       <h1 class="page_heading">About Us</h1>
 
@@ -60,11 +60,14 @@
   </div>
 </template>
 <script>
-import breadcrumb from "../components/Breadcrumb.vue"
+// import breadcrumb from "../components/Breadcrumb.vue"
+import Breadcrumb from "../components/Breadcrumb.vue"
+
 export default {
   name: "Introduction",
   components: {
-    breadcrumb,
+    // breadcrumb,
+    Breadcrumb,
   },
   data() {
     return {
