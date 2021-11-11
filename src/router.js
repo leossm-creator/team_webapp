@@ -27,7 +27,7 @@ const router = new VueRouter({
     if (savedPosition) {
       return savedPosition
     } else {
-      return { x: 0, y: 0 }
+      return { left: 0, top: 0 }
     }
   },
   routes: [
@@ -58,11 +58,31 @@ const router = new VueRouter({
           {
             text: 'About Us',
           }
+        ],
+        sib: [
+          {
+            text: 'Our Works',
+            to: {
+              name: 'Our Works',
+            }
+          },
+          {
+            text: 'Contact Us',
+            to: {
+              name: 'Contact Us',
+            }
+          },
+          {
+            text: 'Partnerships',
+            to: {
+              name: 'Partnerships',
+            }
+          },
         ]
       }
     },
     {
-      name: "ourWorks",
+      name: "Our Works",
       path: "/ourWorks",
       component: OurWorks,
       meta: {
@@ -76,6 +96,26 @@ const router = new VueRouter({
           {
             text: 'Our Works',
           }
+        ],
+        sib: [
+          {
+            text: 'About Us',
+            to: {
+              name: 'About Us',
+            }
+          },
+          {
+            text: 'Contact Us',
+            to: {
+              name: 'Contact Us',
+            }
+          },
+          {
+            text: 'Partnerships',
+            to: {
+              name: 'Partnerships',
+            }
+          },
         ]
       }
     },
@@ -99,6 +139,20 @@ const router = new VueRouter({
           },
           {
             text: 'Introduction',
+          },
+        ],
+        sib: [
+          {
+            text: 'Timeline',
+            to: {
+              name: 'Timeline',
+            }
+          },
+          {
+            text: 'Members',
+            to: {
+              name: 'Members',
+            }
           },
         ]
       }
@@ -124,6 +178,20 @@ const router = new VueRouter({
           {
             text: 'Timeline',
           },
+        ],
+        sib: [
+          {
+            text: 'Introduction',
+            to: {
+              name: 'Introduction',
+            }
+          },
+          {
+            text: 'Members',
+            to: {
+              name: 'Members',
+            }
+          },
         ]
       }
     },
@@ -147,6 +215,20 @@ const router = new VueRouter({
           },
           {
             text: 'Members',
+          },
+        ],
+        sib: [
+          {
+            text: 'Introduction',
+            to: {
+              name: 'Introduction',
+            }
+          },
+          {
+            text: 'Timeline',
+            to: {
+              name: 'Timeline',
+            }
           },
         ]
       }
@@ -172,6 +254,20 @@ const router = new VueRouter({
           {
             text: 'Pharma',
           },
+        ],
+        sib: [
+          {
+            text: 'Research',
+            to: {
+              name: 'Research',
+            }
+          },
+          {
+            text: 'Investments',
+            to: {
+              name: 'Investments',
+            }
+          },
         ]
       }
     },
@@ -195,6 +291,20 @@ const router = new VueRouter({
           },
           {
             text: 'Research',
+          },
+        ],
+        sib: [
+          {
+            text: 'Pharma',
+            to: {
+              name: 'Pharma',
+            }
+          },
+          {
+            text: 'Investments',
+            to: {
+              name: 'Investments',
+            }
           },
         ]
       }
@@ -220,6 +330,20 @@ const router = new VueRouter({
           {
             text: 'Investments',
           },
+        ],
+        sib: [
+          {
+            text: 'Pharma',
+            to: {
+              name: 'Pharma',
+            }
+          },
+          {
+            text: 'Research',
+            to: {
+              name: 'Research'
+            }
+          },
         ]
       }
     },
@@ -238,6 +362,26 @@ const router = new VueRouter({
           {
             text: 'Partnerships',
           },
+        ],
+        sib: [
+          {
+            text: 'About Us',
+            to: {
+              name: 'About Us',
+            }
+          },
+          {
+            text: 'Our Works',
+            to: {
+              name: 'Our Works',
+            }
+          },
+          {
+            text: 'Contact Us',
+            to: {
+              name: 'Contact Us',
+            }
+          },
         ]
       }
     },
@@ -255,6 +399,26 @@ const router = new VueRouter({
           },
           {
             text: 'Contact Us',
+          },
+        ],
+        sib: [
+          {
+            text: 'About Us',
+            to: {
+              name: 'About Us',
+            }
+          },
+          {
+            text: 'Our Works',
+            to: {
+              name: 'Our Works',
+            }
+          },
+          {
+            text: 'Partnerships',
+            to: {
+              name: 'Partnerships',
+            }
           },
         ]
       }
