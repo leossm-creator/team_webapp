@@ -7,10 +7,16 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title class="pageTitle">Members</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Members</p>
+          <p class="pageSub">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
+    <Barnav />
     <div class="page_container">
       <!-- 조직도 -->
       <v-container class="content_container" id="au_members" ref="au_members">
@@ -32,7 +38,7 @@
           augue. Curabitur ullamcorper ultricies nisi.
         </p>
         <!-- Executive 멤버들: 카드 with image -->
-        <h4 id="members_executives">Executives</h4>
+        <h4 id="members_executives">Leader</h4>
         <v-row style="margin: 24px 0">
           <v-col
             v-for="member in members.executives"
@@ -74,8 +80,20 @@
                   {{ member.description }}
                 </v-card-text>
                 <v-card-text>
-                  <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
-                  <v-btn depressed>Contact</v-btn>
+                  <!-- <v-btn depressed>Contact</v-btn> -->
+                  <v-menu offset-y >
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn v-bind="attrs" v-on="on" depressed> Contact </v-btn>
+                    </template>
+                    <v-list>
+                      <v-list-item link @click="send(member.email)">
+                        <v-list-item-title> <v-icon>mdi-send</v-icon> Send email</v-list-item-title>
+                      </v-list-item>
+                      <v-list-item link @click="copy(member.email)">
+                        <v-list-item-title><v-icon>mdi-clipboard-outline</v-icon> Copy email</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu>
                 </v-card-text>
               </div>
             </v-card>
@@ -99,8 +117,20 @@
                 {{ member.description }}
               </v-card-text>
               <v-card-text>
-                <!-- <v-btn depressed color="#FFA726" class="white--text">Contact</v-btn> -->
-                <v-btn depressed>Contact</v-btn>
+                <!-- <v-btn depressed>Contact</v-btn> -->
+                <v-menu offset-y>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn v-bind="attrs" v-on="on" depressed> Contact </v-btn>
+                  </template>
+                  <v-list>
+                    <v-list-item link @click="send(member.email)">
+                      <v-list-item-title> <v-icon>mdi-send</v-icon> Send email</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item link @click="copy(member.email)">
+                      <v-list-item-title><v-icon>mdi-clipboard-outline</v-icon> Copy email</v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
               </v-card-text>
             </v-card>
           </v-col>
@@ -110,11 +140,13 @@
   </div>
 </template>
 <script>
-import Breadcrumb from "../components/Breadcrumb.vue";
+// import Breadcrumb from "../components/Breadcrumb.vue";
+import Barnav from "../components/Barnav.vue";
 export default {
   name: "Members",
   components: {
-    Breadcrumb
+    // Breadcrumb,
+    Barnav,
   },
   data() {
     return {
@@ -137,7 +169,7 @@ export default {
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
-            email: "teammember@example.com",
+            email: "teammember_허지호@example.com",
           },
           {
             name: "최권희",
@@ -145,7 +177,7 @@ export default {
             description:
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
-            email: "teammember@example.com",
+            email: "teammember_촤권희@example.com",
           },
           {
             name: "김종인",
@@ -154,7 +186,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "",
-            email: "teammember@example.com",
+            email: "teammember_김종인@example.com",
           },
           {
             name: "김율담",
@@ -163,7 +195,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
             image: "",
-            email: "teammember@example.com",
+            email: "teammember_김율담@example.com",
           },
           {
             name: "연승주",
@@ -172,7 +204,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "",
-            email: "teammember@example.com",
+            email: "teammember_연승주@example.com",
           },
           {
             name: "구남진",
@@ -181,7 +213,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
             image: "",
-            email: "teammember@example.com",
+            email: "teammember_구남진@example.com",
           },
           {
             name: "박지현",
@@ -190,7 +222,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-left: auto;",
             image: "",
-            email: "teammember@example.com",
+            email: "teammember_박지현@example.com",
           },
           {
             name: "김동혁",
@@ -199,7 +231,7 @@ export default {
               "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
             style: "margin-right: auto;",
             image: "",
-            email: "teammember@example.com",
+            email: "teammember_김동혁@example.com",
           },
         ],
       },
@@ -207,10 +239,23 @@ export default {
   },
 
   methods: {
-
+    send(email) {
+      location.href = `mailto:${email}`;
+    },
+    copy(email) {
+      this.$copyText(email).then(
+        function (e) {
+          alert("Copied");
+          console.log(e);
+        },
+        function (e) {
+          alert("Error occurred: Cannot copy email");
+          console.log(e);
+        }
+      );
+    },
   },
 };
 </script>
 <style scoped lang="scss">
-
 </style>

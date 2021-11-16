@@ -7,10 +7,14 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title class="pageTitle">Research</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Research</p>
+          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
+    <Barnav />
     <div class="page_container">
       <v-container class="content_container" id="ow_research" ref="ow_research">
         <h2>공동 연구</h2>
@@ -59,11 +63,13 @@
   </div>
 </template>
 <script>
-import Breadcrumb from "../components/Breadcrumb.vue"
+import Barnav from '../components/Barnav.vue';
+// import Breadcrumb from "../components/Breadcrumb.vue"
 export default {
   name: "Research",
   components: {
-    Breadcrumb,
+    // Breadcrumb,
+    Barnav,
   },
   data() {
     return {

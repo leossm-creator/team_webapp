@@ -7,10 +7,14 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title class="pageTitle">Pharma</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Pharma</p>
+          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
+    <Barnav />
     <div class="page_container">
       <v-container class="content_container" id="ow_pharma" ref="ow_pharma">
         <h2>신약</h2>
@@ -109,7 +113,8 @@
   </div>
 </template>
 <script>
-import Breadcrumb from "../components/Breadcrumb.vue"
+// import Breadcrumb from "../components/Breadcrumb.vue"
+import Barnav from "../components/Barnav.vue"
 const gradients = [
   ["#222"],
   ["#42b3f4"],
@@ -123,7 +128,8 @@ const gradients = [
 export default {
   name: "Pharma",
   components: {
-    Breadcrumb,
+    // Breadcrumb,
+    Barnav
   },
   data() {
     return {

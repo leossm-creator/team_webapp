@@ -2,21 +2,21 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 // import goTo from 'vuetify/lib/services/goto'
 
-import Home from "./components/Home";
+import Home from "./views_main/Home";
 
-import AboutUs from "./components/AboutUs";
-import OurWorks from "./components/OurWorks";
+import AboutUs from "./views_main/AboutUs";
+import OurWorks from "./views_main/OurWorks";
 
-import ContactUs from "./components/ContactUs";
-import Partnerships from "./components/Partnerships";
+import ContactUs from "./views_main/ContactUs";
+import Partnerships from "./views_main/Partnerships";
 
-import Introduction from "./views/Introduction";
-import Timeline from "./views/Timeline";
-import Members from "./views/Members";
+import Introduction from "./views_sub/Introduction";
+import Timeline from "./views_sub/Timeline";
+import Members from "./views_sub/Members";
 
-import Pharma from "./views/Pharma";
-import Research from "./views/Research";
-import Investments from "./views/Investments";
+import Pharma from "./views_sub/Pharma";
+import Research from "./views_sub/Research";
+import Investments from "./views_sub/Investments";
 
 
 Vue.use(VueRouter);
@@ -25,9 +25,13 @@ const router = new VueRouter({
   mode: "history",
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
-      return savedPosition
+      return savedPosition;
+    }
+    if (to.hash) {
+      return { el: to.hash, behavior: "smooth" };
     } else {
-      return { left: 0, top: 0 }
+      // console.log("moving to top of the page");
+      document.getElementById("content").scrollTo(0, 0);
     }
   },
   routes: [
@@ -124,6 +128,7 @@ const router = new VueRouter({
       path: "/aboutUs/intro",
       component: Introduction,
       meta: {
+        parent: "About Us",
         breadCrumb: [
           {
             text: 'Home',
@@ -162,6 +167,7 @@ const router = new VueRouter({
       path: "/aboutUs/timeline",
       component: Timeline,
       meta: {
+        parent: "About Us",
         breadCrumb: [
           {
             text: 'Home',
@@ -200,6 +206,7 @@ const router = new VueRouter({
       path: "/aboutUs/members",
       component: Members,
       meta: {
+        parent: "About Us",
         breadCrumb: [
           {
             text: 'Home',
@@ -238,6 +245,7 @@ const router = new VueRouter({
       path: "/ourWorks/pharma",
       component: Pharma,
       meta: {
+        parent: "Our Works",
         breadCrumb: [
           {
             text: 'Home',
@@ -276,6 +284,7 @@ const router = new VueRouter({
       path: "/ourWorks/research",
       component: Research,
       meta: {
+        parent: "Our Works",
         breadCrumb: [
           {
             text: 'Home',
@@ -314,6 +323,7 @@ const router = new VueRouter({
       path: "/ourWorks/investments",
       component: Investments,
       meta: {
+        parent: "Our Works",
         breadCrumb: [
           {
             text: 'Home',
@@ -352,6 +362,7 @@ const router = new VueRouter({
       path: "/partnerships",
       component: Partnerships,
       meta: {
+        parent: "Partnerships",
         breadCrumb: [
           {
             text: 'Home',
@@ -363,26 +374,28 @@ const router = new VueRouter({
             text: 'Partnerships',
           },
         ],
-        sib: [
-          {
-            text: 'About Us',
-            to: {
-              name: 'About Us',
-            }
-          },
-          {
-            text: 'Our Works',
-            to: {
-              name: 'Our Works',
-            }
-          },
-          {
-            text: 'Contact Us',
-            to: {
-              name: 'Contact Us',
-            }
-          },
-        ]
+        sib: 
+        null
+        // [
+        //   {
+        //     text: 'About Us',
+        //     to: {
+        //       name: 'About Us',
+        //     }
+        //   },
+        //   {
+        //     text: 'Our Works',
+        //     to: {
+        //       name: 'Our Works',
+        //     }
+        //   },
+        //   {
+        //     text: 'Contact Us',
+        //     to: {
+        //       name: 'Contact Us',
+        //     }
+        //   },
+        // ]
       }
     },
     {
@@ -390,6 +403,7 @@ const router = new VueRouter({
       path: "/ContactUs",
       component: ContactUs,
       meta: {
+        parent: "Contact Us",
         breadCrumb: [
           {
             text: 'Home',
@@ -401,26 +415,28 @@ const router = new VueRouter({
             text: 'Contact Us',
           },
         ],
-        sib: [
-          {
-            text: 'About Us',
-            to: {
-              name: 'About Us',
-            }
-          },
-          {
-            text: 'Our Works',
-            to: {
-              name: 'Our Works',
-            }
-          },
-          {
-            text: 'Partnerships',
-            to: {
-              name: 'Partnerships',
-            }
-          },
-        ]
+        sib: 
+        null
+        // [
+        //   {
+        //     text: 'About Us',
+        //     to: {
+        //       name: 'About Us',
+        //     }
+        //   },
+        //   {
+        //     text: 'Our Works',
+        //     to: {
+        //       name: 'Our Works',
+        //     }
+        //   },
+        //   {
+        //     text: 'Partnerships',
+        //     to: {
+        //       name: 'Partnerships',
+        //     }
+        //   },
+        // ]
       }
     }
   ],

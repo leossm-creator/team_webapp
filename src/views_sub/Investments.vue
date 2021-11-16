@@ -7,10 +7,14 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title class="pageTitle">Investments</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Investments</p>
+          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
+    <Barnav />
     <div class="page_container">
       <v-container
         class="content_container"
@@ -18,7 +22,6 @@
         ref="ow_investment"
       >
         <h2>투자</h2>
-        <LineChart />
         <v-row class="img_box">
           <v-col cols="12" md="6">
             <p>
@@ -60,23 +63,39 @@
           augue. Curabitur ullamcorper ultricies nisi.
         </p>
       </v-container>
+      <v-container>
+        <v-row>
+          <v-col class="d-flex justify-center align-center">
+            <LineChart />
+          </v-col>
+          <v-col class="d-flex justify-center align-center">
+            <LineChart />
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
 <script>
 import LineChart from "../charts/Chart_01.vue";
-import Breadcrumb from "../components/Breadcrumb.vue"
+// import Breadcrumb from "../components/Breadcrumb.vue"
+import Barnav from "../components/Barnav.vue"
 export default {
   name: "Investments",
   components: {
     LineChart,
-    Breadcrumb
+    // Breadcrumb,
+    Barnav,
   },
   data() {
-    return {};
+    return {
+
+    };
   },
 
-  methods: {},
+  methods: {
+
+  },
 };
 </script>
 <style scoped lang="scss">

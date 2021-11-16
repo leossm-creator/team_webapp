@@ -10,6 +10,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import anime from 'animejs/lib/anime.es.js'
 // import * as VueAos from 'vue-aos'
 // import VueBreadcrumbs from 'vue-2-breadcrumbs';
+import VueClipboard from 'vue-clipboard2'
 
 import "./assets/css/global.scss";
 import 'vuetify/dist/vuetify.min.css';
@@ -19,10 +20,12 @@ import 'animate.css';
 
 // Vue.prototype.$anime = anime;
 
+
 Vue.use(vuetify);
 Vue.use(SuiVue);
 Vue.use(VueScrollactive);
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+Vue.use(VueClipboard)
 // Vue.use(VueAos)
 // Vue.use(VueBreadcrumbs, 
 // // {

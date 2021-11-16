@@ -7,11 +7,14 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <!-- <h1>Jello</h1> -->
-        <v-card-title class="pageTitle">Timeline</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Timeline</p>
+          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <Dropdown />
+    <!-- <Breadcrumb /> -->
+    <Barnav />
     <div class="page_container">
       <!-- 성과 Timeline -->
       <v-container class="content_container" id="au_timeline" ref="au_timeline">
@@ -86,11 +89,13 @@
   </div>
 </template>
 <script>
-import Dropdown from "../components/Dropdown.vue"
+// import Breadcrumb from "../components/Breadcrumb.vue"
+import Barnav from "../components/Barnav.vue"
 export default {
   name: "Timeline",
   components: {
-    Dropdown,
+    // Breadcrumb,
+    Barnav
   },
   data() {
     return {

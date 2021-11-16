@@ -8,10 +8,13 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title class="pageTitle">Contact Us</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Contact Us</p>
+          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <Breadcrumbs/>
+    <Barnav />
     <div class="page_container" id="contact_us">
       <!-- <h1 class="page_heading">Contact Us</h1> -->
       <v-container
@@ -39,7 +42,7 @@
             <v-card flat>
               <v-container class="content_container" id="cu_email">
                 <v-form ref="mailTo">
-                  <h2>Get In Touch</h2>
+                  <!-- <h2>Get In Touch</h2> -->
                   <v-row>
                     <v-col>
                       <p class="title">SK케미칼 이용약관</p>
@@ -126,7 +129,7 @@
 
           <v-tab-item :value="'tab-2'">
             <v-container class="content_container" id="cu_info">
-              <h2>Contact Info</h2>
+              <!-- <h2>Contact Info</h2> -->
               <v-row>
                 <v-col>
                   <iframe
@@ -221,12 +224,14 @@
 <script>
 // import Footer from "../layouts/Footer.vue";
 // import "../sketch";
-import EasterEgg from "./EasterEgg.vue"
+import EasterEgg from "../components/EasterEgg.vue"
+import Barnav from "../components/Barnav.vue"
 export default {
   name: "ContactUs",
   components: {
     // Footer,
     EasterEgg,
+    Barnav
   },
   data() {
     return {

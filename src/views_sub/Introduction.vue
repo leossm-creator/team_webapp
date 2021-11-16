@@ -7,13 +7,16 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
       >
-        <v-card-title class="pageTitle">Introduction</v-card-title>
+        <v-card-title class="pageHeadings">
+          <p class="pageTitle">Introduction</p>
+          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </v-card-title>
       </v-img>
     </v-card>
-    <!-- <Breadcrumbs /> -->
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
+    <Barnav />
     <div class="page_container">
-      <h1 class="page_heading">About Us</h1>
+      <!-- <h1 class="page_heading">About Us</h1> -->
 
       <!-- Open R&D 소개 -->
       <v-container class="content_container" id="au_intro" ref="au_intro">
@@ -60,14 +63,13 @@
   </div>
 </template>
 <script>
-// import breadcrumb from "../components/Breadcrumb.vue"
-import Breadcrumb from "../components/Breadcrumb.vue"
-
+// import Breadcrumb from "../components/Breadcrumb.vue"
+import Barnav from "../components/Barnav.vue";
 export default {
   name: "Introduction",
   components: {
-    // breadcrumb,
-    Breadcrumb,
+    // Breadcrumb,
+    Barnav,
   },
   data() {
     return {
@@ -82,5 +84,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 75px 0;
 }
 </style>

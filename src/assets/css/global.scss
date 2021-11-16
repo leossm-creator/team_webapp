@@ -30,12 +30,16 @@ body::-webkit-scrollbar {
 }
 
 .thumbnail {
-  height: 300px;
+  height: 350px;
 
-  .pageTitle {
-    font-size: 2.5rem;
+  .pageHeadings {
     float: right;
-    padding: 40px;
+    flex-direction: column;
+    align-items: flex-end;
+    .pageTitle {
+      font-size: 2.5rem;
+      // padding: 40px;
+    }
   }
 }
 
@@ -43,7 +47,8 @@ body::-webkit-scrollbar {
   height: 100%;
   min-height: calc(100vh - 64px);
   padding: 3rem 1rem;
-  width: calc(100vw - 180px);
+  // width: calc(100vw - 180px);
+  width: 100%;
   // margin: 50px 0;
 
 

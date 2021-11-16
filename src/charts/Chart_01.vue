@@ -35,7 +35,7 @@ export default {
 
 <style>
 .small_chart {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 </style>
