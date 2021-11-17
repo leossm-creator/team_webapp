@@ -20,7 +20,6 @@ body {
 }
 
 // scroll bar settings
-
 html::-webkit-scrollbar {
   display: none; // fix!
 }
@@ -43,6 +42,10 @@ body::-webkit-scrollbar {
   }
 }
 
+// .col {
+//   padding: 0 !important
+// }
+
 .page_container {
   height: 100%;
   min-height: calc(100vh - 64px);
@@ -59,11 +62,15 @@ body::-webkit-scrollbar {
 
   .content_container {
     font-size: 1.15rem;
-    padding: 0 6%;
+    padding: 0 15%;
     margin-top: 50px;
 
     .sub_heading {
       margin: 50px 10%;
+    }
+
+    .p_container {
+      margin: 30px 0;
     }
   }
 

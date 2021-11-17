@@ -204,14 +204,39 @@
       </v-list>
       <template v-slot:append>
         <div class="pa-2">
-          <v-btn @click="changeLocale('en')">
+          <!-- <v-btn @click="changeLocale('en')">
             <v-icon>mdi-web</v-icon>
             EN
           </v-btn>
           <v-btn @click="changeLocale('kr')">
             <v-icon>mdi-web</v-icon>
             KR
-          </v-btn>
+          </v-btn> -->
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn v-bind="attrs" v-on="on" text class="dropdownNav">
+                KR
+                <v-icon right dark> mdi-chevron-down </v-icon>
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item
+                link
+              >
+                <v-list-item-title>Korean</v-list-item-title>
+              </v-list-item>
+              <v-list-item
+                link
+              >
+                <v-list-item-title>English</v-list-item-title>
+              </v-list-item>
+              <v-list-item
+                link
+              >
+                <v-list-item-title>Chinese</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </div>
         <!-- <div class="pa-2">
           <v-switch v-model="switchMe" prepend-icon="mdi-web" label="EN">

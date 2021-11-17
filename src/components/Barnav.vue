@@ -1,7 +1,7 @@
 <template>
   <v-toolbar flat outlined class="barNav">
     <div class="container">
-      <v-btn icon>
+      <v-btn icon link to="/">
         <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-divider vertical inset class="menu_divider"></v-divider>
@@ -107,7 +107,7 @@ export default {
 <style scoped lang="scss">
 $divider-inset-max-height: calc(100% - 16px) !important;
 .barNav {
-  padding: 0 7%;
+  padding: 0 16%;
   .dropdownNav {
     min-width: 150px;
   }

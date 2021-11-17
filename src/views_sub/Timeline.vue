@@ -18,7 +18,6 @@
     <div class="page_container">
       <!-- 성과 Timeline -->
       <v-container class="content_container" id="au_timeline" ref="au_timeline">
-        <h2>Timeline</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
