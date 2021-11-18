@@ -9,92 +9,94 @@
       >
         <v-card-title class="pageHeadings">
           <p class="pageTitle">Timeline</p>
-          <p class="pageSub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p class="pageSub">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
         </v-card-title>
       </v-img>
     </v-card>
     <!-- <Breadcrumb /> -->
     <Barnav />
     <div class="page_container">
-      <!-- 성과 Timeline -->
-      <v-container class="content_container" id="au_timeline" ref="au_timeline">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer
-          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
-          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-          augue. Curabitur ullamcorper ultricies nisi.
-        </p>
-        <sui-container text>
-          <v-timeline>
-            <v-timeline-item
-              v-for="(year, i) in years"
-              :key="i"
-              :color="year.color"
-              small
-            >
-              <template v-slot:opposite>
-                <span
-                  :class="`headline font-weight-bold ${year.color}--text`"
-                  v-text="year.year"
-                ></span>
-              </template>
-              <div class="py-4">
-                <h2
-                  :class="`headline font-weight-normal mb-4 ${year.color}--text`"
-                >
-                  {{ year.title }}
-                </h2>
-                <div>
-                  <p
-                    v-for="item in year.description"
-                    :key="item"
-                    class="font-weight-light"
-                  >
-                    {{ item }}
-                  </p>
-                </div>
+      <div class="content_container" id="au_timeline" ref="au_timeline">
+        <!-- 성과 Timeline -->
+        <v-container>
+          <v-row class="title_board">
+            <v-col>
+              <div class="p_title">
+                SK Chemicals 오픈 이노베이션은
+                <br />
+                이렇게 성장해왔습니다
               </div>
-            </v-timeline-item>
-          </v-timeline>
-        </sui-container>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-          <a href="javascript:void 0">link</a> mollis pretium. Integer
-          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
-          quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-          laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-          augue. Curabitur ullamcorper ultricies nisi.
-        </p>
-      </v-container>
+            </v-col>
+          </v-row>
+          <v-row class="board">
+            <v-col cols="3">
+              <h3>개요</h3>
+            </v-col>
+            <v-col cols="9">
+              <p>
+                <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
+                미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
+                개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
+                셀트리온제약 중앙연구소는 약물평가, 제제연구, 분석법 및 공정개발
+                등 의약품 연구·개발·제조 모든 부분에서<br class="pc_only" />뛰어난
+                역량과 기술을 보유하고 있습니다.
+              </p>
+            </v-col>
+          </v-row>
+          <v-row class="board">
+            <v-col>
+              <!-- <sui-container text> -->
+              <v-timeline class="timeline">
+                <v-timeline-item
+                  v-for="(year, i) in years"
+                  :key="i"
+                  :color="year.color"
+                  small
+                >
+                  <template v-slot:opposite>
+                    <span
+                      :class="`headline font-weight-bold ${year.color}--text`"
+                      v-text="year.year"
+                    ></span>
+                  </template>
+                  <div class="py-8">
+                    <h2
+                      :class="`headline font-weight-normal mb-4 ${year.color}--text`"
+                    >
+                      {{ year.title }}
+                    </h2>
+                    <div>
+                      <p
+                        v-for="item in year.description"
+                        :key="item"
+                        class="font-weight-light"
+                      >
+                        {{ item }}
+                      </p>
+                    </div>
+                  </div>
+                </v-timeline-item>
+              </v-timeline>
+              <!-- </sui-container> -->
+            </v-col>
+          </v-row>
+          <!-- <sui-container text> -->
+          <!-- </sui-container> -->
+        </v-container>
+      </div>
     </div>
   </div>
 </template>
 <script>
 // import Breadcrumb from "../components/Breadcrumb.vue"
-import Barnav from "../components/Barnav.vue"
+import Barnav from "../components/Barnav.vue";
 export default {
   name: "Timeline",
   components: {
     // Breadcrumb,
-    Barnav
+    Barnav,
   },
   data() {
     return {
@@ -137,11 +139,13 @@ export default {
     };
   },
 
-  methods: {
-
-  },
+  methods: {},
 };
 </script>
 <style scoped lang="scss">
-
+#au_timeline {
+  .timeline {
+    padding: 0 25%;
+  }
+}
 </style>

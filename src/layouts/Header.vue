@@ -60,7 +60,7 @@
           
           <v-list-item
           link
-          to="/"
+          href="/"
           >
             <v-list-item-icon>
               <v-icon color="">

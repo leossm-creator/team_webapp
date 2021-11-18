@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-footer padless id="footer">
-      <v-card flat tile class="orange lighten-1 white--text text-center" style="width: 100%;">
+      <v-card flat tile class="footer_up white--text text-center" style="width: 100%;">
         <v-card-text>
           <v-btn
             v-for="link in links"
@@ -20,7 +20,7 @@
         </v-card-text>
         <v-divider></v-divider>
 
-        <v-card-text class="white--text red darken-1">
+        <v-card-text class="white--text footer_down">
           {{ new Date().getFullYear() }} — <strong>SK Chemicals</strong>
         </v-card-text>
       </v-card>
@@ -44,5 +44,12 @@ export default {
   #footer {
     bottom: 0;
     // position: absolute;
+    .footer_up {
+      background-color: #3d3b3a;
+      
+      .footer_down {
+        background-color: #302e2e;
+      }
+    }
   }
 </style>

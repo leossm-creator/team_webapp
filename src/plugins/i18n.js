@@ -17,7 +17,7 @@ const i18n = new VueI18n({
   locale: 'kr', // set locale
   fallbackLocale: 'en', // set fallback locale
   messages: {
-    dev: require('./locales/dev.json')
+    dev: require('../locales/dev.json')
   }, // set locale messages
 });
 
