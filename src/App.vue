@@ -35,6 +35,7 @@ export default {
     height: calc(100vh - 64px);
     overflow-y: scroll;
     width: 100%;
+    // overflow-x: hidden;
   }
 }
 </style>

@@ -8,9 +8,9 @@
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
-                  data-swiper-animation="animate__fadeInUp" 
-                  data-duration="1.5s" 
-                  data-delay="1.5s" 
+                  data-swiper-animation="animate__fadeInUp"
+                  data-duration="1.5s"
+                  data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -20,9 +20,9 @@
                 </p>
                 <p
                   class="an_con"
-                  data-swiper-animation="animate__fadeInUp" 
-                  data-duration="1.5s" 
-                  data-delay="2s" 
+                  data-swiper-animation="animate__fadeInUp"
+                  data-duration="1.5s"
+                  data-delay="2s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -36,9 +36,9 @@
             <v-col class="slide_img">
               <div
                 class="bg_img an_con"
-                style="background-image: url(/img/main-bg-1.jpeg)"
-                data-swiper-animation="animate__fadeInRight" 
-                data-duration="2.5s" 
+                id="sliderImg_01"
+                data-swiper-animation="animate__fadeInRight"
+                data-duration="2.5s"
                 data-swiper-out-animation="animate__fadeOut"
                 data-out-duration="0.5s"
               ></div>
@@ -51,9 +51,9 @@
             <v-col class="slide_img">
               <div
                 class="bg_img an_con"
-                style="background-image: url(/img/main-bg-2.jpeg)"
-                data-swiper-animation="animate__slideInDown" 
-                data-duration="1.5s" 
+                id="sliderImg_02"
+                data-swiper-animation="animate__slideInDown"
+                data-duration="1.5s"
                 data-swiper-out-animation="animate__fadeOut"
                 data-out-duration="0.5s"
               ></div>
@@ -62,9 +62,9 @@
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
-                  data-swiper-animation="animate__fadeInRight" 
-                  data-duration="1.5s" 
-                  data-delay="1s" 
+                  data-swiper-animation="animate__fadeInRight"
+                  data-duration="1.5s"
+                  data-delay="1s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -74,9 +74,9 @@
                 </p>
                 <p
                   class="an_con"
-                  data-swiper-animation="animate__fadeInRight" 
-                  data-duration="1s" 
-                  data-delay="1.5s" 
+                  data-swiper-animation="animate__fadeInRight"
+                  data-duration="1s"
+                  data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -96,9 +96,9 @@
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
-                  data-swiper-animation="animate__fadeInUp" 
-                  data-duration="1.5s"  
-                  data-delay="1s" 
+                  data-swiper-animation="animate__fadeInUp"
+                  data-duration="1.5s"
+                  data-delay="1s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -108,9 +108,9 @@
                 </p>
                 <p
                   class="an_con"
-                  data-swiper-animation="animate__fadeInUp" 
-                  data-duration="1.5s" 
-                  data-delay="1.5s" 
+                  data-swiper-animation="animate__fadeInUp"
+                  data-duration="1.5s"
+                  data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -124,10 +124,10 @@
             <v-col class="slide_img">
               <div
                 class="bg_img an_con"
-                style="background-image: url(/img/main-bg-3.jpeg)"
-                data-swiper-animation="animate__backInRight" 
+                id="sliderImg_03"
+                data-swiper-animation="animate__backInRight"
                 data-duration="1s"
-                data-delay="1.5s" 
+                data-delay="1.5s"
                 data-swiper-out-animation="animate__fadeOut"
                 data-out-duration="0.5s"
               ></div>
@@ -140,9 +140,9 @@
             <v-col class="slide_img">
               <div
                 class="bg_img an_con"
-                style="background-image: url(/img/main-bg-4.jpeg)"
-                data-swiper-animation="animate__fadeInLeft" 
-                data-duration="1s" 
+                id="sliderImg_04"
+                data-swiper-animation="animate__fadeInLeft"
+                data-duration="1s"
                 data-swiper-out-animation="animate__fadeOut"
                 data-out-duration="0.5s"
               ></div>
@@ -151,9 +151,9 @@
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
-                  data-swiper-animation="animate__fadeInDown" 
-                  data-duration="1.5s" 
-                  data-delay="1s" 
+                  data-swiper-animation="animate__fadeInDown"
+                  data-duration="1.5s"
+                  data-delay="1s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -163,9 +163,9 @@
                 </p>
                 <p
                   class="an_con"
-                  data-swiper-animation="animate__fadeInDown" 
-                  data-duration="1.5s" 
-                  data-delay="1.5s" 
+                  data-swiper-animation="animate__fadeInDown"
+                  data-duration="1.5s"
+                  data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -212,7 +212,7 @@ import "swiper/css/swiper.css";
 // import "aos/dist/aos.css";
 import "animate.css";
 
-import SwiperAnimation from '@cycjimmy/swiper-animation';
+import SwiperAnimation from "@cycjimmy/swiper-animation";
 
 const swiperAnimation = new SwiperAnimation();
 
@@ -250,26 +250,19 @@ export default {
         },
         mousewheel: {},
         on: {
-          init: function() {
+          init: function () {
             swiperAnimation.init(this).animate();
           },
-          slideChange: function() {
+          slideChange: function () {
             swiperAnimation.init(this).animate();
           },
-          afterInit() {
-          },
-          slideChangeTransitionStart: function() {
-          },
-          slideChangeTransitionEnd: function() {
-          },
-          slideNextTransitionStart: function() {
-          },
-          slideNextTransitionEnd: function() {
-          },
-          slidePrevTransitionStart: function() {
-          },
-          slidePrevTransitionEnd: function() {
-          },
+          afterInit() {},
+          slideChangeTransitionStart: function () {},
+          slideChangeTransitionEnd: function () {},
+          slideNextTransitionStart: function () {},
+          slideNextTransitionEnd: function () {},
+          slidePrevTransitionStart: function () {},
+          slidePrevTransitionEnd: function () {},
         },
       },
     };
@@ -300,7 +293,7 @@ export default {
 <style scoped lang="scss">
 .landing_container {
   height: calc(100vh - 64px);
-  
+
   .swiper {
     height: 100%;
     width: 100%;
@@ -351,6 +344,19 @@ export default {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            &#sliderImg_01 {
+              background-image: url('~@/assets/img/slider/main-bg-1.jpeg');
+            }
+            &#sliderImg_02 {
+              background-image: url('~@/assets/img/slider/main-bg-2.jpeg');
+            }
+            &#sliderImg_03 {
+              background-image: url('~@/assets/img/slider/main-bg-3.jpeg');
+            }
+            &#sliderImg_04 {
+              background-image: url('~@/assets/img/slider/main-bg-4.jpeg');
+            }
           }
         }
       }

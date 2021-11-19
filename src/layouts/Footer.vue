@@ -46,9 +46,13 @@ export default {
     // position: absolute;
     .footer_up {
       background-color: #3d3b3a;
+      border-top: 3px solid #E53935;
       
       .footer_down {
         background-color: #302e2e;
+        // background-color: orange;
+        // border-top: 5px solid #E53935;
+        // color: #E53935;
       }
     }
   }

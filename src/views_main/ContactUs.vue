@@ -3,7 +3,7 @@
   <div id="contact_us">
     <v-card flat tile class="thumbnail">
       <v-img
-        src="/img/sub_thumbnail-07.png"
+        :src="require(`@/assets/img/thumbnails/sub_thumbnail-07.png`)"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
