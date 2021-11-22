@@ -26,6 +26,7 @@ Vue.use(SuiVue);
 Vue.use(VueScrollactive);
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 Vue.use(VueClipboard)
+// Vue.use(i18n)
 // Vue.use(VueAos)
 // Vue.use(VueBreadcrumbs, 
 // // {

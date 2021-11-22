@@ -17,6 +17,7 @@
                   SK Chemicals
                   <br />
                   <span>Open Innovation Team</span>
+                  <!-- {{ $t("main.welcome") }} -->
                 </p>
                 <p
                   class="an_con"
@@ -230,7 +231,7 @@ export default {
     return {
       swiper: null,
       swiperAnimation: null,
-      images: [
+      sample_images: [
         "https://source.unsplash.com/WCEOtVmk2VY/1600x900",
         "https://source.unsplash.com/pwcKF7L4-no/",
         "https://source.unsplash.com/MD2_srN-02o/1600x900",

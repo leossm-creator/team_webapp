@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar flat outlined class="barNav">
+  <v-toolbar flat outlined class="barNav hidden-sm-and-down">
     <div class="barNav_inner">
       <v-btn icon link to="/">
         <v-icon>mdi-home</v-icon>

@@ -119,28 +119,16 @@
           </v-col>
         </v-row> -->
 
-        <v-row> 
+        <!-- <v-row> 
           <v-col cols="12" md="7" class="img_box">
             <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
           </v-col>
-          <v-col cols="12" md="5">
+          <v-col cols="12" md="5" style="padding: 0;">
             <p>
               <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
               미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
               개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
             </p>
-          </v-col>
-        </v-row>
-        <!-- <v-row > 
-          <v-col cols="12" md="5">
-            <p>
-              <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
-              미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
-              개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
-            </p>
-          </v-col>
-          <v-col cols="12" md="7" class="img_box">
-            <v-img src="https://source.unsplash.com/wCo9UwZEa18"></v-img>
           </v-col>
         </v-row> -->
 

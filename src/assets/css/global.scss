@@ -124,17 +124,6 @@ body ::-webkit-scrollbar-track {
         padding-bottom: 20px;
         // padding-left: 15px;
 
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     left: 0;
-        //     top: 11px;
-        //     width: 3px;
-        //     height: 100px;
-        //     background: #13c9d2;
-          
-        // }
-
         &::after {
           content: '';
           position: absolute;
@@ -222,6 +211,13 @@ body ::-webkit-scrollbar-track {
   position: absolute;
   right: 30px;
   bottom: 30px;
+}
+
+// 모바일
+@media (max-width: 600px) {
+  .pc_only {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
