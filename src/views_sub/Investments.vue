@@ -85,7 +85,7 @@
           </v-row>
         </v-container>
       </div>
-      <v-img src="https://source.unsplash.com/EDj-oxXe4s8"></v-img>
+      <v-img height="100vh" src="https://source.unsplash.com/EDj-oxXe4s8"></v-img>
       <v-container>
         <v-row>
           <v-col class="d-flex justify-center align-center">

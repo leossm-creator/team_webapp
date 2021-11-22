@@ -84,7 +84,7 @@
               </p>
             </v-col>
           </v-row>
-          <p>
+          <!-- <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
             natoque penatibus et magnis dis parturient montes, nascetur
@@ -99,7 +99,7 @@
             in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut
             metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
             ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-          </p>
+          </p> -->
         </v-container>
       </div>
       <div class="img_board">

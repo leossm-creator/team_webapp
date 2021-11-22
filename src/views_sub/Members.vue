@@ -135,13 +135,13 @@
                     <v-list>
                       <v-list-item link @click="send(member.email)">
                         <v-list-item-title>
-                          <v-icon>mdi-send</v-icon> Send
+                          <v-icon>mdi-send</v-icon> send
                           email</v-list-item-title
                         >
                       </v-list-item>
                       <v-list-item link @click="copy(member.email)">
                         <v-list-item-title
-                          ><v-icon>mdi-clipboard-outline</v-icon> Copy
+                          ><v-icon>mdi-clipboard-outline</v-icon> copy
                           email</v-list-item-title
                         >
                       </v-list-item>
