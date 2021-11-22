@@ -98,7 +98,7 @@
                   class="slide_heading an_con"
                   data-swiper-animation="animate__fadeInUp"
                   data-duration="1.5s"
-                  data-delay="1s"
+                  data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -110,7 +110,7 @@
                   class="an_con"
                   data-swiper-animation="animate__fadeInUp"
                   data-duration="1.5s"
-                  data-delay="1.5s"
+                  data-delay="2s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                 >
@@ -127,7 +127,6 @@
                 id="sliderImg_03"
                 data-swiper-animation="animate__backInRight"
                 data-duration="1s"
-                data-delay="1.5s"
                 data-swiper-out-animation="animate__fadeOut"
                 data-out-duration="0.5s"
               ></div>

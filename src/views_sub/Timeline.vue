@@ -20,8 +20,7 @@
     <div class="page_container">
       <div class="content_container" id="au_timeline" ref="au_timeline">
         <!-- 성과 Timeline -->
-        <v-container>
-          <v-row class="title_board">
+          <v-row class="board title_board">
             <v-col>
               <div class="p_title">
                 SK Chemicals 오픈 이노베이션은
@@ -30,7 +29,7 @@
               </div>
             </v-col>
           </v-row>
-          <v-row class="board">
+          <v-row class="board text_board">
             <v-col cols="3">
               <h3>개요</h3>
             </v-col>
@@ -84,7 +83,6 @@
           </v-row>
           <!-- <sui-container text> -->
           <!-- </sui-container> -->
-        </v-container>
       </div>
     </div>
   </div>

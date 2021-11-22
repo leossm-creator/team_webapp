@@ -20,8 +20,7 @@
     <div class="page_container">
       <div class="content_container" id="au_members" ref="au_members">
         <!-- 조직도 -->
-        <v-container>
-          <v-row class="title_board">
+          <v-row class="board title_board">
             <v-col>
               <div class="p_title">
                 SK Chemicals 오픈이노베이션 팀은
@@ -30,7 +29,7 @@
               </div>
             </v-col>
           </v-row>
-          <v-row class="board">
+          <v-row class="board ">
           <!-- Executive 멤버들: 카드 with image -->
           <v-row style="margin: 24px 0">
             <v-col cols="12">
@@ -90,14 +89,14 @@
                       <v-list>
                         <v-list-item link @click="send(member.email)">
                           <v-list-item-title>
-                            <v-icon>mdi-send</v-icon> Send
-                            email</v-list-item-title
+                            <v-icon left="8">mdi-send</v-icon> Send
+                            Email</v-list-item-title
                           >
                         </v-list-item>
                         <v-list-item link @click="copy(member.email)">
                           <v-list-item-title
-                            ><v-icon>mdi-clipboard-outline</v-icon> Copy
-                            email</v-list-item-title
+                            ><v-icon left="8">mdi-clipboard-outline</v-icon> Copy
+                            Email</v-list-item-title
                           >
                         </v-list-item>
                       </v-list>
@@ -135,14 +134,14 @@
                     <v-list>
                       <v-list-item link @click="send(member.email)">
                         <v-list-item-title>
-                          <v-icon>mdi-send</v-icon> send
-                          email</v-list-item-title
+                          <v-icon left="8">mdi-send</v-icon> Send
+                          Email</v-list-item-title
                         >
                       </v-list-item>
                       <v-list-item link @click="copy(member.email)">
                         <v-list-item-title
-                          ><v-icon>mdi-clipboard-outline</v-icon> copy
-                          email</v-list-item-title
+                          ><v-icon left="8">mdi-clipboard-outline</v-icon> Copy
+                          Email</v-list-item-title
                         >
                       </v-list-item>
                     </v-list>
@@ -152,7 +151,6 @@
             </v-col>
           </v-row>
           </v-row>
-        </v-container>
       </div>
     </div>
   </div>

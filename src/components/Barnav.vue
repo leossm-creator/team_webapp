@@ -105,10 +105,12 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-$divider-inset-max-height: calc(100% - 16px) !important;
+
 .barNav {
-  padding: 0 15%;
+  width: 100%;
   .barNav_inner {
+    width: 100%;
+    padding: 0 15%;
     // margin-left: auto;
     // margin-right: auto;
     .dropdownNav {

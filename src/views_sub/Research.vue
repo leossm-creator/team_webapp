@@ -19,7 +19,7 @@
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="ow_research" ref="ow_research">
-        <v-row class="title_board">
+        <v-row class="board title_board">
           <v-col>
             <div class="p_title">
               SK Chemicals는 더 나은 의약품을 만들기 위해
@@ -29,8 +29,7 @@
           </v-col>
         </v-row>
 
-        <v-container>
-          <v-row class="board">
+          <v-row class="board text_board">
             <v-col cols="3">
               <h3>개요</h3>
             </v-col>
@@ -46,7 +45,7 @@
               </p>
             </v-col>
           </v-row>
-          <v-row class="board">
+          <v-row class="board text_board">
             <v-col cols="3">
               <h3>설계기반<br class="pc_only" />품질 고도화</h3>
             </v-col>
@@ -63,7 +62,7 @@
               </p>
             </v-col>
           </v-row>
-          <v-row class="board">
+          <v-row class="board text_board">
             <v-col cols="3">
               <h3>핵심<br class="pc_only" />연구분야</h3>
             </v-col>
@@ -100,7 +99,6 @@
             metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
             ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
           </p> -->
-        </v-container>
       </div>
       <div class="img_board">
         <div class="img_container">

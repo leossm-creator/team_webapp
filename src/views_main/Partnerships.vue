@@ -48,11 +48,16 @@
             <v-col
               v-for="(item, index) in partners"
               :key="index"
-              cols="6"
+              cols="12"
+              md="6"
               class="card_container"
-              :class="{'left': index % 2 === 0, 'right': index % 2 !== 0 }"
+              :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
             >
               <v-card hover class="p_card">
+                <div class="img_container">
+                  <v-img :src="item.img" width="200" contain>
+                  </v-img>
+                </div>
                 <v-card-text>
                   {{ item.name }}
                 </v-card-text>
@@ -76,36 +81,52 @@ export default {
     return {
       partners: [
         {
-          name: "Celltrion",
-          img: "/path_to_img",
+          name: "Standigm",
+          img: require(`@/assets/img/partners/standigm.jpeg`),
+          title: "",
+          description: "",
+        },
+        {
+          name: "J2H Biotech",
+          img: require(`@/assets/img/partners/j2h.png`),
+          title: "",
+          description: "",
+        },
+        {
+          name: "Deargen",
+          img: require(`@/assets/img/partners/deargen.png`),
+          title: "",
+          description: "",
+        },
+        {
+          name: "Dr. Noah Biotech",
+          img: require(`@/assets/img/partners/dr_noah.png`),
+          title: "",
+          description: "",
         },
         {
           name: "Celltrion",
           img: "/path_to_img",
+          title: "",
+          description: "",
         },
         {
           name: "Celltrion",
           img: "/path_to_img",
+          title: "",
+          description: "",
         },
         {
           name: "Celltrion",
           img: "/path_to_img",
+          title: "",
+          description: "",
         },
         {
           name: "Celltrion",
           img: "/path_to_img",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
+          title: "",
+          description: "",
         },
       ],
     };
@@ -118,17 +139,24 @@ export default {
   // padding: 20px 80px;
   padding-bottom: 40px;
 
-      &.left {
-      padding-right: 25px;
-    }
+  &.left {
+    padding-right: 25px;
+  }
 
-    &.right {
-      padding-left: 25px;
-    }
+  &.right {
+    padding-left: 25px;
+  }
   .p_card {
     width: 100%;
     height: 400px;
 
+    .img_container {
+      display: flex;
+      width: 100%;
+      // height: 50%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 </style>

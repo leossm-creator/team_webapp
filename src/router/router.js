@@ -110,6 +110,12 @@ const routes = [
       parent: "About Us",
       sib: [
         {
+          text: 'Introduction',
+          to: {
+            name: 'Intoduction',
+          }
+        },
+        {
           text: 'Timeline',
           to: {
             name: 'Timeline',
@@ -135,6 +141,12 @@ const routes = [
           text: 'Introduction',
           to: {
             name: 'Introduction',
+          }
+        },
+        {
+          text: 'Timeline',
+          to: {
+            name: 'Timeline',
           }
         },
         {
@@ -165,6 +177,12 @@ const routes = [
             name: 'Timeline',
           }
         },
+        {
+          text: 'Members',
+          to: {
+            name: 'Members',
+          }
+        },
       ]
     }
   },
@@ -175,6 +193,12 @@ const routes = [
     meta: {
       parent: "Our Works",
       sib: [
+        {
+          text: 'Pharma',
+          to: {
+            name: 'Pharma',
+          }
+        },
         {
           text: 'Research',
           to: {
@@ -204,6 +228,12 @@ const routes = [
           }
         },
         {
+          text: 'Research',
+          to: {
+            name: 'Research',
+          }
+        },
+        {
           text: 'Investments',
           to: {
             name: 'Investments',
@@ -229,6 +259,12 @@ const routes = [
           text: 'Research',
           to: {
             name: 'Research'
+          }
+        },
+        {
+          text: 'Investments',
+          to: {
+            name: 'Investments',
           }
         },
       ]
