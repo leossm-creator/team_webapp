@@ -18,8 +18,8 @@
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="partnerships">
-        <v-container>
-          <v-row class="title_board">
+        <div class="title_board">
+          <v-row class="board">
             <v-col>
               <div class="p_title">
                 SK Chemicals는 더 나은 의약품을 만들기 위해
@@ -28,6 +28,8 @@
               </div>
             </v-col>
           </v-row>
+        </div>
+        <div class="text_board">
           <v-row class="board">
             <v-col cols="3">
               <h3>개요</h3>
@@ -44,6 +46,8 @@
               </p>
             </v-col>
           </v-row>
+        </div>
+
           <v-row class="board">
             <v-col
               v-for="(item, index) in partners"
@@ -54,17 +58,21 @@
               :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
             >
               <v-card hover class="p_card">
-                <div class="img_container">
-                  <v-img :src="item.img" width="200" contain>
+                <div class="img_container" :style="{ padding: item.padding }">
+                  <v-img :src="item.img" :height="item.height" contain>
                   </v-img>
                 </div>
-                <v-card-text>
-                  {{ item.name }}
-                </v-card-text>
+                <div class="text_container">
+                  <h2>
+                    {{item.title}}
+                  </h2>
+                  <p style="text-align: left;">
+                    {{item.description}}
+                  </p>
+                </div>
               </v-card>
             </v-col>
           </v-row>
-        </v-container>
       </div>
       <!-- <v-parallax src="https://source.unsplash.com/WCEOtVmk2VY/300" height="300"></v-parallax> -->
     </div>
@@ -82,51 +90,35 @@ export default {
       partners: [
         {
           name: "Standigm",
-          img: require(`@/assets/img/partners/standigm.jpeg`),
-          title: "",
-          description: "",
+          img: require(`@/assets/img/partners/standigm.png`),
+          height: "150",
+          padding: "0 150px",
+          title: "류마티스 관절염 치료물질 발굴",
+          description: "신약 재창출(drug repositioning) 접근법의 류마티스 관절염(rheumatoid arthritis, RA) 치료물질을 발굴 및 특허 출원",
         },
         {
           name: "J2H Biotech",
           img: require(`@/assets/img/partners/j2h.png`),
-          title: "",
-          description: "",
+          height: "100",
+          padding: "25px 150px",
+          title: "신약 개발 공동연구 체결",
+          description: "옵티플렉스(Optiflex) 기술 및 표적단백질 분해(Targeted Protein Degrader) 기술 등을 활용해 신약 연구",
         },
         {
           name: "Deargen",
           img: require(`@/assets/img/partners/deargen.png`),
-          title: "",
-          description: "",
+          height: "200",
+          padding: "0 150px",
+          title: "약물 재창출 및 신약개발 공동연구 체결",
+          description: "약물 재창출(Drug Repositioning) 및 신약개발(De Novo Drug Design)에 대한 공동연구 계약을 체결",
         },
         {
           name: "Dr. Noah Biotech",
-          img: require(`@/assets/img/partners/dr_noah.png`),
-          title: "",
-          description: "",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
-          title: "",
-          description: "",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
-          title: "",
-          description: "",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
-          title: "",
-          description: "",
-        },
-        {
-          name: "Celltrion",
-          img: "/path_to_img",
-          title: "",
-          description: "",
+          img: require(`@/assets/img/partners/drNoah.png`),
+          height: "200",
+          padding: "0 150px",
+          title: "인공지능(AI) 기반 신약개발 공동연구 체결",
+          description: "‘ARK’ 플랫폼 기술을 활용 AI기반 신약개발을 공동연구 및 개발 협약을 체결",
         },
       ],
     };
@@ -156,6 +148,11 @@ export default {
       // height: 50%;
       justify-content: center;
       align-items: center;
+    }
+
+    .text_container {
+      text-align: center;
+      padding: 30px;
     }
   }
 }

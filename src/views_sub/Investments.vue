@@ -19,7 +19,8 @@
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="ow_investment" ref="ow_investment">
-          <v-row class="board title_board">
+        <div class="title_board">
+          <v-row class="board">
             <v-col>
               <div class="p_title">
                 SK Chemicals는 더 나은 투자를 하기 위해
@@ -28,7 +29,9 @@
               </div>
             </v-col>
           </v-row>
-          <v-row class="board text_board">
+        </div>
+        <div class="text_board">
+          <v-row class="board">
             <v-col cols="3">
               <h3>개요</h3>
             </v-col>
@@ -44,7 +47,7 @@
               </p>
             </v-col>
           </v-row>
-          <v-row class="board text_board">
+          <v-row class="board">
             <v-col cols="3">
               <h3>설계기반<br class="pc_only" />품질 고도화</h3>
             </v-col>
@@ -61,7 +64,7 @@
               </p>
             </v-col>
           </v-row>
-          <v-row class="board text_board">
+          <v-row class="board">
             <v-col cols="3">
               <h3>핵심<br class="pc_only" />연구분야</h3>
             </v-col>
@@ -82,11 +85,12 @@
               </p>
             </v-col>
           </v-row>
-      </div>
-      <v-img height="100vh" src="https://source.unsplash.com/EDj-oxXe4s8">
-      </v-img>
-      <v-container>
-        <v-row>
+        </div>
+        <v-row class="board">
+          <v-img height="100vh" src="https://source.unsplash.com/EDj-oxXe4s8">
+          </v-img>
+        </v-row>
+        <v-row class="board">
           <v-col class="d-flex justify-center align-center">
             <LineChart />
           </v-col>
@@ -94,7 +98,7 @@
             <LineChart />
           </v-col>
         </v-row>
-      </v-container>
+      </div>
     </div>
   </div>
 </template>
@@ -111,6 +115,10 @@ export default {
   },
   data() {
     return {};
+  },
+
+  mounted() {
+    console.log(this.$vuetify.breakpoint);
   },
 
   methods: {},

@@ -15,7 +15,6 @@
         </v-card-title>
       </v-img>
     </v-card>
-    <!-- <Breadcrumb /> -->
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="au_timeline" ref="au_timeline">
@@ -46,7 +45,6 @@
           </v-row>
           <v-row class="board">
             <v-col>
-              <!-- <sui-container text> -->
               <v-timeline class="timeline">
                 <v-timeline-item
                   v-for="(year, i) in years"
@@ -78,22 +76,17 @@
                   </div>
                 </v-timeline-item>
               </v-timeline>
-              <!-- </sui-container> -->
             </v-col>
           </v-row>
-          <!-- <sui-container text> -->
-          <!-- </sui-container> -->
       </div>
     </div>
   </div>
 </template>
 <script>
-// import Breadcrumb from "../components/Breadcrumb.vue"
 import Barnav from "../components/Barnav.vue";
 export default {
   name: "Timeline",
   components: {
-    // Breadcrumb,
     Barnav,
   },
   data() {

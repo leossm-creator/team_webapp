@@ -15,11 +15,9 @@
         </v-card-title>
       </v-img>
     </v-card>
-    <!-- <Breadcrumb /> -->
     <Barnav />
     <div class="page_container" id="ow_pharma" ref="ow_pharma">
       <div class="content_container">
-        <!-- <v-container> -->
         <div class="title_board">
           <v-row class="board">
             <v-col>
@@ -87,6 +85,27 @@
               </p>
             </v-col>
           </v-row>
+          <v-row class="board">
+            <v-col cols="3">
+              <h3>핵심<br class="pc_only" />연구 성장</h3>
+            </v-col>
+            <v-col cols="9">
+              <p>
+                <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
+                미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
+                개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
+              </p>
+              <p>
+                <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
+                미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
+                개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
+                셀트리온제약 중앙연구소는 약물평가, 제제연구, 분석법 및 공정개발
+                등 의약품 연구·개발·제조 모든 부분에서<br
+                  class="pc_only"
+                />뛰어난 역량과 기술을 보유하고 있습니다.
+              </p>
+            </v-col>
+          </v-row>
         </div>
 
         <!-- <v-row class="board">
@@ -131,34 +150,11 @@
             </p>
           </v-col>
         </v-row> -->
-
-        <v-row class="board text_board">
-          <v-col cols="3">
-            <h3>핵심<br class="pc_only" />연구 성장</h3>
-          </v-col>
-          <v-col cols="9">
-            <p>
-              <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
-              미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
-              개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
-            </p>
-            <p>
-              <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
-              미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
-              개발에 연구역량을<br class="pc_only" />집중하고 있습니다.
-              셀트리온제약 중앙연구소는 약물평가, 제제연구, 분석법 및 공정개발
-              등 의약품 연구·개발·제조 모든 부분에서<br class="pc_only" />뛰어난
-              역량과 기술을 보유하고 있습니다.
-            </p>
-          </v-col>
-        </v-row>
-        <!-- </v-container> -->
       </div>
     </div>
   </div>
 </template>
 <script>
-// import Breadcrumb from "../components/Breadcrumb.vue"
 import Barnav from "../components/Barnav.vue";
 const gradients = [
   ["#222"],
@@ -173,7 +169,6 @@ const gradients = [
 export default {
   name: "Pharma",
   components: {
-    // Breadcrumb,
     Barnav,
   },
   data() {

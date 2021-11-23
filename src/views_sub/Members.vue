@@ -15,12 +15,11 @@
         </v-card-title>
       </v-img>
     </v-card>
-    <!-- <Breadcrumb /> -->
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="au_members" ref="au_members">
-        <!-- 조직도 -->
-          <v-row class="board title_board">
+        <div class="title_board">
+          <v-row class="board">
             <v-col>
               <div class="p_title">
                 SK Chemicals 오픈이노베이션 팀은
@@ -29,57 +28,103 @@
               </div>
             </v-col>
           </v-row>
-          <v-row class="board ">
-          <!-- Executive 멤버들: 카드 with image -->
-          <v-row style="margin: 24px 0">
-            <v-col cols="12">
-              <h4>Leader</h4>
-            </v-col>
-            <v-col
-              v-for="member in members.executives"
-              :key="member.name"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <v-card hover width="300" style="padding: 12px">
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <v-avatar
-                    class="profile"
-                    size="200"
-                    color="#dedede"
-                    style="margin: 5% 0"
+        </div>
+        <div class="members">
+          <!-- 조직도 -->
+          <v-row class="board">
+            <!-- Executive 멤버들: 카드 with image -->
+            <v-row style="margin: 24px 0">
+              <v-col cols="12">
+                <h4>Leader</h4>
+              </v-col>
+              <v-col
+                v-for="member in members.executives"
+                :key="member.name"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <v-card hover width="300" style="padding: 12px">
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                    "
                   >
-                    <!-- <v-img max-height="250" :src="member.image"></v-img> -->
-                    <v-icon size="100">mdi-account</v-icon>
-                  </v-avatar>
-                </div>
+                    <v-avatar
+                      class="profile"
+                      size="200"
+                      color="#dedede"
+                      style="margin: 5% 0"
+                    >
+                      <!-- <v-img max-height="250" :src="member.image"></v-img> -->
+                      <v-icon size="100">mdi-account</v-icon>
+                    </v-avatar>
+                  </div>
 
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                  "
-                >
-                  <v-card-title class="font-weight-bold">{{
-                    member.name
-                  }}</v-card-title>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    "
+                  >
+                    <v-card-title class="font-weight-bold">{{
+                      member.name
+                    }}</v-card-title>
+                    <v-card-subtitle>{{ member.role }}</v-card-subtitle>
+                    <v-card-text>
+                      {{ member.description }}
+                    </v-card-text>
+                    <v-card-text>
+                      <v-menu offset-y>
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-btn v-bind="attrs" v-on="on" depressed>
+                            Contact
+                          </v-btn>
+                        </template>
+                        <v-list>
+                          <v-list-item link @click="send(member.email)">
+                            <v-list-item-title>
+                              <v-icon left="8">mdi-send</v-icon> Send
+                              Email</v-list-item-title
+                            >
+                          </v-list-item>
+                          <v-list-item link @click="copy(member.email)">
+                            <v-list-item-title
+                              ><v-icon left="8">mdi-clipboard-outline</v-icon>
+                              Copy Email</v-list-item-title
+                            >
+                          </v-list-item>
+                        </v-list>
+                      </v-menu>
+                    </v-card-text>
+                  </div>
+                </v-card>
+              </v-col>
+            </v-row>
+            <!-- Team 멤버들: 카드 with text -->
+            <v-row>
+              <v-col cols="12"><h4>Managers</h4></v-col>
+              <v-col
+                cols="3"
+                v-for="member in members.managers"
+                :key="member.name"
+                style="padding-top: 30px; padding-bottom: 30px"
+              >
+                <v-card hover class="card_man">
+                  <v-card-title class="font-weight-bold">
+                    {{ member.name }}
+                  </v-card-title>
                   <v-card-subtitle>{{ member.role }}</v-card-subtitle>
                   <v-card-text>
                     {{ member.description }}
                   </v-card-text>
                   <v-card-text>
-                    <!-- <v-btn depressed>Contact</v-btn> -->
                     <v-menu offset-y>
                       <template v-slot:activator="{ on, attrs }">
                         <v-btn v-bind="attrs" v-on="on" depressed>
@@ -95,73 +140,27 @@
                         </v-list-item>
                         <v-list-item link @click="copy(member.email)">
                           <v-list-item-title
-                            ><v-icon left="8">mdi-clipboard-outline</v-icon> Copy
-                            Email</v-list-item-title
+                            ><v-icon left="8">mdi-clipboard-outline</v-icon>
+                            Copy Email</v-list-item-title
                           >
                         </v-list-item>
                       </v-list>
                     </v-menu>
                   </v-card-text>
-                </div>
-              </v-card>
-            </v-col>
+                </v-card>
+              </v-col>
+            </v-row>
           </v-row>
-          <!-- Team 멤버들: 카드 with text -->
-          <v-row>
-            <v-col cols="12"><h4>Managers</h4></v-col>
-            <v-col
-              cols="3"
-              v-for="member in members.managers"
-              :key="member.name"
-              style="padding-top: 30px; padding-bottom: 30px"
-            >
-              <v-card hover class="card_man">
-                <v-card-title class="font-weight-bold">
-                  {{ member.name }}
-                </v-card-title>
-                <v-card-subtitle>{{ member.role }}</v-card-subtitle>
-                <v-card-text>
-                  {{ member.description }}
-                </v-card-text>
-                <v-card-text>
-                  <!-- <v-btn depressed>Contact</v-btn> -->
-                  <v-menu offset-y>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn v-bind="attrs" v-on="on" depressed>
-                        Contact
-                      </v-btn>
-                    </template>
-                    <v-list>
-                      <v-list-item link @click="send(member.email)">
-                        <v-list-item-title>
-                          <v-icon left="8">mdi-send</v-icon> Send
-                          Email</v-list-item-title
-                        >
-                      </v-list-item>
-                      <v-list-item link @click="copy(member.email)">
-                        <v-list-item-title
-                          ><v-icon left="8">mdi-clipboard-outline</v-icon> Copy
-                          Email</v-list-item-title
-                        >
-                      </v-list-item>
-                    </v-list>
-                  </v-menu>
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
-          </v-row>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-// import Breadcrumb from "../components/Breadcrumb.vue";
 import Barnav from "../components/Barnav.vue";
 export default {
   name: "Members",
   components: {
-    // Breadcrumb,
     Barnav,
   },
   data() {

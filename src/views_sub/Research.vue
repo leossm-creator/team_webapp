@@ -15,21 +15,23 @@
         </v-card-title>
       </v-img>
     </v-card>
-    <!-- <Breadcrumb /> -->
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="ow_research" ref="ow_research">
-        <v-row class="board title_board">
-          <v-col>
-            <div class="p_title">
-              SK Chemicals는 더 나은 의약품을 만들기 위해
-              <br />
-              끊임없이 고민하고 연구합니다
-            </div>
-          </v-col>
-        </v-row>
+        <div class="title_board">
+          <v-row class="board">
+            <v-col>
+              <div class="p_title">
+                SK Chemicals는 더 나은 의약품을 만들기 위해
+                <br />
+                끊임없이 고민하고 연구합니다
+              </div>
+            </v-col>
+          </v-row>
+        </div>
 
-          <v-row class="board text_board">
+        <div class="text_board">
+          <v-row class="board">
             <v-col cols="3">
               <h3>개요</h3>
             </v-col>
@@ -45,7 +47,7 @@
               </p>
             </v-col>
           </v-row>
-          <v-row class="board text_board">
+          <v-row class="board">
             <v-col cols="3">
               <h3>설계기반<br class="pc_only" />품질 고도화</h3>
             </v-col>
@@ -62,7 +64,7 @@
               </p>
             </v-col>
           </v-row>
-          <v-row class="board text_board">
+          <v-row class="board">
             <v-col cols="3">
               <h3>핵심<br class="pc_only" />연구분야</h3>
             </v-col>
@@ -83,7 +85,8 @@
               </p>
             </v-col>
           </v-row>
-          <!-- <p>
+        </div>
+        <!-- <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa <b>strong</b>. Cum sociis
             natoque penatibus et magnis dis parturient montes, nascetur
@@ -104,13 +107,9 @@
         <div class="img_container">
           <v-row>
             <v-col cols="6">
-              <!-- <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img> -->
-              <div class="image_container" style="background-image: url(https://source.unsplash.com/9vnACvX2748)">
-
-              </div>
+              <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
             </v-col>
-            <v-col cols="6">
-            </v-col>
+            <v-col cols="6"> </v-col>
           </v-row>
         </div>
         <div class="img_content"></div>
@@ -120,11 +119,9 @@
 </template>
 <script>
 import Barnav from "../components/Barnav.vue";
-// import Breadcrumb from "../components/Breadcrumb.vue"
 export default {
   name: "Research",
   components: {
-    // Breadcrumb,
     Barnav,
   },
   data() {

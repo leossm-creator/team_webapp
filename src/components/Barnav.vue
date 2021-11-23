@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar flat outlined class="barNav hidden-sm-and-down">
+  <v-toolbar flat outlined class="barNav" v-if="$vuetify.breakpoint.smAndUp">
     <div class="barNav_inner">
       <v-btn icon link to="/">
         <v-icon>mdi-home</v-icon>
@@ -101,6 +101,8 @@ export default {
   mounted() {
     // console.log(this.sib)
     this.current.sub = this.$route.name;
+
+    // console.log(this.$vuetify.breakpoint.smAndUp)
   },
 };
 </script>

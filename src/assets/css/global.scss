@@ -69,6 +69,10 @@ body ::-webkit-scrollbar-track {
 //   padding: 0px !important;
 // }
 
+* {
+  word-break: keep-all;
+}
+
 
 .ff_m {
   font-family: 'Montserrat', sans-serif;
@@ -112,7 +116,11 @@ body ::-webkit-scrollbar-track {
     font-size: 1.15rem;
     // padding: 0 15%;
     // margin-top: 50px;
-    // margin: 120px 0;
+    margin: 120px 0;
+
+    &:last-child {
+      margin-bottom: 120px;
+    }
 
     .title_board {
       margin-bottom: 120px;
@@ -145,8 +153,9 @@ body ::-webkit-scrollbar-track {
     }
 
     .board {
+      width: 100%;
       margin-top: 120px;
-      padding: 0 calc(15% + 16px);
+      padding: 0 15%;
 
       &.text_board {
         // background-color: #e7e7e7;
@@ -220,7 +229,18 @@ body ::-webkit-scrollbar-track {
   }
 }
 
-@media (max-width: 960px) {
+// 태블릿 &ㄴ 랩탑
+@media (min-width: 601px) and (max-width: 1279px) {
+  .pc_only {
+    display: block;
+  }
+}
+
+// 데스크탑 & 모니터
+@media (min-width: 1280px) {  
+  .pc_only {
+    display: block;
+  }
   .page_container {
     width: 100%;
   }
