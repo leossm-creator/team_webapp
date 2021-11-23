@@ -4,7 +4,7 @@
     <div id="content" ref="content">
       <router-view>
       </router-view>
-      <Footer v-if="$route.path != '/'"></Footer>
+      <Footer v-if="$route.path !== '/'"></Footer>
     </div>
   </v-app>
 </template>

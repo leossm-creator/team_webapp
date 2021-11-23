@@ -24,7 +24,7 @@ html::-webkit-scrollbar {
   display: none; // fix!
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar { 
   display: none !important;
 }
 
@@ -63,10 +63,6 @@ body ::-webkit-scrollbar-track {
 // /* set button(top and bottom of the scrollbar) */
 // ::-webkit-scrollbar-button {
 //   display: none;
-// }
-
-// .barNav > .v-toolbar__content {
-//   padding: 0px !important;
 // }
 
 * {

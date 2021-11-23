@@ -102,17 +102,54 @@
             metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
             ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
           </p> -->
-      </div>
-      <div class="img_board">
-        <div class="img_container">
-          <v-row>
-            <v-col cols="6">
-              <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
-            </v-col>
-            <v-col cols="6"> </v-col>
-          </v-row>
+        <div class="img_board">
+            <v-row style="margin-top: 120px;">
+              <v-col cols="6">
+                <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
+              </v-col>
+              <v-col cols="6">
+                <div class="img_heading">뭐라고 쓸지 아직 모르겠어요</div>
+                <p>
+                  <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의
+                  원천이자 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는
+                  의약품 개발에 연구역량을<br class="pc_only" />집중하고
+                  있습니다.
+                </p>
+                <p>
+                  <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의
+                  원천이자 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는
+                  의약품 개발에 연구역량을<br class="pc_only" />집중하고
+                  있습니다. 셀트리온제약 중앙연구소는 약물평가, 제제연구, 분석법
+                  및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br
+                    class="pc_only"
+                  />뛰어난 역량과 기술을 보유하고 있습니다.
+                </p>
+              </v-col>
+            </v-row>
+            <!-- <v-row style="margin-top: 120px;">
+              <v-col cols="6">
+                <div class="img_heading">뭐라고 쓸지 아직 모르겠어요</div>
+                <p>
+                  <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의
+                  원천이자 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는
+                  의약품 개발에 연구역량을<br class="pc_only" />집중하고
+                  있습니다.
+                </p>
+                <p>
+                  <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의
+                  원천이자 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는
+                  의약품 개발에 연구역량을<br class="pc_only" />집중하고
+                  있습니다. 셀트리온제약 중앙연구소는 약물평가, 제제연구, 분석법
+                  및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br
+                    class="pc_only"
+                  />뛰어난 역량과 기술을 보유하고 있습니다.
+                </p>
+              </v-col>
+              <v-col cols="6">
+                <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
+              </v-col>
+            </v-row> -->
         </div>
-        <div class="img_content"></div>
       </div>
     </div>
   </div>
