@@ -92,7 +92,7 @@
           <v-col>
             <div id="au_diagram_container" ref="au_diagram">
               <v-img
-                :src="require(`@/assets/img/contents/diagram_1.png`)"
+                :src="require(`@/assets/img/content/diagram_1.png`)"
                 :max-width="wrapperWidth()"
                 style="margin-left: auto; margin-right: auto"
                 max-height="550"

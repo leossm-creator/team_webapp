@@ -141,9 +141,7 @@
                               required
                             >
                               <template v-slot:label>
-                                <div class="agree_label">
-                                  동의합니다
-                                </div>
+                                <div class="agree_label">동의합니다</div>
                               </template>
                             </v-checkbox>
                           </v-list-item>
@@ -226,7 +224,16 @@
                       </v-col>
                       <v-col>
                         <!-- <a type="submit" @click="mailTo">Send Mail</a> -->
-                        <v-btn type="submit" @click="mailTo" color="success" elevation="0" :disabled="!agree" class="white--text"> Submit </v-btn>
+                        <v-btn
+                          type="submit"
+                          @click="mailTo"
+                          color="#93bc3b"
+                          elevation="0"
+                          :disabled="!agree"
+                          class="white--text"
+                        >
+                          Submit
+                        </v-btn>
                       </v-col>
                     </v-row>
                   </v-form>
@@ -237,42 +244,49 @@
                 <!-- <h2>Contact Info</h2> -->
                 <v-row class="board">
                   <v-col>
-                      <v-list>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title
-                              ><v-icon>mdi-phone</v-icon> 대표전화:
-                              <span>02)2008-2008</span></v-list-item-title
-                            >
-                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title
-                              ><v-icon>mdi-email</v-icon> 이메일:
-                              <span
-                                >someemail.email.com</span
-                              ></v-list-item-title
-                            >
-                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title
-                              ><v-icon>mdi-map-marker</v-icon> 주소:
-                              <span
-                                >[13494] 경기도 성남시 분당구 판교로 310</span
-                              ></v-list-item-title
-                            >
-                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
+                    <v-list>
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            <v-avatar color="amber">
+                              <v-icon color="deep-orange">mdi-phone</v-icon>
+                            </v-avatar>
+                            <span class="con_details">02) 2008 - 2008</span></v-list-item-title
+                          >
+                          <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
+                        </v-list-item-content>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            <v-avatar color="amber">
+                              <v-icon color="deep-orange">mdi-email</v-icon>
+                            </v-avatar>
+                            <span class="con_details">someemail.email.com</span></v-list-item-title
+                          >
+                          <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
+                        </v-list-item-content>
+                      </v-list-item>
+                      <v-list-item>
+                        <v-list-item-content>
+                          <!-- <div style="display: flex; background-color: orange;"> -->
+                          <!-- </div> -->
+
+                          <v-list-item-title>
+                            <v-avatar color="amber">
+                              <v-icon color="deep-orange"
+                                >mdi-map-marker</v-icon
+                              >
+                            </v-avatar>
+                            <span class="con_details">[13494] 경기도 성남시 분당구 판교로 310</span>
+                          </v-list-item-title>
+                          <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
                   </v-col>
                 </v-row>
-                <v-row class="board">
+                <v-row class="map_container">
                   <v-col>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6339.005712252203!2d127.10572956533485!3d37.40158765283903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca7f51b7be5ff%3A0x11f1e6bd42f4ffd3!2zU0vsvIDrr7jsubwo7KO8KSDrs7jsgqw!5e0!3m2!1sko!2skr!4v1634523792165!5m2!1sko!2skr"
@@ -630,6 +644,15 @@ export default {
         font-weight: 600;
       }
     }
+
+    .map_container {
+      padding: 0 15%;
+    }
+  }
+
+  .con_details {
+    font-size: 18px;
+    padding-left: 18px;
   }
 }
 </style>
