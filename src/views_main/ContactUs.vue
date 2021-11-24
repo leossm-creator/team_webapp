@@ -244,46 +244,54 @@
                 <!-- <h2>Contact Info</h2> -->
                 <v-row class="board">
                   <v-col>
-                    <v-list>
-                      <v-list-item>
-                        <v-list-item-content>
-                          <v-list-item-title>
-                            <v-avatar color="amber">
-                              <v-icon color="deep-orange">mdi-phone</v-icon>
-                            </v-avatar>
-                            <span class="con_details">02) 2008 - 2008</span></v-list-item-title
-                          >
-                          <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
-                        </v-list-item-content>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-content>
-                          <v-list-item-title>
-                            <v-avatar color="amber">
-                              <v-icon color="deep-orange">mdi-email</v-icon>
-                            </v-avatar>
-                            <span class="con_details">someemail.email.com</span></v-list-item-title
-                          >
-                          <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
-                        </v-list-item-content>
-                      </v-list-item>
-                      <v-list-item>
-                        <v-list-item-content>
-                          <!-- <div style="display: flex; background-color: orange;"> -->
-                          <!-- </div> -->
+                    <v-card class="con_info" outlined tile>
+                      <v-list>
+                        <v-list-item>
+                          <v-list-item-content>
+                            <v-list-item-title>
+                              <v-avatar color="amber">
+                                <v-icon color="deep-orange">mdi-phone</v-icon>
+                              </v-avatar>
+                              <span class="con_details"
+                                >02) 2008 - 2008</span
+                              ></v-list-item-title
+                            >
+                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
+                          </v-list-item-content>
+                        </v-list-item>
+                        <v-list-item>
+                          <v-list-item-content>
+                            <v-list-item-title>
+                              <v-avatar color="amber">
+                                <v-icon color="deep-orange">mdi-email</v-icon>
+                              </v-avatar>
+                              <span class="con_details"
+                                >someemail.email.com</span
+                              ></v-list-item-title
+                            >
+                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
+                          </v-list-item-content>
+                        </v-list-item>
+                        <v-list-item>
+                          <v-list-item-content>
+                            <!-- <div style="display: flex; background-color: orange;"> -->
+                            <!-- </div> -->
 
-                          <v-list-item-title>
-                            <v-avatar color="amber">
-                              <v-icon color="deep-orange"
-                                >mdi-map-marker</v-icon
+                            <v-list-item-title>
+                              <v-avatar color="amber">
+                                <v-icon color="deep-orange"
+                                  >mdi-map-marker</v-icon
+                                >
+                              </v-avatar>
+                              <span class="con_details"
+                                >[13494] 경기도 성남시 분당구 판교로 310</span
                               >
-                            </v-avatar>
-                            <span class="con_details">[13494] 경기도 성남시 분당구 판교로 310</span>
-                          </v-list-item-title>
-                          <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
-                        </v-list-item-content>
-                      </v-list-item>
-                    </v-list>
+                            </v-list-item-title>
+                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
+                          </v-list-item-content>
+                        </v-list-item>
+                      </v-list>
+                    </v-card>
                   </v-col>
                 </v-row>
                 <v-row class="map_container">

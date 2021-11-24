@@ -53,7 +53,7 @@
               v-for="(item, index) in partners"
               :key="index"
               cols="12"
-              md="6"
+              md="4"
               class="card_container"
               :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
             >

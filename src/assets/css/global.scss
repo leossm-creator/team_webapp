@@ -150,7 +150,7 @@ body ::-webkit-scrollbar-track {
 
     .board {
       width: 100%;
-      margin-top: 120px;
+      margin: 120px 0 0;
       padding: 0 15%;
 
       &.text_board {
@@ -221,11 +221,11 @@ body ::-webkit-scrollbar-track {
 // 모바일
 @media (max-width: 600px) {
   .pc_only {
-    display: none;
+    display: none !important;
   }
 }
 
-// 태블릿 &ㄴ 랩탑
+// 태블릿 & 랩탑
 @media (min-width: 601px) and (max-width: 1279px) {
   .pc_only {
     display: block;
