@@ -622,15 +622,15 @@ export default {
 
   .tab_content {
     .t_and_c {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 120px;
-        height: 4px;
-        background: orange;
-      }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   left: 15%;
+      //   width: 120px;
+      //   height: 4px;
+      //   background: orange;
+      // }
 
       .li_title {
         font-size: 18px;

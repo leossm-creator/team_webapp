@@ -90,6 +90,99 @@ export default {
         }
       }
 
+      class Whale {
+        constructor(x, y) {
+          // this.speed = 2;
+          this.dir = 1;
+          this.w = 50 * sk.random(0.1, 3);
+          this.h = 20 * sk.random(0.1, 2);
+
+
+          this.x = x;
+          this.baseY = y;
+          this.speed = sk.int(sk.random(1, 3));
+          this.fishColour = sk.color(sk.random(255), sk.random(255), 0);
+          this.tailColour = sk.color(
+            sk.random(255),
+            sk.random(255),
+            sk.random(255)
+          );
+        }
+
+        // Updates the movement of the fish - Class method
+        move() {
+          // Figure out the new x, y position of the fish.
+          this.x += this.dir * this.speed;
+          // If fish hits the edge of the screen, change direction
+          if (this.x < 0 || this.x > sk.width) {
+            this.dir = -this.dir;
+            this.x += this.dir * this.speed;
+          }
+          // Fish will just sort of bob up and down as it moves.
+          this.y = this.baseY + sk.sin(sk.radians(sk.frameCount * 2)) * 40;
+
+          // Adjust the height positive or negative depending on the direction
+          this.w = 50 * this.dir;
+        }
+
+        // Draw the fish to the screen.
+        display() {
+          // body
+          sk.fill(this.fishColour);
+          sk.ellipse(this.x, this.y, this.w * 2, this.h * 2);
+
+          // eye
+          sk.fill(255);
+          sk.ellipse(this.x + 25 * this.dir, this.y, 10, 10);
+
+          // pupil
+          sk.fill(0);
+          sk.ellipse(this.x + 27.5 * this.dir, this.y, 7.5, 7.5);
+
+          // tail
+          sk.fill(this.tailColour);
+          sk.triangle(
+            this.x - 50 * this.dir,
+            this.y,
+            this.x - 70 * this.dir,
+            this.y + 20,
+            this.x - 70 * this.dir,
+            this.y - 20
+          );
+        }
+      }
+
+      class Jellyfish {
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+          this.baseX = x;
+          this.speed = -1 * sk.random(0, 5);
+          this.outerCol = sk.color(255, 255, 255, 50);
+          this.innerCol = sk.color(255, 255, 255, 180);
+          this.size = 50;
+        }
+
+        move() {
+          this.y += this.speed;
+          if (this.y < -0.2 * sk.height) {
+            this.y = sk.height * 1.2;
+          }
+          // this.x = this.baseX + sk.sin(sk.radians(sk.frameCount * 2)) * 30;
+        }
+
+        display() {
+          sk.fill(this.outerCol);
+          sk.ellipse(this.x, this.y, this.size);
+          sk.fill(this.innerCol);
+          sk.ellipse(
+            this.x + 0.2 * this.size,
+            this.y - 0.2 * this.size,
+            0.2 * this.size
+          );
+        }
+      }
+
       class Bubble {
         constructor(x, y) {
           this.x = x;
@@ -133,9 +226,12 @@ export default {
         sk.smooth();
         sk.noStroke();
 
-        for (let i = 0; i < 7; i ++) {
-          let newBub = new Bubble(sk.random(0,sk.width), sk.random(0,sk.height));
-          bubbles.push(newBub)
+        for (let i = 0; i < 7; i++) {
+          let newBub = new Bubble(
+            sk.random(0, sk.width),
+            sk.random(0, sk.height)
+          );
+          bubbles.push(newBub);
         }
       };
 
@@ -152,12 +248,24 @@ export default {
       };
 
       sk.mousePressed = () => {
-        let newFish = new Fish(sk.mouseX, sk.mouseY);
-        // let newFish = new Fish(sk.random(0,sk.width), sk.random(0,sk.height));
+        let num = sk.int(sk.random(0, 25));
+        let newFish;
+        if (num === 0) {
+          // 고래
+          alert("Whale!");
+          newFish = new Whale(sk.mouseX, sk.mouseY);
+        } else if (0 < num && num < 4) {
+          // 해파리
+          alert("Jellyfish!");
+          newFish = new Jellyfish(sk.mouseX, sk.mouseY)
+        } else {
+          newFish = new Fish(sk.mouseX, sk.mouseY);
+          // let newFish = new Fish(sk.random(0,sk.width), sk.random(0,sk.height));
+        }
         fishes.push(newFish);
       };
 
-      // sk.mousePressed = () => {
+      // function clearAllFishes() {
 
       // }
     },
@@ -166,6 +274,7 @@ export default {
     },
   },
 };
+      
 </script>
 <style scoped lang="scss">
 #ocean {
