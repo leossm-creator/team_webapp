@@ -130,26 +130,7 @@
       </v-list>
       <template v-slot:append>
         <div class="pa-2">
-          <!-- <v-menu offset-y>
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn v-bind="attrs" v-on="on" text class="dropdownNav">
-                {{KR}}
-                <v-icon right dark> mdi-chevron-down </v-icon>
-              </v-btn>
-            </template>
-            <v-list>
-              <v-list-item link>
-                <v-list-item-title>Korean</v-list-item-title>
-              </v-list-item>
-              <v-list-item link>
-                <v-list-item-title>English</v-list-item-title>
-              </v-list-item>
-              <v-list-item link>
-                <v-list-item-title>Chinese</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu> -->
-          <LocaleSwitcher />
+          <LocaleSwitcher v-on:change="$emit('localeChange', $event)" />
         </div>
       </template>
     </v-navigation-drawer>
@@ -159,11 +140,13 @@
 <script>
 import i18n from "@/plugins/i18n";
 import LocaleSwitcher from "../components/LocaleSwitcher.vue"
+// import LocalisedLink from "./LocalisedLink.vue"
 
 export default {
   name: "Header",
   components: {
     LocaleSwitcher,
+    // LocalisedLink,
   },
   data() {
     return {

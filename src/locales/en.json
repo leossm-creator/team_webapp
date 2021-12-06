@@ -1,4 +1,7 @@
 {
+  "app": {
+    "title": "SK Chemicals Open Innovation"
+  },
   "nav": {
     "introduction": "Introduction",
     "timeline": "Timeline",

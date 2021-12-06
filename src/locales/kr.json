@@ -1,4 +1,7 @@
 {
+  "app": {
+    "title": "SK케미칼 오픈이노베이션"
+  },
   "nav": {
     "introduction": "소개",
     "timeline": "타임라인",
