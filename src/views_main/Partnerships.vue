@@ -48,31 +48,30 @@
           </v-row>
         </div>
 
-          <v-row class="board">
-            <v-col
-              v-for="(item, index) in partners"
-              :key="index"
-              cols="12"
-              md="4"
-              class="card_container"
-              :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
-            >
-              <v-card hover class="p_card">
-                <div class="img_container" :style="{ padding: item.padding }">
-                  <v-img :src="item.img" :height="item.height" contain>
-                  </v-img>
-                </div>
-                <div class="text_container">
-                  <h2>
-                    {{item.title}}
-                  </h2>
-                  <p style="text-align: left;">
-                    {{item.description}}
-                  </p>
-                </div>
-              </v-card>
-            </v-col>
-          </v-row>
+        <v-row class="board">
+          <v-col
+            v-for="(item, index) in partners"
+            :key="index"
+            cols="12"
+            md="4"
+            class="card_container"
+            :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
+          >
+            <v-card class="p_card">
+              <div class="img_container" :style="{ padding: item.padding }">
+                <v-img class="logo_imgs" :src="item.img" :height="item.height" contain  @click="openLink(item.link)"></v-img>
+              </div>
+              <div class="text_container">
+                <h2>
+                  {{ item.title }}
+                </h2>
+                <p style="text-align: left">
+                  {{ item.description }}
+                </p>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
       </div>
       <!-- <v-parallax src="https://source.unsplash.com/WCEOtVmk2VY/300" height="300"></v-parallax> -->
     </div>
@@ -90,40 +89,52 @@ export default {
       partners: [
         {
           name: "Standigm",
+          link: "https://www.standigm.com/main",
           img: require(`@/assets/img/partners/standigm.png`),
-          height: "150",
-          padding: "0 150px",
+          // height: "150",
+          padding: "0 100px",
           title: "류마티스 관절염 치료물질 발굴",
-          description: "신약 재창출(drug repositioning) 접근법의 류마티스 관절염(rheumatoid arthritis, RA) 치료물질을 발굴 및 특허 출원",
+          description:
+            "신약 재창출(drug repositioning) 접근법의 류마티스 관절염(rheumatoid arthritis, RA) 치료물질을 발굴 및 특허 출원",
         },
         {
           name: "J2H Biotech",
+          link: "http://j2hbio.com",
           img: require(`@/assets/img/partners/j2h.png`),
           height: "100",
           padding: "25px 150px",
           title: "신약 개발 공동연구 체결",
-          description: "옵티플렉스(Optiflex) 기술 및 표적단백질 분해(Targeted Protein Degrader) 기술 등을 활용해 신약 연구",
+          description:
+            "옵티플렉스(Optiflex) 기술 및 표적단백질 분해(Targeted Protein Degrader) 기술 등을 활용해 신약 연구",
         },
         {
           name: "Deargen",
+          link: "https://deargen.me/ko/",
           img: require(`@/assets/img/partners/deargen.png`),
           height: "200",
-          padding: "0 150px",
-          title: "약물 재창출 및 신약개발 공동연구 체결",
-          description: "약물 재창출(Drug Repositioning) 및 신약개발(De Novo Drug Design)에 대한 공동연구 계약을 체결",
+          padding: "0 100px",
+          title: "약물 재창출 공동연구 체결",
+          description:
+            "약물 재창출(Drug Repositioning) 및 신약개발(De Novo Drug Design)에 대한 공동연구 계약을 체결",
         },
         {
           name: "Dr. Noah Biotech",
+          link: "http://www.drnoahbiotech.com",
           img: require(`@/assets/img/partners/drNoah.png`),
           height: "200",
-          padding: "0 150px",
-          title: "인공지능(AI) 기반 신약개발 공동연구 체결",
-          description: "‘ARK’ 플랫폼 기술을 활용 AI기반 신약개발을 공동연구 및 개발 협약을 체결",
+          padding: "0 100px",
+          title: "인공지능(AI) 기반 신약개발 공동연구",
+          description:
+            "‘ARK’ 플랫폼 기술을 활용 AI기반 신약개발을 공동연구 및 개발 협약을 체결",
         },
       ],
     };
   },
-  methods: {},
+  methods: {
+    openLink(url) {
+      window.open(url)
+    }
+  },
 };
 </script>
 <style scoped lang="scss">
@@ -145,9 +156,15 @@ export default {
     .img_container {
       display: flex;
       width: 100%;
-      // height: 50%;
+      height: 50%;
       justify-content: center;
       align-items: center;
+
+      .logo_imgs {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
 
     .text_container {

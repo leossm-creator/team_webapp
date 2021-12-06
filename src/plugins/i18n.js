@@ -12,27 +12,25 @@ Vue.use(VueI18n);
 //   }
 // };
 
-function loadLocaleMessages () {
-  const locales = require.context('../locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
-  const messages = {}
+function loadLocaleMessages() {
+  const locales = require.context(
+    "../locales",
+    true,
+    /[A-Za-z0-9-_,\s]+\.json$/i
+  );
+  const messages = {};
   locales.keys().forEach(key => {
-    const matched = key.match(/([A-Za-z0-9-_]+)\./i)
+    const matched = key.match(/([A-Za-z0-9-_]+)\./i);
     if (matched && matched.length > 1) {
-      const locale = matched[1]
-      messages[locale] = locales(key)
+      const locale = matched[1];
+      messages[locale] = locales(key);
     }
-  })
-  return messages
+  });
+  return messages;
 }
 
-const i18n = new VueI18n({
-  silentTranslationWarn: true,
-  locale: 'kr', // set locale
-  fallbackLocale: 'en', // set fallback locale
-  // messages: {
-  //   dev: require('../locales/dev.json')
-  // }, // set locale messages
-  messages: loadLocaleMessages,
+export default new VueI18n({
+  locale: process.env.VUE_APP_I18N_LOCALE || "kr",
+  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "kr",
+  messages: loadLocaleMessages()
 });
-
-export default i18n

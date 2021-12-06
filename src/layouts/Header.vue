@@ -58,7 +58,7 @@
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">Introduction</v-list-item-title>
+                <v-list-item-title class="pl-3">{{$t("nav.introduction")}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
             <v-list-item link to="/aboutUs/timeline">
@@ -66,7 +66,7 @@
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">Timeline</v-list-item-title>
+                <v-list-item-title class="pl-3">{{$t("nav.timeline")}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
             <v-list-item link to="/aboutUs/members">
@@ -74,7 +74,7 @@
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">Members</v-list-item-title>
+                <v-list-item-title class="pl-3">{{$t("nav.members")}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
@@ -88,7 +88,7 @@
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">Pharma</v-list-item-title>
+                <v-list-item-title class="pl-3">{{ $t("nav.pharma") }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
             <v-list-item link to="/ourWorks/research">
@@ -96,7 +96,7 @@
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">Research</v-list-item-title>
+                <v-list-item-title class="pl-3">{{$t("nav.research")}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
             <v-list-item link to="/ourWorks/investments">
@@ -104,7 +104,7 @@
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">Investments</v-list-item-title>
+                <v-list-item-title class="pl-3">{{$t("nav.investments")}}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
@@ -130,18 +130,10 @@
       </v-list>
       <template v-slot:append>
         <div class="pa-2">
-          <!-- <v-btn @click="changeLocale('en')">
-            <v-icon>mdi-web</v-icon>
-            EN
-          </v-btn>
-          <v-btn @click="changeLocale('kr')">
-            <v-icon>mdi-web</v-icon>
-            KR
-          </v-btn> -->
-          <v-menu offset-y>
+          <!-- <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
               <v-btn v-bind="attrs" v-on="on" text class="dropdownNav">
-                KR
+                {{KR}}
                 <v-icon right dark> mdi-chevron-down </v-icon>
               </v-btn>
             </template>
@@ -156,12 +148,9 @@
                 <v-list-item-title>Chinese</v-list-item-title>
               </v-list-item>
             </v-list>
-          </v-menu>
+          </v-menu> -->
+          <LocaleSwitcher />
         </div>
-        <!-- <div class="pa-2">
-          <v-switch v-model="switchMe" prepend-icon="mdi-web" label="EN">
-          </v-switch>
-        </div> -->
       </template>
     </v-navigation-drawer>
   </div>
@@ -169,9 +158,13 @@
 
 <script>
 import i18n from "@/plugins/i18n";
+import LocaleSwitcher from "../components/LocaleSwitcher.vue"
 
 export default {
   name: "Header",
+  components: {
+    LocaleSwitcher,
+  },
   data() {
     return {
       drawer: false,

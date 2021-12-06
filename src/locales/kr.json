@@ -1,4 +1,12 @@
 {
+  "nav": {
+    "introduction": "소개",
+    "timeline": "타임라인",
+    "members": "구성",
+    "pharma": "제약",
+    "research": "공동 연구",
+    "investments": "투자"
+  },
   "main": {
     "welcome": "반갑습니다! SK Chemical 오픈 이노베이션 팀입니다"
   }

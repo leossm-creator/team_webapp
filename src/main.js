@@ -26,20 +26,7 @@ Vue.use(SuiVue);
 Vue.use(VueScrollactive);
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 Vue.use(VueClipboard)
-// Vue.use(i18n)
 // Vue.use(VueAos)
-// Vue.use(VueBreadcrumbs, 
-// // {
-// //   template:
-// //     '        <nav v-if="$breadcrumbs.length" aria-label="breadcrumb">\n' +
-// //     '            <ol class="breadcrumb">\n' +
-// //     '                <li v-for="(crumb, key) in $breadcrumbs" v-if="crumb.meta.breadcrumb" :key="key" class="breadcrumb-item active" aria-current="page">\n' +
-// //     '                    <router-link :to="{ path: getPath(crumb) }">{{ getBreadcrumb(crumb.meta.breadcrumb) }}</router-link>' +
-// //     '                </li>\n' +
-// //     '            </ol>\n' +
-// //     '        </nav>'
-// // }
-// );
 
 Vue.config.productionTip = false
 

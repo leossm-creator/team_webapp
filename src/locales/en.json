@@ -1,4 +1,12 @@
 {
+  "nav": {
+    "introduction": "Introduction",
+    "timeline": "Timeline",
+    "members": "Members",
+    "pharma": "Pharma",
+    "research": "Research",
+    "investments": "Investments"
+  },
   "main": {
     "welcome": "Welcome! We are SK Chemical Open Innovation Team"
   }
