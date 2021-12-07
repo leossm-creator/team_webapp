@@ -5,12 +5,30 @@
   "nav": {
     "title": "오픈이노베이션 팀",
     "sub_title": "SK케미칼 오픈이노베이션 팀",
-    "introduction": "소개",
-    "timeline": "타임라인",
-    "members": "구성",
-    "pharma": "신약",
-    "research": "공동 연구",
-    "investments": "투자"
+    "introduction": {
+      "title": "소개",
+      "sub_title": ""
+    } ,
+    "timeline": {
+      "title": "타임라인",
+      "sub_title": ""
+    } ,
+    "members": {
+      "title": "구성원",
+      "sub_title": ""
+    } ,
+    "pharma": {
+      "title": "신약",
+      "sub_title": ""
+    } ,
+    "research":{
+      "title": "공동 연구",
+      "sub_title": ""
+    } ,
+    "investments": {
+      "title": "투자",
+      "sub_title": ""
+    }
   },
   "main": {
     "welcome": "반갑습니다! SK Chemicals 오픈 이노베이션 팀입니다"

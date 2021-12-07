@@ -8,9 +8,9 @@
         height="100%"
       >
         <v-card-title class="pageHeadings">
-          <p class="pageTitle">Members</p>
+          <p class="pageTitle">{{$t("nav.members.title")}}</p>
           <p class="pageSub">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            {{$t("nav.members.sub_title")}}
           </p>
         </v-card-title>
       </v-img>

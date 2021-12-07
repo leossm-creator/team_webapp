@@ -5,12 +5,30 @@
   "nav": {
     "title": "Open Innovation",
     "sub_title": "SK Chemicals Open Innovation",
-    "introduction": "Introduction",
-    "timeline": "Timeline",
-    "members": "Members",
-    "pharma": "Pharma",
-    "research": "Research",
-    "investments": "Investments"
+    "introduction": {
+      "title": "Introduction",
+      "sub_title": ""
+    } ,
+    "timeline": {
+      "title": "Timeline",
+      "sub_title": ""
+    } ,
+    "members": {
+      "title": "Members",
+      "sub_title": ""
+    } ,
+    "pharma": {
+      "title": "Pharma",
+      "sub_title": ""
+    } ,
+    "research":{
+      "title": "Research",
+      "sub_title": ""
+    } ,
+    "investments": {
+      "title": "Investments",
+      "sub_title": ""
+    }
   },
   "main": {
     "welcome": "Welcome! We are SK Chemical Open Innovation Team"
