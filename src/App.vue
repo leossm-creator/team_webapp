@@ -4,7 +4,7 @@
     <div v-else>
       <Header />
       <div id="content" ref="content">
-        <router-view> </router-view>
+        <router-view />
         <Footer v-if="$route.path !== '/'"></Footer>
       </div>
     </div>
@@ -14,8 +14,6 @@
 <script>
 import Header from "./layouts/Header.vue";
 import Footer from "./layouts/Footer.vue";
-// import { setDocumentLang, setDocumentTitle } from "@/util/i18n/document";
-// import { loadLocaleMessagesAsync } from "@/plugins/i18n";
 import EventBus from "@/EventBus";
 
 export default {
@@ -30,32 +28,9 @@ export default {
     isLoading: true,
   }),
   mounted() {
-    // this.$watch(
-    //   "$i18n.locale",
-    //   (newLocale, oldLocale) => {
-    //     if (newLocale === oldLocale) {
-    //       return;
-    //     }
-
-    //     setDocumentLang(newLocale);
-    //     setDocumentTitle(this.$t("app.title"));
-    //   },
-    //   { immediate: true }
-    // );
-    // this.loadLocaleMessages(this.$i18n.locale);
     EventBus.$on("i18n-load-start", () => (this.isLoading = true));
     EventBus.$on("i18n-load-complete", () => (this.isLoading = false));
   },
-  // methods: {
-  //   loadLocaleMessages(locale) {
-  //     this.isLoading = true;
-  //     loadLocaleMessagesAsync(locale).then(() => {
-  //       setDocumentLang(locale);
-  //       setDocumentTitle(this.$t("app.title"));
-  //       this.isLoading = false;
-  //     });
-  //   },
-  // },
 };
 </script>
 

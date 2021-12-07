@@ -13,11 +13,11 @@
                   data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.1.title')"
                 >
-                  SK Chemicals
+                  <!-- SK Chemicals
                   <br />
-                  <span>Open Innovation Team</span>
-                  <!-- {{ $t("main.welcome") }} -->
+                  <span>Open Innovation Team</span> -->
                 </p>
                 <p
                   class="an_con"
@@ -26,11 +26,8 @@
                   data-delay="2s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.1.description')"
                 >
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
-                  기업
-                  <br />
-                  SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
               </div>
             </v-col>
@@ -68,10 +65,8 @@
                   data-delay="1s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.2.title')"
                 >
-                  <span class="">This is an</span>
-                  <br />
-                  Irrelevant Image
                 </p>
                 <p
                   class="an_con"
@@ -80,11 +75,8 @@
                   data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.2.description')"
                 >
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
-                  기업
-                  <br />
-                  SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
               </div>
             </v-col>
@@ -102,10 +94,8 @@
                   data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.3.title')"
                 >
-                  Research and Development
-                  <br />
-                  <span>많이 하고 있습니다</span>
                 </p>
                 <p
                   class="an_con"
@@ -114,11 +104,8 @@
                   data-delay="2s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.3.description')"
                 >
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
-                  기업
-                  <br />
-                  SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
               </div>
             </v-col>
@@ -156,10 +143,8 @@
                   data-delay="1s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.4.title')"
                 >
-                  COVID 19
-                  <br />
-                  <span>백신 개발도 하고 있습니다</span>
                 </p>
                 <p
                   class="an_con"
@@ -168,11 +153,8 @@
                   data-delay="1.5s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
+                  v-html="$t('home.slide.4.description')"
                 >
-                  환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는
-                  기업
-                  <br />
-                  SK Chemical 오픈 이노베이션 팀이 만들고 있습니다
                 </p>
               </div>
             </v-col>
@@ -290,7 +272,7 @@ export default {
   },
 };
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 .landing_container {
   height: calc(100vh - 64px);
 
@@ -328,7 +310,7 @@ export default {
               line-height: 76px;
               font-weight: 500;
 
-              span {
+              .sub_heading {
                 font-size: 50px;
                 font-weight: 300;
               }

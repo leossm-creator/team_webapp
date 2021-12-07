@@ -12,5 +12,25 @@
   },
   "main": {
     "welcome": "Welcome! We are SK Chemical Open Innovation Team"
+  },
+  "home": {
+    "slide": {
+      "1": {
+        "title": "SK Chemicals <br /> <span class='sub_heading'>Open Innovation Team</span>",
+        "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
+      },
+      "2": {
+        "title": "<span class='sub_heading'>This is an</span> <br /> Irrelevant Image",
+        "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
+      },
+      "3": {
+        "title": "Research and Development <br /> <span class='sub_heading'>많이 하고 있습니다</span>",
+        "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
+      },
+      "4": {
+        "title": "COVID 19 <br /> <span class='sub_heading'>백신 개발도 하고 있습니다</span>",
+        "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
+      }
+    }
   }
 }

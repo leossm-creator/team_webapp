@@ -1,6 +1,5 @@
 <template>
   <div class="locale-switcher">
-    <!-- <div>🌐 {{$i18n.locale}}</div> -->
     <v-select
       solo
       flat
@@ -13,15 +12,27 @@
       style="width: 175px; margin-left: auto"
       item-text="name"
       item-value="code"
-      @change.prevent="changeLocale"
+      @change="changeLocale"
     >
     </v-select>
+
+    <!-- <div style="width: fit-content; margin-left: auto; margin-right: 16px;">
+      <v-icon small color="" style="margin-right: 6px"> mdi-web </v-icon>
+      <select :value="$i18n.locale" @change.prevent="changeLocale">
+        <option
+          :value="locale.code"
+          v-for="locale in locales"
+          :key="locale.code"
+        >
+          {{ locale.name }}
+        </option>
+      </select>
+    </div> -->
   </div>
 </template>
 
 <script>
 import { getSupportedLocales } from "@/util/i18n/supported-locales";
-// import { loadLocaleMessagesAsync } from "@/plugins/i18n"
 
 export default {
   data() {
@@ -40,9 +51,17 @@ export default {
     };
   },
   methods: {
-    changeLocale(e) {
-      const locale = e.target.value;
-      this.$router.push(`/${locale}`);
+    // changeLocale(e) {
+    //   const locale = e.target.value;
+    //   console.log(locale);
+    //   this.$router.push(`/${locale}`);
+
+    //   location.reload();
+    // },
+    changeLocale() {
+      console.log(this.$i18n.locale)
+      this.$router.push(`/${this.$i18n.locale}`);
+      location.reload();
     },
   },
 };

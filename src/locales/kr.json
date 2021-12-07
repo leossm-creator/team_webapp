@@ -6,11 +6,31 @@
     "introduction": "소개",
     "timeline": "타임라인",
     "members": "구성",
-    "pharma": "제약",
+    "pharma": "신약",
     "research": "공동 연구",
     "investments": "투자"
   },
   "main": {
-    "welcome": "반갑습니다! SK Chemical 오픈 이노베이션 팀입니다"
+    "welcome": "반갑습니다! SK Chemicals 오픈 이노베이션 팀입니다"
+  },
+  "home": {
+    "slide": {
+      "1": {
+        "title": "SK Chemicals <br /> <span class='sub_heading'>Open Innovation Team</span>",
+        "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br /> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
+      },
+      "2": {
+        "title": "<span class='sub_heading'>This is an</span> <br /> Irrelevant Image",
+        "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br /> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
+      },
+      "3": {
+        "title": "Research and Development <br /> <span class='sub_heading'>많이 하고 있습니다</span>",
+        "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br /> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
+      },
+      "4": {
+        "title": "COVID 19 <br /> <span class='sub_heading'>백신 개발도 하고 있습니다</span>",
+        "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br /> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
+      }
+    }
   }
 }

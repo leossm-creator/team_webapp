@@ -60,19 +60,19 @@ export default {
       mainRoutes: [
         {
           name: "About Us",
-          to: "/aboutUs/intro",
+          to: this.formatLink("/aboutUs/intro"),
         },
         {
           name: "Our Works",
-          to: "/ourWorks/pharma",
+          to: this.formatLink("/ourWorks/pharma"),
         },
         {
           name: "Contact Us",
-          to: "/contactUs",
+          to: this.formatLink("/contactUs"),
         },
         {
           name: "Partnerships",
-          to: "/partnerships",
+          to: this.formatLink("/partnerships"),
         },
       ],
     };
@@ -97,7 +97,14 @@ export default {
       return this.$route.meta.parent;
     },
   },
-  methods: {},
+  methods: {
+    formatLink(link) {
+      const locale = this.$route.params.locale;
+      // we strip leading and trailing slashes and prefix
+      // the current locale
+      return `/${locale}/${link.replace(/^\/|\/$/g, "")}`;
+    },
+  },
   mounted() {
     // console.log(this.sib)
     this.current.sub = this.$route.name;
@@ -107,7 +114,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-
 .barNav {
   width: 100%;
   .barNav_inner {

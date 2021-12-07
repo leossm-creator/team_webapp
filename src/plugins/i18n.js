@@ -1,20 +1,11 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 
-Vue.use(VueI18n);
-
 import getBrowserLocale from "@/util/i18n/get-browser-locale"
 import { supportedLocalesInclude } from "@/util/i18n/supported-locales"
 import EventBus from "@/EventBus"
 
-// const messages = {
-//   'en': {
-//       welcomeMsg: 'Welcome to Your Vue.js App'
-//   },
-//   'kr': {
-//       welcomeMsg: 'Vue.js App에 오신것을 환영합니다'
-//   }
-// };
+Vue.use(VueI18n);
 
 function getStartingLocale() {
   const browserLocale = getBrowserLocale({ countryCodeOnly: true })
@@ -22,34 +13,34 @@ function getStartingLocale() {
   if (supportedLocalesInclude(browserLocale)) {
     return browserLocale
   } else {
-    return process.env.VUE_APP_I18N_LOCALE || "en"
+    return process.env.VUE_APP_I18N_LOCALE || "kr"
   }
 }
 
 const startingLocale = getStartingLocale()
 
-function loadLocaleMessages() {
-  const locales = require.context(
-    "../locales",
-    true,
-    /[A-Za-z0-9-_,\s]+\.json$/i
-  );
-  const messages = {};
-  locales.keys().forEach(key => {
-    const matched = key.match(/([A-Za-z0-9-_]+)\./i);
-    if (matched && matched.length > 1) {
-      const locale = matched[1];
-      messages[locale] = locales(key);
-    }
-  });
-  return messages;
-}
+// function loadLocaleMessages() {
+//   const locales = require.context(
+//     "../locales",
+//     true,
+//     /[A-Za-z0-9-_,\s]+\.json$/i
+//   );
+//   const messages = {};
+//   locales.keys().forEach(key => {
+//     const matched = key.match(/([A-Za-z0-9-_]+)\./i);
+//     if (matched && matched.length > 1) {
+//       const locale = matched[1];
+//       messages[locale] = locales(key);
+//     }
+//   });
+//   return messages;
+// }
 
 const i18n =  new VueI18n({
   locale: startingLocale,
   // locale: process.env.VUE_APP_I18N_LOCALE || "kr",
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "kr",
-  messages: loadLocaleMessages()
+  messages: {},
 });
 
 
@@ -86,6 +77,4 @@ export function loadLocaleMessagesAsync(locale) {
   })
 }
 
-loadLocaleMessagesAsync(startingLocale)
-
-export default i18n;
+export default i18n; 

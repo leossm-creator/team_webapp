@@ -4,8 +4,8 @@ import VueRouter from "vue-router";
 
 import Home from "../views_main/Home";
 
-import AboutUs from "../views_main/AboutUs";
-import OurWorks from "../views_main/OurWorks";
+// import AboutUs from "../views_main/AboutUs";
+// import OurWorks from "../views_main/OurWorks";
 
 import ContactUs from "../views_main/ContactUs";
 import Partnerships from "../views_main/Partnerships";
@@ -39,68 +39,68 @@ const routes = [
     children: [
       {
         name: "Home",
-        path: "/",
+        path: "",
         component: Home,
         meta: {
         }
       },
-      {
-        name: "About Us",
-        path: "/aboutUs",
-        component: AboutUs,
-        meta: {
-          sib: [
-            {
-              text: 'Our Works',
-              to: {
-                name: 'Our Works',
-              }
-            },
-            {
-              text: 'Contact Us',
-              to: {
-                name: 'Contact Us',
-              }
-            },
-            {
-              text: 'Partnerships',
-              to: {
-                name: 'Partnerships',
-              }
-            },
-          ]
-        }
-      },
-      {
-        name: "Our Works",
-        path: "/ourWorks",
-        component: OurWorks,
-        meta: {
-          sib: [
-            {
-              text: 'About Us',
-              to: {
-                name: 'About Us',
-              }
-            },
-            {
-              text: 'Contact Us',
-              to: {
-                name: 'Contact Us',
-              }
-            },
-            {
-              text: 'Partnerships',
-              to: {
-                name: 'Partnerships',
-              }
-            },
-          ]
-        }
-      },
+      // {
+      //   name: "About Us",
+      //   path: "aboutUs",
+      //   component: AboutUs,
+      //   meta: {
+      //     sib: [
+      //       {
+      //         text: 'Our Works',
+      //         to: {
+      //           name: 'Our Works',
+      //         }
+      //       },
+      //       {
+      //         text: 'Contact Us',
+      //         to: {
+      //           name: 'Contact Us',
+      //         }
+      //       },
+      //       {
+      //         text: 'Partnerships',
+      //         to: {
+      //           name: 'Partnerships',
+      //         }
+      //       },
+      //     ]
+      //   }
+      // },
+      // {
+      //   name: "Our Works",
+      //   path: "ourWorks",
+      //   component: OurWorks,
+      //   meta: {
+      //     sib: [
+      //       {
+      //         text: 'About Us',
+      //         to: {
+      //           name: 'About Us',
+      //         }
+      //       },
+      //       {
+      //         text: 'Contact Us',
+      //         to: {
+      //           name: 'Contact Us',
+      //         }
+      //       },
+      //       {
+      //         text: 'Partnerships',
+      //         to: {
+      //           name: 'Partnerships',
+      //         }
+      //       },
+      //     ]
+      //   }
+      // },
       {
         name: "Introduction",
-        path: "/aboutUs/intro",
+        path: "aboutUs/intro",
         component: Introduction,
         meta: {
           parent: "About Us",
@@ -128,7 +128,7 @@ const routes = [
       },
       {
         name: "Timeline",
-        path: "/aboutUs/timeline",
+        path: "aboutUs/timeline",
         component: Timeline,
         meta: {
           parent: "About Us",
@@ -156,7 +156,7 @@ const routes = [
       },
       {
         name: "Members",
-        path: "/aboutUs/members",
+        path: "aboutUs/members",
         component: Members,
         meta: {
           parent: "About Us",
@@ -184,7 +184,7 @@ const routes = [
       },
       {
         name: "Pharma",
-        path: "/ourWorks/pharma",
+        path: "ourWorks/pharma",
         component: Pharma,
         meta: {
           parent: "Our Works",
@@ -212,7 +212,7 @@ const routes = [
       },
       {
         name: "Research",
-        path: "/ourWorks/research",
+        path: "ourWorks/research",
         component: Research,
         meta: {
           parent: "Our Works",
@@ -240,7 +240,7 @@ const routes = [
       },
       {
         name: "Investments",
-        path: "/ourWorks/investments",
+        path: "ourWorks/investments",
         component: Investments,
         meta: {
           parent: "Our Works",
@@ -268,7 +268,7 @@ const routes = [
       },
       {
         name: "Partnerships",
-        path: "/partnerships",
+        path: "partnerships",
         component: Partnerships,
         meta: {
           parent: "Partnerships",
@@ -277,7 +277,7 @@ const routes = [
       },
       {
         name: "Contact Us",
-        path: "/ContactUs",
+        path: "contactUs",
         component: ContactUs,
         meta: {
           parent: "Contact Us",
@@ -300,6 +300,7 @@ const router = new VueRouter({
     } else {
       // console.log("moving to top of the page");
       document.getElementById("content").scrollTo(0, 0);
+      // return { selector: "#content", offset: { x: 0, y: 0 }}
     }
   },
   routes,

@@ -49,67 +49,87 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-group prepend-icon="mdi-account-group" color="red" active-class="list_active">
+          <v-list-group
+            prepend-icon="mdi-account-group"
+            color="red"
+            active-class="list_active"
+          >
             <template v-slot:activator>
               <v-list-item-title>About Us</v-list-item-title>
             </template>
-            <v-list-item link to="/aboutUs/intro">
+            <v-list-item link :to="formatLink('/aboutUs/intro')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">{{$t("nav.introduction")}}</v-list-item-title>
+                <v-list-item-title class="pl-3">{{
+                  $t("nav.introduction")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item link to="/aboutUs/timeline">
+            <v-list-item link :to="formatLink('/aboutUs/timeline')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">{{$t("nav.timeline")}}</v-list-item-title>
+                <v-list-item-title class="pl-3">{{
+                  $t("nav.timeline")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item link to="/aboutUs/members">
+            <v-list-item link :to="formatLink('/aboutUs/members')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">{{$t("nav.members")}}</v-list-item-title>
+                <v-list-item-title class="pl-3">{{
+                  $t("nav.members")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
 
-          <v-list-group prepend-icon="mdi-chart-areaspline" color="red" active-class="list_active">
+          <v-list-group
+            prepend-icon="mdi-chart-areaspline"
+            color="red"
+            active-class="list_active"
+          >
             <template v-slot:activator>
               <v-list-item-title>Our Works</v-list-item-title>
             </template>
-            <v-list-item link to="/ourWorks/pharma">
+            <v-list-item link :to="formatLink('/ourWorks/pharma')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">{{ $t("nav.pharma") }}</v-list-item-title>
+                <v-list-item-title class="pl-3">{{
+                  $t("nav.pharma")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item link to="/ourWorks/research">
+            <v-list-item link  :to="formatLink('/ourWorks/research')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">{{$t("nav.research")}}</v-list-item-title>
+                <v-list-item-title class="pl-3">{{
+                  $t("nav.research")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item link to="/ourWorks/investments">
+            <v-list-item link :to="formatLink('/ourWorks/investments')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title class="pl-3">{{$t("nav.investments")}}</v-list-item-title>
+                <v-list-item-title class="pl-3">{{
+                  $t("nav.investments")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
 
-          <v-list-item link to="/contactUs">
+          <v-list-item link :to="formatLink('/contactUs')">
             <v-list-item-icon>
               <v-icon> mdi-card-account-mail </v-icon>
             </v-list-item-icon>
@@ -118,7 +138,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item link to="/partnerships">
+          <v-list-item link :to="formatLink('/partnerships')">
             <v-list-item-icon>
               <v-icon> mdi-handshake </v-icon>
             </v-list-item-icon>
@@ -139,7 +159,7 @@
 
 <script>
 import i18n from "@/plugins/i18n";
-import LocaleSwitcher from "../components/LocaleSwitcher.vue"
+import LocaleSwitcher from "../components/LocaleSwitcher.vue";
 // import LocalisedLink from "./LocalisedLink.vue"
 
 export default {
@@ -152,7 +172,6 @@ export default {
     return {
       drawer: false,
       items: [
-        // { title: "Home", icon: 'mdi-home-variant', path: "/", id: "home"},
         {
           title: "About Us",
           icon: "mdi-account-group",
@@ -190,6 +209,12 @@ export default {
     },
     changeLocale(locale) {
       i18n.locale = locale;
+    },
+    formatLink(link) {
+      const locale = this.$route.params.locale;
+      // we strip leading and trailing slashes and prefix
+      // the current locale
+      return `/${locale}/${link.replace(/^\/|\/$/g, "")}`;
     },
   },
 };
