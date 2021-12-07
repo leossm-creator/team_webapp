@@ -9,7 +9,7 @@
       <Header />
       <div id="content" ref="content">
         <router-view />
-        <Footer v-if="$route.path !== '/'"></Footer>
+        <Footer v-if="$route.name !== 'home'"></Footer>
       </div>
     </div>
   </v-app>
@@ -48,9 +48,8 @@ export default {
     top: 64px;
     height: calc(100vh - 64px);
     overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
-    // overflow-x: hidden;
   }
 }
 </style>

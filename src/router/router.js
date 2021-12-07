@@ -38,7 +38,7 @@ const routes = [
     component: Root,
     children: [
       {
-        name: "Home",
+        name: "home",
         path: "",
         component: Home,
         meta: {
@@ -99,188 +99,188 @@ const routes = [
       //   }
       // },
       {
-        name: "Introduction",
+        name: "introduction",
         path: "aboutUs/intro",
         component: Introduction,
         meta: {
           parent: "About Us",
           sib: [
             {
-              text: 'Introduction',
+              text: 'introduction',
               to: {
-                name: 'Intoduction',
+                name: 'intoduction',
               }
             },
             {
-              text: 'Timeline',
+              text: 'timeline',
               to: {
-                name: 'Timeline',
+                name: 'timeline',
               }
             },
             {
-              text: 'Members',
+              text: 'members',
               to: {
-                name: 'Members',
+                name: 'members',
               }
             },
           ]
         }
       },
       {
-        name: "Timeline",
+        name: "timeline",
         path: "aboutUs/timeline",
         component: Timeline,
         meta: {
           parent: "About Us",
           sib: [
             {
-              text: 'Introduction',
+              text: 'introduction',
               to: {
-                name: 'Introduction',
+                name: 'introduction',
               }
             },
             {
-              text: 'Timeline',
+              text: 'timeline',
               to: {
-                name: 'Timeline',
+                name: 'timeline',
               }
             },
             {
-              text: 'Members',
+              text: 'members',
               to: {
-                name: 'Members',
+                name: 'members',
               }
             },
           ]
         }
       },
       {
-        name: "Members",
+        name: "members",
         path: "aboutUs/members",
         component: Members,
         meta: {
           parent: "About Us",
           sib: [
             {
-              text: 'Introduction',
+              text: 'introduction',
               to: {
-                name: 'Introduction',
+                name: 'introduction',
               }
             },
             {
-              text: 'Timeline',
+              text: 'timeline',
               to: {
-                name: 'Timeline',
+                name: 'timeline',
               }
             },
             {
-              text: 'Members',
+              text: 'members',
               to: {
-                name: 'Members',
+                name: 'members',
               }
             },
           ]
         }
       },
       {
-        name: "Pharma",
+        name: "pharma",
         path: "ourWorks/pharma",
         component: Pharma,
         meta: {
           parent: "Our Works",
           sib: [
             {
-              text: 'Pharma',
+              text: 'pharma',
               to: {
-                name: 'Pharma',
+                name: 'pharma',
               }
             },
             {
-              text: 'Research',
+              text: 'research',
               to: {
-                name: 'Research',
+                name: 'research',
               }
             },
             {
-              text: 'Investments',
+              text: 'investments',
               to: {
-                name: 'Investments',
+                name: 'investments',
               }
             },
           ]
         }
       },
       {
-        name: "Research",
+        name: "research",
         path: "ourWorks/research",
         component: Research,
         meta: {
           parent: "Our Works",
           sib: [
             {
-              text: 'Pharma',
+              text: 'pharma',
               to: {
-                name: 'Pharma',
+                name: 'pharma',
               }
             },
             {
-              text: 'Research',
+              text: 'research',
               to: {
-                name: 'Research',
+                name: 'research',
               }
             },
             {
-              text: 'Investments',
+              text: 'investments',
               to: {
-                name: 'Investments',
+                name: 'investments',
               }
             },
           ]
         }
       },
       {
-        name: "Investments",
+        name: "investments",
         path: "ourWorks/investments",
         component: Investments,
         meta: {
           parent: "Our Works",
           sib: [
             {
-              text: 'Pharma',
+              text: 'pharma',
               to: {
-                name: 'Pharma',
+                name: 'pharma',
               }
             },
             {
-              text: 'Research',
+              text: 'research',
               to: {
-                name: 'Research'
+                name: 'research'
               }
             },
             {
-              text: 'Investments',
+              text: 'investments',
               to: {
-                name: 'Investments',
+                name: 'investments',
               }
             },
           ]
         }
       },
       {
-        name: "Partnerships",
+        name: "partnerships",
         path: "partnerships",
         component: Partnerships,
         meta: {
-          parent: "Partnerships",
+          parent: "partnerships",
           sib: null
         }
       },
       {
-        name: "Contact Us",
+        name: "contactUs",
         path: "contactUs",
         component: ContactUs,
         meta: {
-          parent: "Contact Us",
+          parent: "contactUs",
           sib: null
         }
       }

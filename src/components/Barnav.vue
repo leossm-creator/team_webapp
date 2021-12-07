@@ -27,7 +27,7 @@
       <v-menu offset-y open-on-hover v-if="sib != null">
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" text class="dropdownNav">
-            {{ sub }}
+            {{ $t(`nav.${sub}`) }}
             <v-icon right dark> mdi-chevron-down </v-icon>
           </v-btn>
         </template>
@@ -38,7 +38,7 @@
             link
             :to="item.to"
           >
-            <v-list-item-title>{{ item.text }}</v-list-item-title>
+            <v-list-item-title>{{ $t(`nav.${item.text}`) }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
