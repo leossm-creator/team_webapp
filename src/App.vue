@@ -1,6 +1,10 @@
 <template>
   <v-app id="app">
-    <div v-if="isLoading">Loading...</div>
+    <div v-if="isLoading">
+      <v-overlay :value="true" color="" light>
+        <v-progress-circular indeterminate size="32" color="#212121"></v-progress-circular>
+      </v-overlay>
+    </div>
     <div v-else>
       <Header />
       <div id="content" ref="content">

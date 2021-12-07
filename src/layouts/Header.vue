@@ -24,11 +24,11 @@
           ></v-img>
         </a>
         <v-list-item-content style="margin-left: 12px; margin-right: 12px">
-          <v-list-item-title class="text-h6" style="text-align: right">
-            Open R&D Team
+          <v-list-item-title class="nav_heading">
+            {{$t("nav.title")}}
           </v-list-item-title>
-          <v-list-item-subtitle style="text-align: right">
-            SK Chemicals Open Innovation
+          <v-list-item-subtitle class="nav_subHeading">
+            {{$t("nav.sub_title")}}
           </v-list-item-subtitle>
         </v-list-item-content>
         <v-btn rounded icon @click.stop="drawer = false">
@@ -230,6 +230,17 @@ export default {
 
   #navDrawer {
     z-index: 101;
+
+    .nav_heading {
+      text-align: right;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .nav_subHeading {
+      text-align: right;
+      font-size: 14px;
+    }
   }
 }
 

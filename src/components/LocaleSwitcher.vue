@@ -9,7 +9,7 @@
       color="#7d7d7d"
       item-color="#ff7a00"
       prepend-icon="mdi-web"
-      style="width: 175px; margin-left: auto"
+      style="width: 150px; margin-left: auto"
       item-text="name"
       item-value="code"
       @change="changeLocale"
