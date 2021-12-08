@@ -63,7 +63,7 @@
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="pl-3">{{
-                  $t("nav.introduction")
+                  $t("nav.introduction.title")
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -73,7 +73,7 @@
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="pl-3">{{
-                  $t("nav.timeline")
+                  $t("nav.timeline.title")
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -83,7 +83,7 @@
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="pl-3">{{
-                  $t("nav.members")
+                  $t("nav.members.title")
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -103,7 +103,7 @@
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="pl-3">{{
-                  $t("nav.pharma")
+                  $t("nav.pharma.title")
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -113,7 +113,7 @@
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="pl-3">{{
-                  $t("nav.research")
+                  $t("nav.research.title")
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -123,7 +123,7 @@
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="pl-3">{{
-                  $t("nav.investments")
+                  $t("nav.investments.title")
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -253,5 +253,12 @@ export default {
   // color: black !important;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+// 모바일
+@media (max-width: 600px) {
+  #navDrawer {
+    width: 100% !important;
+  }
 }
 </style>

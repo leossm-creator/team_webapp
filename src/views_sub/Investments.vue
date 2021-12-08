@@ -22,20 +22,18 @@
         <div class="title_board">
           <v-row class="board">
             <v-col>
-              <div class="p_title">
-                SK Chemicals는 바이오 벤처와의 
-                <br class="pc_only"> 성장 및 미래 가치를 함께 모색하고자 합니다. 
+              <div class="p_title" v-html="$t('investments.p_title')">
               </div>
             </v-col>
           </v-row>
         </div>
         <div class="text_board">
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>개요</h3>
             </v-col>
-            <v-col cols="9">
-              <p>
+            <v-col cols="12" md="9">
+              <p> 
                 2020년 이래로 <span class="ff_m">SK</span>케미칼은 오픈
                 이노베이션의 일환으로 국내외 유망 벤처를 발굴하여 투자를 통한
                 전략적 협업 관계를 맺고자 합니다. 현재 국내외 벤처 투자
@@ -57,10 +55,10 @@
             </v-col>
           </v-row>
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>목표</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 <span class="ff_m">SK</span>케미칼이 선정한 중점 연구개발 영역에
                 집중하는 기업들에 대해서는 <span class="ff_m">Seed</span> 단계에
@@ -72,10 +70,10 @@
             </v-col>
           </v-row>
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>중점<br class="pc_only" />연구분야</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 자사의 중점 연구개발 영역에는 시장의 인정을 받은 분야로서 상업적
                 판매망이 갖추어진 신경계 질환, 근골격계 질환, 비뇨기계 질환,
@@ -85,10 +83,10 @@
             </v-col>
           </v-row>
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>미래<br class="pc_only" />확장영역</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 자사의 미래 사업 확장 영역에는 시장에서의 자사 판매망 강화와
                 확장에 유리한 당뇨 합병증, 알츠하이머 치매, 자가면역 질환, 암

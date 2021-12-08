@@ -7,31 +7,39 @@
     "sub_title": "SK케미칼 오픈이노베이션 팀",
     "introduction": {
       "title": "소개",
-      "sub_title": ""
-    } ,
+      "sub_title": "글로벌 수준의 R&D 역량확보"
+    },
     "timeline": {
       "title": "타임라인",
-      "sub_title": ""
-    } ,
+      "sub_title": "글로벌 수준의 R&D 역량확보"
+    },
     "members": {
       "title": "구성원",
-      "sub_title": ""
-    } ,
+      "sub_title": "글로벌 수준의 R&D 역량확보"
+    },
     "pharma": {
       "title": "신약",
-      "sub_title": ""
-    } ,
-    "research":{
+      "sub_title": "효율적 개발을 위한 소통과 혁신"
+    },
+    "research": {
       "title": "공동 연구",
-      "sub_title": ""
-    } ,
+      "sub_title": "글로벌 수준의 R&D 역량확보"
+    },
     "investments": {
       "title": "투자",
-      "sub_title": ""
+      "sub_title": "효율적 개발을 위한 소통과 혁신"
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "sub_title": "효율적 개발을 위한 소통과 혁신"
+    },
+    "partnerships": {
+      "title": "파트너쉽",
+      "sub_title": "효율적 개발을 위한 소통과 혁신"
     }
   },
-  "main": {
-    "welcome": "반갑습니다! SK Chemicals 오픈 이노베이션 팀입니다"
+  "footer": {
+    "text": "[13494] 경기도 성남시 분당구 판교로 310 TEL.02)2008-2008<br>SK케미칼(주) 대표이사 김철, 전광현 사업자등록번호 846-81-00915<br>Copyright(c) SK chemicals. All Right Reserved."
   },
   "home": {
     "slide": {
@@ -52,5 +60,255 @@
         "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br /> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
       }
     }
+  },
+  "intro": {
+    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "text_board": {
+      "1": {
+        "title": "개요",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only' />집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
+      },
+      "2": {
+        "title": "설계기반<br class='pc_only' />품질 고도화",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only' />집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
+      },
+      "3": {
+        "title": "핵심<br class='pc_only' />연구분야",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only' />집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
+      }
+    }
+  },
+  "timeline": {
+    "p_title": "SK Chemicals 오픈 이노베이션은 <br class='pc_only' /> 계속 성장해왔습니다",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "diagram": [
+      {
+        "color": "cyan",
+        "year": "2017",
+        "title": "Pilot Project",
+        "description": [
+          "1. 신약 재창출 (DR)*",
+          "2. 이대 김완규 교수"
+        ]
+      },
+      {
+        "color": "green",
+        "year": "2019",
+        "title": "Open Innovation",
+        "description": [
+          "1. Open R&D TF 출범",
+          "2. 집중 3개 질환 선정",
+          "3. 외부 협력 추진"
+        ]
+      },
+      {
+        "color": "pink",
+        "year": "2020",
+        "title": "신약 개발 R&D 착수 및 협력 확장",
+        "description": [
+          "1. DR 특허 출원 (2건)",
+          "2. AI 협력 기관 추가"
+        ]
+      },
+      {
+        "color": "amber",
+        "year": "2021",
+        "title": "역량 강화 및 정식 과제 상정",
+        "description": [
+          "1. 내부 AI 모델 구축"
+        ]
+      },
+      {
+        "color": "orange",
+        "year": "2022",
+        "title": "과제 고도화",
+        "description": [
+          "1. 신약 파이프라인 확보",
+          "2. Early Stage L/O"
+        ]
+      }
+    ]
+  },
+  "members": {
+    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "member_list": {
+      "executives": [
+        {
+          "name": "이수민",
+          "role": "Open R&D팀 팀장",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-left: auto;",
+          "image": "https://source.unsplash.com/c_GmwfHBDzk/",
+          "email": "mrlee@example.com"
+        }
+      ],
+      "managers": [
+        {
+          "name": "허지호",
+          "role": "Pharma 기획팀 팀장",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-right: auto;",
+          "email": "teammember_허지호@example.com"
+        },
+        {
+          "name": "최권희",
+          "role": "Open R&D팀",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-right: auto;",
+          "email": "teammember_촤권희@example.com"
+        },
+        {
+          "name": "김종인",
+          "role": "Open R&D팀 매니저",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-left: auto;",
+          "image": "",
+          "email": "teammember_김종인@example.com"
+        },
+        {
+          "name": "김율담",
+          "role": "Open R&D팀 매니저",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-right: auto;",
+          "image": "",
+          "email": "teammember_김율담@example.com"
+        },
+        {
+          "name": "연승주",
+          "role": "Open R&D팀",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-left: auto;",
+          "image": "",
+          "email": "teammember_연승주@example.com"
+        },
+        {
+          "name": "구남진",
+          "role": "Open R&D팀",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-right: auto;",
+          "image": "",
+          "email": "teammember_구남진@example.com"
+        },
+        {
+          "name": "박지현",
+          "role": "Open R&D팀",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-left: auto;",
+          "image": "",
+          "email": "teammember_박지현@example.com"
+        },
+        {
+          "name": "김동혁",
+          "role": "Open R&D팀",
+          "description": "제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.",
+          "style": "margin-right: auto;",
+          "image": "",
+          "email": "teammember_김동혁@example.com"
+        }
+      ]
+    }
+  },
+  "pharma": {
+    "p_title": "SK Chemicals는 더 나은 신약을 만들기 위해 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      },
+      "4": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "research": {
+    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      },
+      "4": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "investments": {
+    "p_title": "SK Chemicals는 바이오 벤처와의  <br class='pc_only'> 성장 및 미래 가치를 함께 모색하고자 합니다. ",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      },
+      "4": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "contactUs": {
+    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 누구에게나 열려있습니다",
+    "t_c": {
+      "title": "SK케미칼 이용약관",
+      "li_title": {
+        "1": "수집하는 개인정보 항목 및 수집방법",
+        "2": "개인정보의 수집 및 이용목적",
+        "3": "개인정보의 보유 및 이용기간"
+      },
+      "li_txt": {
+        "1": "SK케미칼(주) 홈페이지는 서비스 이용을 위해 필요한 최소한의 개인정보만을 “고객문의” 게시판에서 이용자가 입력한 정보에 한해 수집합니다. 귀하가 SK케미칼(주) 홈페이지의 서비스를 이용하기 위해서는 이메일, 연락처를 입력하셔야 하며, 입력하신 정보는 서비스 제공에 사용됩니다. <br /> [수집항목] : 이메일(필수), 연락처(선택)",
+        "2": "SK케미칼(주) 홈페이지는 귀하의 개인정보 수집에 대한 동의를 받고 있습니다. 귀하의 개인정보 수집과 관련하여 SK케미칼(주) 홈페이지의 개인정보처리방침 또는 이용약관의 내용에 대해 『동의함』 버튼을 클릭할 수 있는 절차를 마련하고 있으며, 귀하가 『동의 함』 버튼을 클릭하면 개인 정보 수집에 대해 동의한 것으로 봅니다. <br /> [이용목적] : 문의내용 답변 목적",
+        "3": "SK케미칼(주) 홈페이지는 개인정보의 수집목적 또는 제공받은 목적이 달성된 때에는 귀하의 개인정보를 즉시 파기합니다. <br /> [보유기간] : 문의내용 처리 후 즉시 파기"
+      },
+      "agree": "동의합니다",
+      "submit": "제출"
+    },
+    "info": {
+      "address": "[13494] 경기도 성남시 분당구 판교로 310"
+    }
+  },
+  "partnerships": {
+    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "partners": []
   }
 }

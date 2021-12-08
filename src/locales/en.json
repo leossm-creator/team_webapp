@@ -7,31 +7,39 @@
     "sub_title": "SK Chemicals Open Innovation",
     "introduction": {
       "title": "Introduction",
-      "sub_title": ""
+      "sub_title": "R&D capabilities being on par with global standards"
     } ,
     "timeline": {
       "title": "Timeline",
-      "sub_title": ""
+      "sub_title": "R&D capabilities being on par with global standards"
     } ,
     "members": {
       "title": "Members",
-      "sub_title": ""
+      "sub_title": "R&D capabilities being on par with global standards"
     } ,
     "pharma": {
       "title": "Pharma",
-      "sub_title": ""
+      "sub_title": "R&D capabilities being on par with global standards"
     } ,
     "research":{
       "title": "Research",
-      "sub_title": ""
+      "sub_title": "R&D capabilities being on par with global standards"
     } ,
     "investments": {
       "title": "Investments",
-      "sub_title": ""
+      "sub_title": "R&D capabilities being on par with global standards"
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "sub_title": "효율적 개발을 위한 소통과 혁신"
+    },
+    "partnerships": {
+      "title": "파트너쉽",
+      "sub_title": "효율적 개발을 위한 소통과 혁신"
     }
   },
-  "main": {
-    "welcome": "Welcome! We are SK Chemical Open Innovation Team"
+  "footer": {
+    "text": "310 Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do <br/> 463-400 Korea [13494]<br />Copyright(c) SK chemicals. All Rights Reserved."
   },
   "home": {
     "slide": {
@@ -52,5 +60,246 @@
         "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
       }
     }
+  },
+  "intro": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "text_text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "timeline": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "diagram": [
+      {
+        "color": "cyan",
+        "year": "2017",
+        "title": "Pilot Project",
+        "description": ["1. 신약 재창출 (DR)*", "2. 이대 김완규 Professor"]
+      },
+      {
+        "color": "green",
+        "year": "2019",
+        "title": "Open Innovation",
+        "description": [
+          "1. Open R&D TF 출범",
+          "2. 집중 3개 질환 선정",
+          "3. 외부 협력 추진"
+        ]
+      },
+      {
+        "color": "pink",
+        "year": "2020",
+        "title": "신약 개발 R&D 착수 및 협력 확장",
+        "description": ["1. DR 특허 출원 (2건)", "2. AI 협력 기관 추가"]
+      },
+      {
+        "color": "amber",
+        "year": "2021",
+        "title": "역량 강화 및 정식 과제 상정",
+        "description": ["1. 내부 AI 모델 구축"]
+      },
+      {
+        "color": "orange",
+        "year": "2022",
+        "title": "과제 고도화",
+        "description": ["1. 신약 파이프라인 확보", "2. Early Stage L/O"]
+      }
+    ]
+  },
+  "members": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "member_list": {
+      "executives": [
+        {
+          "name": "Soomin Lee",
+          "role": "Open R&D팀 팀장",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-left: auto;",
+          "image": "https://source.unsplash.com/c_GmwfHBDzk/",
+          "email": "mrlee@example.com"
+        }
+      ],
+      "managers": [
+        {
+          "name": "Jiho Heo",
+          "role": "Pharma 기획팀 팀장",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-right: auto;",
+          "email": "teammember_허지호@example.com"
+        },
+        {
+          "name": "Kwonhee Choi",
+          "role": "Open R&D팀",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-right: auto;",
+          "email": "teammember_촤권희@example.com"
+        },
+        {
+          "name": "Jongin Kim",
+          "role": "Open R&D팀 매니저",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-left: auto;",
+          "image": "",
+          "email": "teammember_김종인@example.com"
+        },
+        {
+          "name": "Yuldam Kim",
+          "role": "Open R&D팀 매니저",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-right: auto;",
+          "image": "",
+          "email": "teammember_김율담@example.com"
+        },
+        {
+          "name": "SeungJu Yeon",
+          "role": "Open R&D팀",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-left: auto;",
+          "image": "",
+          "email": "teammember_연승주@example.com"
+        },
+        {
+          "name": "Namgin Koo",
+          "role": "Open R&D팀",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-right: auto;",
+          "image": "",
+          "email": "teammember_구남진@example.com"
+        },
+        {
+          "name": "Jihyeon Park",
+          "role": "Open R&D팀",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-left: auto;",
+          "image": "",
+          "email": "teammember_박지현@example.com"
+        },
+        {
+          "name": "Donghyuk Kim",
+          "role": "Open R&D팀",
+          "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+          "style": "margin-right: auto;",
+          "image": "",
+          "email": "teammember_김동혁@example.com"
+        }
+      ]
+    }
+  },
+  "pharma": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      },
+      "4": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "research": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      },
+      "4": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "investments": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      },
+      "3": {
+        "title": "",
+        "description": ""
+      },
+      "4": {
+        "title": "",
+        "description": ""
+      }
+    }
+  },
+  "contactUs": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "t_c": {
+      "title": "SK Chemicals Terms and Conditions",
+      "li_title": {
+        "1": "Personal Information",
+        "2": "The purpose of collection and use of personal information",
+        "3": "Period of possession and use of personal information"
+      },
+      "li_txt": {
+        "1": "We collect your personal information for user sign up, customer consultations, and service requests. <ul><li>Personal information : email address, and contact information</li><li>Means of collection : our website (Ask a Question)</li><p></p></ul>",
+        "2": "We use our customers' personal information for the purposes stated below. <ul><li>Management</li><li>To handle customer complaints and feedback</li><p></p></ul>",
+        "3": "Your personal information will be destroyed without exception or delay after our customer support team achieves the purpose for which the information was collected and used."
+      },
+      "agree": "Agree",
+      "submit": "Submit"
+    },
+    "info": {
+      "address": "310 Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do 463-400 Korea [13494]"
+    }
+  },
+  "partnerships": {
+    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "text_board": {
+      "1": {
+        "title": "",
+        "description": ""
+      },
+      "2": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "partners": [
+
+    ]
   }
 }

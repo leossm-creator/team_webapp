@@ -97,9 +97,16 @@ body ::-webkit-scrollbar-track {
     float: right;
     flex-direction: column;
     align-items: flex-end;
+    margin-right: 100px;
+    margin-bottom: 50px;
     .pageTitle {
-      font-size: 2.5rem;
-      // padding: 40px;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    .pageSub {
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: right;
     }
   }
 }
@@ -238,6 +245,36 @@ body ::-webkit-scrollbar-track {
 @media (max-width: 600px) {
   .pc_only {
     display: none !important;
+  }
+
+  .thumbnail {
+    height: 300px !important;
+    .pageHeadings {
+      margin-right: 25px !important;
+      margin-bottom: 25px !important;
+
+      .pageTitle {
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+
+  .page_container {
+    .content_container {
+      margin: 60px 0 !important;
+
+      .title_board {
+        margin-bottom: 60px !important;
+        .p_title {
+          font-size: 28px;
+        }
+      }
+
+      .board {
+        padding: 0 7.5% !important;
+        margin-top: 60px !important;
+      }
+    }
   }
 }
 

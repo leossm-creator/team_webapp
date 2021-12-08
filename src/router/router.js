@@ -44,60 +44,6 @@ const routes = [
         meta: {
         }
       },
-      // {
-      //   name: "About Us",
-      //   path: "aboutUs",
-      //   component: AboutUs,
-      //   meta: {
-      //     sib: [
-      //       {
-      //         text: 'Our Works',
-      //         to: {
-      //           name: 'Our Works',
-      //         }
-      //       },
-      //       {
-      //         text: 'Contact Us',
-      //         to: {
-      //           name: 'Contact Us',
-      //         }
-      //       },
-      //       {
-      //         text: 'Partnerships',
-      //         to: {
-      //           name: 'Partnerships',
-      //         }
-      //       },
-      //     ]
-      //   }
-      // },
-      // {
-      //   name: "Our Works",
-      //   path: "ourWorks",
-      //   component: OurWorks,
-      //   meta: {
-      //     sib: [
-      //       {
-      //         text: 'About Us',
-      //         to: {
-      //           name: 'About Us',
-      //         }
-      //       },
-      //       {
-      //         text: 'Contact Us',
-      //         to: {
-      //           name: 'Contact Us',
-      //         }
-      //       },
-      //       {
-      //         text: 'Partnerships',
-      //         to: {
-      //           name: 'Partnerships',
-      //         }
-      //       },
-      //     ]
-      //   }
-      // },
       {
         name: "introduction",
         path: "aboutUs/intro",
@@ -280,7 +226,7 @@ const routes = [
         path: "contactUs",
         component: ContactUs,
         meta: {
-          parent: "contactUs",
+          parent: "contact us",
           sib: null
         }
       }

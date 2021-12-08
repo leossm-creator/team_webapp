@@ -8,9 +8,9 @@
         height="100%"
       >
         <v-card-title class="pageHeadings">
-          <p class="pageTitle">Partnerships</p>
+          <p class="pageTitle">{{ $t("nav.investments.title") }}</p>
           <p class="pageSub">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            {{ $t("nav.members.sub_title") }}
           </p>
         </v-card-title>
       </v-img>
@@ -21,20 +21,16 @@
         <div class="title_board">
           <v-row class="board">
             <v-col>
-              <div class="p_title">
-                SK Chemicals는 더 나은 의약품을 만들기 위해
-                <br />
-                끊임없이 고민하고 연구합니다
-              </div>
+              <div class="p_title" v-html="$t('partnerships.p_title')"></div>
             </v-col>
           </v-row>
         </div>
         <div class="text_board">
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>개요</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
                 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
@@ -59,7 +55,13 @@
           >
             <v-card class="p_card">
               <div class="img_container" :style="{ padding: item.padding }">
-                <v-img class="logo_imgs" :src="item.img" :height="item.height" contain  @click="openLink(item.link)"></v-img>
+                <v-img
+                  class="logo_imgs"
+                  :src="item.img"
+                  :height="item.height"
+                  contain
+                  @click="openLink(item.link)"
+                ></v-img>
               </div>
               <div class="text_container">
                 <h2>
@@ -132,8 +134,8 @@ export default {
   },
   methods: {
     openLink(url) {
-      window.open(url)
-    }
+      window.open(url);
+    },
   },
 };
 </script>
@@ -170,6 +172,27 @@ export default {
     .text_container {
       text-align: center;
       padding: 30px;
+    }
+  }
+}
+
+// 모바일
+@media (max-width: 600px) {
+  .card_container {
+    &.left {
+      padding-right: 0 !important;
+    }
+
+    &.right {
+      padding-left: 0 !important;
+    }
+
+    .p_card {
+      height: fit-content !important;
+
+      .img_container {
+        padding: 30px 30px 0 !important;
+      }
     }
   }
 }

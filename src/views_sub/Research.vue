@@ -21,10 +21,7 @@
         <div class="title_board">
           <v-row class="board">
             <v-col>
-              <div class="p_title">
-                SK Chemicals는 더 나은 의약품을 만들기 위해
-                <br />
-                끊임없이 고민하고 연구합니다
+              <div class="p_title" v-html="$t('research.p_title')">
               </div>
             </v-col>
           </v-row>
@@ -32,10 +29,10 @@
 
         <div class="text_board">
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>개요</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
                 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
@@ -48,10 +45,10 @@
             </v-col>
           </v-row>
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>설계기반<br class="pc_only" />품질 고도화</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 셀트리온제약은 개발에서 생산에 이르는 모든 과정에 설계기반 품질
                 고도화<span class="ff_m">(QbD, Quality by Design)</span>를
@@ -65,10 +62,10 @@
             </v-col>
           </v-row>
           <v-row class="board">
-            <v-col cols="3">
+            <v-col cols="12" md="3">
               <h3>핵심<br class="pc_only" />연구분야</h3>
             </v-col>
-            <v-col cols="9">
+            <v-col cols="12" md="9">
               <p>
                 <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의 원천이자
                 미래성장동력으로, 셀트리온제약은 글로벌 경쟁력을 갖는 의약품
@@ -104,10 +101,10 @@
           </p> -->
         <div class="img_board">
             <v-row style="margin-top: 120px;">
-              <v-col cols="6">
+              <v-col cols="12" md="6">
                 <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
               </v-col>
-              <v-col cols="6">
+              <v-col cols="12" md="6">
                 <div class="img_heading">뭐라고 쓸지 아직 모르겠어요</div>
                 <p>
                   <span class="ff_m">R&amp;D</span>는 제약기업의 경쟁력의

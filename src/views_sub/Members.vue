@@ -21,10 +21,7 @@
         <div class="title_board">
           <v-row class="board">
             <v-col>
-              <div class="p_title">
-                SK Chemicals 오픈이노베이션 팀은
-                <br />
-                끊임없이 고민하고 연구합니다
+              <div class="p_title" v-html="$t('members.p_title')">
               </div>
             </v-col>
           </v-row>
@@ -111,7 +108,8 @@
             <v-row>
               <v-col cols="12"><h4>Managers</h4></v-col>
               <v-col
-                cols="3"
+                cols="6"
+                md="3"
                 v-for="member in members.managers"
                 :key="member.name"
                 style="padding-top: 30px; padding-bottom: 30px"
@@ -165,91 +163,92 @@ export default {
   },
   data() {
     return {
-      members: {
-        executives: [
-          {
-            name: "이수민",
-            role: "Open R&D팀 팀장",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-left: auto;",
-            image: "https://source.unsplash.com/c_GmwfHBDzk/",
-            email: "mrlee@example.com",
-          },
-        ],
-        managers: [
-          {
-            name: "허지호",
-            role: "Pharma 기획팀 팀장",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            email: "teammember_허지호@example.com",
-          },
-          {
-            name: "최권희",
-            role: "Open R&D팀",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            email: "teammember_촤권희@example.com",
-          },
-          {
-            name: "김종인",
-            role: "Open R&D팀 매니저",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-left: auto;",
-            image: "",
-            email: "teammember_김종인@example.com",
-          },
-          {
-            name: "김율담",
-            role: "Open R&D팀 매니저",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            image: "",
-            email: "teammember_김율담@example.com",
-          },
-          {
-            name: "연승주",
-            role: "Open R&D팀",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-left: auto;",
-            image: "",
-            email: "teammember_연승주@example.com",
-          },
-          {
-            name: "구남진",
-            role: "Open R&D팀",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            image: "",
-            email: "teammember_구남진@example.com",
-          },
-          {
-            name: "박지현",
-            role: "Open R&D팀",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-left: auto;",
-            image: "",
-            email: "teammember_박지현@example.com",
-          },
-          {
-            name: "김동혁",
-            role: "Open R&D팀",
-            description:
-              "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
-            style: "margin-right: auto;",
-            image: "",
-            email: "teammember_김동혁@example.com",
-          },
-        ],
-      },
+      // members: {
+      //   executives: [
+      //     {
+      //       name: "이수민",
+      //       role: "Open R&D팀 팀장",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-left: auto;",
+      //       image: "https://source.unsplash.com/c_GmwfHBDzk/",
+      //       email: "mrlee@example.com",
+      //     },
+      //   ],
+      //   managers: [
+      //     {
+      //       name: "허지호",
+      //       role: "Pharma 기획팀 팀장",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-right: auto;",
+      //       email: "teammember_허지호@example.com",
+      //     },
+      //     {
+      //       name: "최권희",
+      //       role: "Open R&D팀",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-right: auto;",
+      //       email: "teammember_촤권희@example.com",
+      //     },
+      //     {
+      //       name: "김종인",
+      //       role: "Open R&D팀 매니저",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-left: auto;",
+      //       image: "",
+      //       email: "teammember_김종인@example.com",
+      //     },
+      //     {
+      //       name: "김율담",
+      //       role: "Open R&D팀 매니저",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-right: auto;",
+      //       image: "",
+      //       email: "teammember_김율담@example.com",
+      //     },
+      //     {
+      //       name: "연승주",
+      //       role: "Open R&D팀",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-left: auto;",
+      //       image: "",
+      //       email: "teammember_연승주@example.com",
+      //     },
+      //     {
+      //       name: "구남진",
+      //       role: "Open R&D팀",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-right: auto;",
+      //       image: "",
+      //       email: "teammember_구남진@example.com",
+      //     },
+      //     {
+      //       name: "박지현",
+      //       role: "Open R&D팀",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-left: auto;",
+      //       image: "",
+      //       email: "teammember_박지현@example.com",
+      //     },
+      //     {
+      //       name: "김동혁",
+      //       role: "Open R&D팀",
+      //       description:
+      //         "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
+      //       style: "margin-right: auto;",
+      //       image: "",
+      //       email: "teammember_김동혁@example.com",
+      //     },
+      //   ],
+      // },
+      members: this.$t("members.member_list")
     };
   },
 

@@ -19,7 +19,7 @@
             link
             :to="item.to"
           >
-            <v-list-item-title>{{ item.name }}</v-list-item-title>
+            <v-list-item-title style="font-weight: 400; font-size: 14px;">{{ item.name.toUpperCase() }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -38,7 +38,7 @@
             link
             :to="item.to"
           >
-            <v-list-item-title>{{ $t(`nav.${item.text}.title`) }}</v-list-item-title>
+            <v-list-item-title style="font-weight: 400; font-size: 14px;">{{ $t(`nav.${item.text}.title`) }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
