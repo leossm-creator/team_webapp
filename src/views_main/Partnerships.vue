@@ -8,9 +8,9 @@
         height="100%"
       >
         <v-card-title class="pageHeadings">
-          <p class="pageTitle">{{ $t("nav.investments.title") }}</p>
+          <p class="pageTitle">{{ $t("nav.partnerships.title") }}</p>
           <p class="pageSub">
-            {{ $t("nav.members.sub_title") }}
+            {{ $t("nav.partnerships.sub_title") }}
           </p>
         </v-card-title>
       </v-img>

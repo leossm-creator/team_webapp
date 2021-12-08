@@ -49,7 +49,7 @@
           </v-row>
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 v-html="$t('intro.text_board.2.title')"></h3>
+              <h3 v-html="$t('intro.text_board.3.title')"></h3>
             </v-col>
             <v-col cols="12" md="9">
               <p v-html="$t('intro.text_board.3.description')">

@@ -4,7 +4,7 @@
       <swiper class="swiper" :options="swiperOption" ref="landingSwiper">
         <swiper-slide>
           <v-row class="slide">
-            <v-col cols="5" class="slide_content">
+            <v-col md="5" cols="12" class="slide_content">
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
@@ -20,15 +20,14 @@
                   <span>Open Innovation Team</span> -->
                 </p>
                 <p
-                  class="an_con"
+                  class="an_con slide_p"
                   data-swiper-animation="animate__fadeInUp"
                   data-duration="1.5s"
                   data-delay="2s"
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.1.description')"
-                >
-                </p>
+                ></p>
               </div>
             </v-col>
             <v-col class="slide_img">
@@ -56,7 +55,7 @@
                 data-out-duration="0.5s"
               ></div>
             </v-col>
-            <v-col cols="6" class="slide_content">
+            <v-col md="6" cols="12" class="slide_content">
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
@@ -66,8 +65,7 @@
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.2.title')"
-                >
-                </p>
+                ></p>
                 <p
                   class="an_con"
                   data-swiper-animation="animate__fadeInRight"
@@ -76,8 +74,7 @@
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.2.description')"
-                >
-                </p>
+                ></p>
               </div>
             </v-col>
           </v-row>
@@ -85,7 +82,7 @@
 
         <swiper-slide>
           <v-row class="slide">
-            <v-col cols="6" class="slide_content">
+            <v-col md="6" cols="12" class="slide_content">
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
@@ -95,8 +92,7 @@
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.3.title')"
-                >
-                </p>
+                ></p>
                 <p
                   class="an_con"
                   data-swiper-animation="animate__fadeInUp"
@@ -105,8 +101,7 @@
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.3.description')"
-                >
-                </p>
+                ></p>
               </div>
             </v-col>
             <v-col class="slide_img">
@@ -134,7 +129,7 @@
                 data-out-duration="0.5s"
               ></div>
             </v-col>
-            <v-col cols="6" class="slide_content">
+            <v-col md="6" cols="12" class="slide_content">
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
@@ -144,8 +139,7 @@
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.4.title')"
-                >
-                </p>
+                ></p>
                 <p
                   class="an_con"
                   data-swiper-animation="animate__fadeInDown"
@@ -154,8 +148,7 @@
                   data-swiper-out-animation="animate__fadeOut"
                   data-out-duration="0.5s"
                   v-html="$t('home.slide.4.description')"
-                >
-                </p>
+                ></p>
               </div>
             </v-col>
           </v-row>
@@ -328,16 +321,16 @@ export default {
             background-size: cover;
 
             &#sliderImg_01 {
-              background-image: url('~@/assets/img/slider/main-bg-1.jpeg');
+              background-image: url("~@/assets/img/slider/main-bg-1.jpeg");
             }
             &#sliderImg_02 {
-              background-image: url('~@/assets/img/slider/main-bg-2.jpeg');
+              background-image: url("~@/assets/img/slider/main-bg-2.jpeg");
             }
             &#sliderImg_03 {
-              background-image: url('~@/assets/img/slider/main-bg-3.jpeg');
+              background-image: url("~@/assets/img/slider/main-bg-3.jpeg");
             }
             &#sliderImg_04 {
-              background-image: url('~@/assets/img/slider/main-bg-4.jpeg');
+              background-image: url("~@/assets/img/slider/main-bg-4.jpeg");
             }
           }
         }
@@ -347,6 +340,35 @@ export default {
 
   .landing_content_container {
     padding: 15px;
+  }
+}
+
+// 모바일
+@media (max-width: 600px) {
+  .swiper {
+    .slide {
+      .slide_content {
+        position: absolute !important;
+        width: 80% !important;
+        .content_box {
+          top: 15% !important;
+          left: 60px !important;
+          .slide_heading {
+            font-size: 42px !important;
+            padding-bottom: 42px !important;
+            line-height: 42px !important;
+
+            // color: whitesmoke;
+
+            .sub_heading {
+              font-size: 28px !important;
+            }
+          }
+          .slide_p {
+          }
+        }
+      }
+    }
   }
 }
 </style>
