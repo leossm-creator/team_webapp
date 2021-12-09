@@ -52,7 +52,7 @@
         "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br class='pc_only'/> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
       },
       "3": {
-        "title": "Research and Development <br /> <span class='sub_heading'>많이 하고 있습니다</span>",
+        "title": "Research &<br class='pc_only' /> Development <br /> <span class='sub_heading'>많이 하고 있습니다</span>",
         "description": "환경을 생각하는 화학 · 생명을 지켜가는 과학 · 행복을 열어가는 기업 <br class='pc_only'/> SK Chemicals 오픈 이노베이션 팀이 만들고 있습니다"
       },
       "4": {
@@ -217,20 +217,16 @@
     "p_title": "SK Chemicals는 더 나은 신약을 만들기 위해 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "개요",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "설계기반<br class='pc_only' />품질 고도화",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       },
       "3": {
-        "title": "",
-        "description": ""
-      },
-      "4": {
-        "title": "",
-        "description": ""
+        "title": "핵심<br class='pc_only' />연구분야",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       }
     }
   },
@@ -238,41 +234,41 @@
     "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "개요",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "설계기반<br class='pc_only' />품질 고도화",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       },
       "3": {
-        "title": "",
-        "description": ""
-      },
-      "4": {
-        "title": "",
-        "description": ""
+        "title": "핵심<br class='pc_only' />연구분야",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       }
     }
   },
   "investments": {
-    "p_title": "SK Chemicals는 바이오 벤처와의  <br class='pc_only'> 성장 및 미래 가치를 함께 모색하고자 합니다. ",
+    "p_title": "SK Chemicals는 바이오 벤처와의  <br class='pc_only'> 성장 및 미래 가치를 함께 모색하고자 합니다.",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "개요",
+        "description": [
+          "2020년 이래로 <span class='ff_m'>SK</span>케미칼은 오픈 이노베이션의 일환으로 국내외 유망 벤처를 발굴하여 투자를 통한 전략적 협업 관계를 맺어오고 있습니다. 현재 국내외 벤처 투자 네트워크를 구축을 완료 하였으며, 기업의 성장을 위한 공동의 노력을 통하여 성과의 과실을 함께 나눌 수 있는 기업을 찾고 있습니다.",
+          "글로벌 수준 R&D 역량을 보유한 더 많은 벤처기업과의 연결을 통해 사업 전략 및 미래 비전을 공유하면서 확장적 성장을 이어나가고자 합니다.",
+          "SK케미칼은 중점 연구개발 영역에 집중함과 동시에 미래 사업 확장 영역에 대해서도 기회를 열어두고 있으며, 기업의 투자유치 전주기에 가능성을 열어두고 투자하고자 합니다."
+        ]
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "목표",
+        "description": "<span class='ff_m'>SK</span>케미칼이 선정한 중점 연구개발 영역에 집중하는 기업들에 대해서는 <span class='ff_m'>Seed</span> 단계에 해당하는 기업의 설립초기단계부터 협력 가능성을 모색하고 있으며, 미래 사업 확장 영역에 대해서는 <span class='ff_m'>Series B</span> 단계에 해당하는 기업의 사업 영역의 성격이 확정된 시기부터의 투자 기회를 탐색하고 있습니다."
       },
       "3": {
-        "title": "",
-        "description": ""
+        "title": "중점<br class='pc_only' />연구분야",
+        "description": "자사의 중점 연구개발 영역에는 시장의 인정을 받은 분야로서 상업적 판매망이 갖추어진 신경계 질환, 근골격계 질환, 비뇨기계 질환, 신장계 질환 등과 중점 연구개발 영역에 해당하는 대사성 질환, 염증성 질환, 중추신경계 질환이 속합니다."
       },
       "4": {
-        "title": "",
-        "description": ""
+        "title": "미래<br class='pc_only' />확장영역",
+        "description": "자사의 미래 사업 확장 영역에는 시장에서의 자사 판매망 강화와 확장에 유리한 당뇨 합병증, 알츠하이머 치매, 자가면역 질환, 암 질환 등과 새로운 영역에 대한 사업 발굴에 해당하는 게놈 편집/유전자 치료제, 표적 단백질 분해제, 세포 치료제 등이 속합니다."
       }
     }
   },
@@ -301,14 +297,35 @@
     "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "개요",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "설계기반<br class='pc_only' />품질 고도화",
+        "description": "<span class= 'ff_m'>R&amp;D</span>는 제약기업의 경쟁력의 원천이자 미래성장동력으로, SK케미칼은 글로벌 경쟁력을 갖는 의약품 개발에 연구역량을 <br class='pc_only'/>집중하고 있습니다. SK케미칼 연구소는 약물평가, 제제연구, 분석법 및 공정개발 등 의약품 연구·개발·제조 모든 부분에서<br class='pc_only' />뛰어난 역량과 기술을 보유하고 있습니다."
       }
     },
-    "partners": []
+    "partners": [
+      {
+        "name": "Standigm",
+        "title": "류마티스 관절염 치료물질 발굴",
+        "description": "신약 재창출(drug repositioning) 접근법의 류마티스 관절염(rheumatoid arthritis, RA) 치료물질을 발굴 및 특허 출원"
+      },
+      {
+        "name": "J2H Biotech",
+        "title": "신약 개발 공동연구 체결",
+        "description": "옵티플렉스(Optiflex) 기술 및 표적단백질 분해(Targeted Protein Degrader) 기술 등을 활용해 신약 연구"
+      },
+      {
+        "name": "Deargen",
+        "title": "약물 재창출 공동연구 체결",
+        "description": "약물 재창출(Drug Repositioning) 및 신약개발(De Novo Drug Design)에 대한 공동연구 계약을 체결"
+      },
+      {
+        "name": "Dr. Noah Biotech",
+        "title": "인공지능(AI) 기반 신약개발 공동연구",
+        "description": "‘ARK’ 플랫폼 기술을 활용 AI기반 신약개발을 공동연구 및 개발 협약을 체결"
+      }
+    ]
   }
 }

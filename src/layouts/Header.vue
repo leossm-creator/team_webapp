@@ -149,7 +149,7 @@
         </v-list-item-group>
       </v-list>
       <template v-slot:append>
-        <div class="pa-2">
+        <div class="">
           <LocaleSwitcher v-on:change="$emit('localeChange', $event)" />
         </div>
       </template>
@@ -230,6 +230,8 @@ export default {
 
   #navDrawer {
     z-index: 101;
+    height: 100%;
+    overflow-y: auto;
 
     .nav_heading {
       text-align: right;

@@ -31,11 +31,11 @@
     },
     "contactUs": {
       "title": "Contact Us",
-      "sub_title": "효율적 개발을 위한 소통과 혁신"
+      "sub_title": "R&D capabilities being on par with global standards"
     },
     "partnerships": {
-      "title": "파트너쉽",
-      "sub_title": "효율적 개발을 위한 소통과 혁신"
+      "title": "Partnerships",
+      "sub_title": "R&D capabilities being on par with global standards"
     }
   },
   "footer": {
@@ -52,11 +52,11 @@
         "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
       },
       "3": {
-        "title": "Research and Development <br /> <span class='sub_heading'>많이 하고 있습니다</span>",
+        "title": "<span class='sub_heading'>Focusing on</span> <br /> Research & Development",
         "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
       },
       "4": {
-        "title": "COVID 19 <br /> <span class='sub_heading'>백신 개발도 하고 있습니다</span>",
+        "title": "COVID 19 <br /> <span class='sub_heading'>vaccine development</span>",
         "description": "We promote the health of humankind and <span>protect the environment of the Earth</span>"
       }
     }
@@ -82,8 +82,8 @@
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "Overview",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       }
     },
     "diagram": [
@@ -91,35 +91,35 @@
         "color": "cyan",
         "year": "2017",
         "title": "Pilot Project",
-        "description": ["1. 신약 재창출 (DR)*", "2. 이대 김완규 Professor"]
+        "description": ["1. Drug repositioning (DR)*", "2. 이대 김완규 Professor"]
       },
       {
         "color": "green",
         "year": "2019",
         "title": "Open Innovation",
         "description": [
-          "1. Open R&D TF 출범",
-          "2. 집중 3개 질환 선정",
-          "3. 외부 협력 추진"
+          "1. Open R&D TF launched",
+          "2. Selected 3 key diseases",
+          "3. Promotion of external cooperation"
         ]
       },
       {
         "color": "pink",
         "year": "2020",
-        "title": "신약 개발 R&D 착수 및 협력 확장",
-        "description": ["1. DR 특허 출원 (2건)", "2. AI 협력 기관 추가"]
+        "title": "R&D development of new drugs and expansion of cooperation",
+        "description": ["1. DR patent application (2 cases)", "2. Expanding networks on AI partner organizations"]
       },
       {
         "color": "amber",
         "year": "2021",
-        "title": "역량 강화 및 정식 과제 상정",
-        "description": ["1. 내부 AI 모델 구축"]
+        "title": "Strengthening capabilities and introducing formal tasks",
+        "description": ["1. Build of internal AI model"]
       },
       {
         "color": "orange",
         "year": "2022",
-        "title": "과제 고도화",
-        "description": ["1. 신약 파이프라인 확보", "2. Early Stage L/O"]
+        "title": "Advanced assignments",
+        "description": ["1. Secured the pipeline for new drugs", "2. Early Stage L/O"]
       }
     ]
   },
@@ -129,7 +129,7 @@
       "executives": [
         {
           "name": "Soomin Lee",
-          "role": "Open R&D팀 팀장",
+          "role": "Open Innovation Team Leader",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-left: auto;",
           "image": "https://source.unsplash.com/c_GmwfHBDzk/",
@@ -139,21 +139,21 @@
       "managers": [
         {
           "name": "Jiho Heo",
-          "role": "Pharma 기획팀 팀장",
+          "role": "Pharma Planning Team Leader",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-right: auto;",
           "email": "teammember_허지호@example.com"
         },
         {
           "name": "Kwonhee Choi",
-          "role": "Open R&D팀",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-right: auto;",
           "email": "teammember_촤권희@example.com"
         },
         {
           "name": "Jongin Kim",
-          "role": "Open R&D팀 매니저",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-left: auto;",
           "image": "",
@@ -161,7 +161,7 @@
         },
         {
           "name": "Yuldam Kim",
-          "role": "Open R&D팀 매니저",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-right: auto;",
           "image": "",
@@ -169,7 +169,7 @@
         },
         {
           "name": "SeungJu Yeon",
-          "role": "Open R&D팀",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-left: auto;",
           "image": "",
@@ -177,7 +177,7 @@
         },
         {
           "name": "Namgin Koo",
-          "role": "Open R&D팀",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-right: auto;",
           "image": "",
@@ -185,7 +185,7 @@
         },
         {
           "name": "Jihyeon Park",
-          "role": "Open R&D팀",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-left: auto;",
           "image": "",
@@ -193,7 +193,7 @@
         },
         {
           "name": "Donghyuk Kim",
-          "role": "Open R&D팀",
+          "role": "Open Innovation team manager",
           "description": "Lorem ipsum dolor sit amet, no nam oblique veritus. Communescaevola imperdiet nec ut, sed euismod convenire principes at.",
           "style": "margin-right: auto;",
           "image": "",
@@ -206,20 +206,16 @@
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "Overview",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "Quality by Design",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       },
       "3": {
-        "title": "",
-        "description": ""
-      },
-      "4": {
-        "title": "",
-        "description": ""
+        "title": "Key Areas",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       }
     }
   },
@@ -227,41 +223,41 @@
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "Overview",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "Quality by Design",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       },
       "3": {
-        "title": "",
-        "description": ""
-      },
-      "4": {
-        "title": "",
-        "description": ""
+        "title": "Key Areas",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       }
     }
   },
   "investments": {
-    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "p_title": "SK Chemicals is looking for <br class='pc_only'/> Bio-Ventures to share growth and future values",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "Overview",
+        "description": [
+          "Since 2020, SK Chemicals has been establishing a strategic cooperative relationship through investment by discovering promising domestic and foreign ventures as part of open innovation. Currently, we have completed the establishment of venture investment networks at home and abroad, and are looking for companies that can put their effort to share common growth and future values.",
+          "Through connections with more venture companies with global-level R&D capabilities, we want to continue expanding oour growth by sharing business strategies and future visions.",
+          "SK Chemicals is focusing on our key R&D areas while also opening up opportunities for possible future expansion areas, and intends to invest with open possibilities in the prelude to attracting investment from companies."
+        ]
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "Aim",
+        "description": "For companies focusing on the key R&D areas selected by SK Chemicals, we are seeking to cooperate from the early stages of establishment (Seed), and for future business expansion we are exploring investment opportunities from the time when the nature of the business area is confirmed (Series B)."
       },
       "3": {
-        "title": "",
-        "description": ""
+        "title": "Key Areas",
+        "description": "The company's key R&D areas include neurological diseases, musculoskeletal diseases, urological diseases, kidney diseases, and metabolic diseases, inflammatory diseases, and central nervous system diseases which are the fields that has been recognized by the market and has a commercial sales network."
       },
       "4": {
-        "title": "",
-        "description": ""
+        "title": "Future<br class='pc_only' />Expansion Areas",
+        "description": "The company's future business expansion areas include diabetes complications, Alzheimer's dementia, autoimmune diseases, cancer diseases, and genome editing/genetic treatments, targeted proteolysis, and cell therapy, which are favorable to strengthening and expanding our sales network in the market."
       }
     }
   },
@@ -290,16 +286,35 @@
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
       "1": {
-        "title": "",
-        "description": ""
+        "title": "Overview",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       },
       "2": {
-        "title": "",
-        "description": ""
+        "title": "Quality by Design",
+        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
       }
     },
     "partners": [
-
+      {
+        "name": "Standigm",
+        "title": "Cure for rheumatoid arthritis",
+        "description": "Discovery of rheumatoid arthritis treatment substances in the new drug re-creation approach and patent application"
+      },
+      {
+        "name": "J2H Biotech",
+        "title": "Joint research on the development of new drugs",
+        "description": "Research on new drugs using Optiplex technology and Targeted Protein Degrader technology"
+      },
+      {
+        "name": "Deargen",
+        "title": "Joint research on drug re-creation",
+        "description": "Signed a joint research agreement on drug repositioning and new drug development (De Novo Drug Design)"
+      },
+      {
+        "name": "Dr. Noah Biotech",
+        "title": "A joint study on artificial intelligence-based new drug development",
+        "description": "Signed a joint research and development agreement on AI-based new drug development utilising 'ARK' platform technology"
+      }
     ]
   }
 }

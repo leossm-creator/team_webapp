@@ -4,7 +4,7 @@
       solo
       flat
       v-model="$i18n.locale"
-      :menu-props="{ offsetY: true }"
+      :menu-props="{offsetY: true }"
       :items="locales"
       color="#7d7d7d"
       item-color="#ff7a00"
@@ -13,6 +13,7 @@
       item-text="name"
       item-value="code"
       @change="changeLocale"
+      hide-details
     >
     </v-select>
 
@@ -68,6 +69,7 @@ export default {
 </script>
 <style scoped>
 .locale-switcher {
-  height: 50px;
+  /* height: 50px; */
+  margin-bottom: 8px;
 }
 </style>

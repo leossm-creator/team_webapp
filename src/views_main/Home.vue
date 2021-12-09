@@ -82,7 +82,7 @@
 
         <swiper-slide>
           <v-row class="slide">
-            <v-col md="6" cols="12" class="slide_content">
+            <v-col md="5" cols="12" class="slide_content">
               <div class="content_box">
                 <p
                   class="slide_heading an_con"
