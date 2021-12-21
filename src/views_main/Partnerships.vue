@@ -28,11 +28,10 @@
         <div class="text_board">
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 v-html="$t('partnerships.text_board.1.title')"></h3>
+              <h3 class="heading" v-html="$t('partnerships.text_board.1.title')"></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p v-html="$t('partnerships.text_board.1.description')">
-              </p>
+              <p class="content" v-html="$t('partnerships.text_board.1.description')"></p>
             </v-col>
           </v-row>
         </div>
@@ -47,19 +46,17 @@
             :class="{ left: index % 2 === 0, right: index % 2 !== 0 }"
           >
             <v-card class="p_card">
-              <div class="img_container" :style="{ padding: item.padding }">
                 <v-img
                   class="logo_imgs"
                   :src="item.img"
-                  :height="item.height"
+                  height="200"
                   contain
                   @click="openLink(item.link)"
                 ></v-img>
-              </div>
               <div class="text_container">
-                <h2>
+                <h3>
                   {{ $t(`partnerships.partners[${index}].title`) }}
-                </h2>
+                </h3>
                 <p style="text-align: left">
                   {{ $t(`partnerships.partners[${index}].description`) }}
                 </p>
@@ -85,30 +82,22 @@ export default {
         {
           name: "Standigm",
           link: "https://www.standigm.com/main",
-          img: require(`@/assets/img/partners/standigm.png`),
-          // height: "150",
-          padding: "0 100px",
+          img: require(`@/assets/img/partners/standigm-01.png`),
         },
         {
           name: "J2H Biotech",
           link: "http://j2hbio.com",
-          img: require(`@/assets/img/partners/j2h.png`),
-          height: "100",
-          padding: "25px 150px",
+          img: require(`@/assets/img/partners/j2h-01.png`),
         },
         {
           name: "Deargen",
           link: "https://deargen.me/ko/",
-          img: require(`@/assets/img/partners/deargen.png`),
-          height: "200",
-          padding: "0 100px",
+          img: require(`@/assets/img/partners/deargen-01.png`),
         },
         {
           name: "Dr. Noah Biotech",
           link: "http://www.drnoahbiotech.com",
-          img: require(`@/assets/img/partners/drNoah.png`),
-          height: "200",
-          padding: "0 100px",
+          img: require(`@/assets/img/partners/drNoah-01.png`),
         },
       ],
     };
@@ -136,23 +125,26 @@ export default {
     width: 100%;
     min-height: 100%;
 
-    .img_container {
-      display: flex;
-      width: 100%;
-      height: 50%;
-      justify-content: center;
-      align-items: center;
+    // .img_container {
+    //   display: flex;
+    //   width: 100%;
+    //   min-height: 50%;
+    //   max-height: 50%;
+    //   justify-content: center;
+    //   align-items: center;
 
       .logo_imgs {
         &:hover {
           cursor: pointer;
         }
       }
-    }
+    // }
 
     .text_container {
       text-align: center;
       padding: 30px;
+      min-height: 50%;
+      max-height: 50%;
     }
   }
 }

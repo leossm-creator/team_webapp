@@ -25,10 +25,10 @@
         </a>
         <v-list-item-content style="margin-left: 12px; margin-right: 12px">
           <v-list-item-title class="nav_heading">
-            {{$t("nav.title")}}
+            {{ $t("nav.title") }}
           </v-list-item-title>
           <v-list-item-subtitle class="nav_subHeading">
-            {{$t("nav.sub_title")}}
+            {{ $t("nav.sub_title") }}
           </v-list-item-subtitle>
         </v-list-item-content>
         <v-btn rounded icon @click.stop="drawer = false">
@@ -107,7 +107,7 @@
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item link  :to="formatLink('/ourWorks/research')">
+            <v-list-item link :to="formatLink('/ourWorks/research')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
@@ -222,7 +222,9 @@ export default {
 <style scoped lang="scss">
 .header {
   #appBar {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
     border-bottom: 3px solid #ffa726;

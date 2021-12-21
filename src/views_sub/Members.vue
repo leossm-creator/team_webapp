@@ -8,9 +8,9 @@
         height="100%"
       >
         <v-card-title class="pageHeadings">
-          <p class="pageTitle">{{$t("nav.members.title")}}</p>
+          <p class="pageTitle">{{ $t("nav.members.title") }}</p>
           <p class="pageSub">
-            {{$t("nav.members.sub_title")}}
+            {{ $t("nav.members.sub_title") }}
           </p>
         </v-card-title>
       </v-img>
@@ -21,8 +21,7 @@
         <div class="title_board">
           <v-row class="board">
             <v-col>
-              <div class="p_title" v-html="$t('members.p_title')">
-              </div>
+              <div class="p_title" v-html="$t('members.p_title')"></div>
             </v-col>
           </v-row>
         </div>
@@ -30,94 +29,48 @@
           <!-- 조직도 -->
           <v-row class="board">
             <!-- Executive 멤버들: 카드 with image -->
-            <v-row style="margin: 24px 0">
-              <v-col cols="12">
-                <h4>Leader</h4>
-              </v-col>
-              <v-col
-                v-for="member in members.executives"
-                :key="member.name"
-                style="
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <v-card hover width="300" style="padding: 12px">
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: center;
-                      align-items: center;
-                    "
+            <v-col cols="12" style="margin-bottom: 40px;">
+              <h3 class="heading">Leader</h3>
+            </v-col>
+            <v-col
+              v-for="member in members.executives"
+              :key="member.name"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <v-card hover width="300" style="padding: 12px">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <v-avatar
+                    class="profile"
+                    size="200"
+                    color="#dedede"
+                    style="margin: 5% 0"
                   >
-                    <v-avatar
-                      class="profile"
-                      size="200"
-                      color="#dedede"
-                      style="margin: 5% 0"
-                    >
-                      <!-- <v-img max-height="250" :src="member.image"></v-img> -->
-                      <v-icon size="100">mdi-account</v-icon>
-                    </v-avatar>
-                  </div>
+                    <!-- <v-img max-height="250" :src="member.image"></v-img> -->
+                    <v-icon size="100">mdi-account</v-icon>
+                  </v-avatar>
+                </div>
 
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                    "
-                  >
-                    <v-card-title class="font-weight-bold">{{
-                      member.name
-                    }}</v-card-title>
-                    <v-card-subtitle>{{ member.role }}</v-card-subtitle>
-                    <v-card-text>
-                      {{ member.description }}
-                    </v-card-text>
-                    <v-card-text>
-                      <v-menu offset-y>
-                        <template v-slot:activator="{ on, attrs }">
-                          <v-btn v-bind="attrs" v-on="on" depressed>
-                            Contact
-                          </v-btn>
-                        </template>
-                        <v-list>
-                          <v-list-item link @click="send(member.email)">
-                            <v-list-item-title>
-                              <v-icon left="8">mdi-send</v-icon> Send
-                              Email</v-list-item-title
-                            >
-                          </v-list-item>
-                          <v-list-item link @click="copy(member.email)">
-                            <v-list-item-title
-                              ><v-icon left="8">mdi-clipboard-outline</v-icon>
-                              Copy Email</v-list-item-title
-                            >
-                          </v-list-item>
-                        </v-list>
-                      </v-menu>
-                    </v-card-text>
-                  </div>
-                </v-card>
-              </v-col>
-            </v-row>
-            <!-- Team 멤버들: 카드 with text -->
-            <v-row>
-              <v-col cols="12"><h4>Managers</h4></v-col>
-              <v-col
-                cols="6"
-                md="3"
-                v-for="member in members.managers"
-                :key="member.name"
-                style="padding-top: 30px; padding-bottom: 30px"
-              >
-                <v-card hover class="card_man">
-                  <v-card-title class="font-weight-bold">
-                    {{ member.name }}
-                  </v-card-title>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <v-card-title class="font-weight-bold">{{
+                    member.name
+                  }}</v-card-title>
                   <v-card-subtitle>{{ member.role }}</v-card-subtitle>
                   <v-card-text>
                     {{ member.description }}
@@ -145,9 +98,55 @@
                       </v-list>
                     </v-menu>
                   </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+          <!-- Team 멤버들: 카드 with text -->
+          <v-row class="board">
+            <v-col cols="12" style="margin-bottom: 40px;">
+              <h3 class="heading">Managers</h3>
+            </v-col>
+            <v-col
+              cols="6"
+              md="3"
+              v-for="member in members.managers"
+              :key="member.name"
+              style="padding-top: 30px; padding-bottom: 30px"
+            >
+              <v-card hover class="card_man">
+                <v-card-title class="font-weight-bold">
+                  {{ member.name }}
+                </v-card-title>
+                <v-card-subtitle>{{ member.role }}</v-card-subtitle>
+                <v-card-text>
+                  {{ member.description }}
+                </v-card-text>
+                <v-card-text>
+                  <v-menu offset-y>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn v-bind="attrs" v-on="on" depressed>
+                        Contact
+                      </v-btn>
+                    </template>
+                    <v-list>
+                      <v-list-item link @click="send(member.email)">
+                        <v-list-item-title>
+                          <v-icon left="8">mdi-send</v-icon> Send
+                          Email</v-list-item-title
+                        >
+                      </v-list-item>
+                      <v-list-item link @click="copy(member.email)">
+                        <v-list-item-title
+                          ><v-icon left="8">mdi-clipboard-outline</v-icon> Copy
+                          Email</v-list-item-title
+                        >
+                      </v-list-item>
+                    </v-list>
+                  </v-menu>
+                </v-card-text>
+              </v-card>
+            </v-col>
           </v-row>
         </div>
       </div>
@@ -248,7 +247,7 @@ export default {
       //     },
       //   ],
       // },
-      members: this.$t("members.member_list")
+      members: this.$t("members.member_list"),
     };
   },
 

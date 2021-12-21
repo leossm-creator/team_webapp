@@ -27,10 +27,10 @@
           </v-row>
           <v-row class="board text_board">
             <v-col md="3" cols="12">
-              <h3 v-html="$t('timeline.text_board.1.title')"></h3>
+              <h3 class="heading" v-html="$t('timeline.text_board.1.title')"></h3>
             </v-col>
             <v-col md="9" cols="12">
-              <p v-html="$t('timeline.text_board.1.description')">
+              <p class="content" v-html="$t('timeline.text_board.1.description')">
               </p>
             </v-col>
           </v-row>

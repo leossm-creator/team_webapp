@@ -30,7 +30,7 @@
                 ></p>
               </div>
             </v-col>
-            <v-col class="slide_img">
+            <v-col class="slide_img darken">
               <div
                 class="bg_img an_con"
                 id="sliderImg_01"
@@ -45,7 +45,7 @@
 
         <swiper-slide>
           <v-row class="slide">
-            <v-col class="slide_img">
+            <v-col class="slide_img darken">
               <div
                 class="bg_img an_con"
                 id="sliderImg_02"
@@ -67,7 +67,7 @@
                   v-html="$t('home.slide.2.title')"
                 ></p>
                 <p
-                  class="an_con"
+                  class="an_con slide_p"
                   data-swiper-animation="animate__fadeInRight"
                   data-duration="1s"
                   data-delay="1.5s"
@@ -94,7 +94,7 @@
                   v-html="$t('home.slide.3.title')"
                 ></p>
                 <p
-                  class="an_con"
+                  class="an_con slide_p"
                   data-swiper-animation="animate__fadeInUp"
                   data-duration="1.5s"
                   data-delay="2s"
@@ -104,7 +104,7 @@
                 ></p>
               </div>
             </v-col>
-            <v-col class="slide_img">
+            <v-col class="slide_img darken">
               <div
                 class="bg_img an_con"
                 id="sliderImg_03"
@@ -119,7 +119,7 @@
 
         <swiper-slide>
           <v-row class="slide">
-            <v-col class="slide_img">
+            <v-col class="slide_img darken">
               <div
                 class="bg_img an_con"
                 id="sliderImg_04"
@@ -141,7 +141,7 @@
                   v-html="$t('home.slide.4.title')"
                 ></p>
                 <p
-                  class="an_con"
+                  class="an_con slide_p"
                   data-swiper-animation="animate__fadeInDown"
                   data-duration="1.5s"
                   data-delay="1.5s"
@@ -358,6 +358,8 @@ export default {
             padding-bottom: 42px !important;
             line-height: 42px !important;
 
+            color: whitesmoke;
+
             // color: whitesmoke;
 
             .sub_heading {
@@ -365,6 +367,24 @@ export default {
             }
           }
           .slide_p {
+            color: whitesmoke;
+          }
+        }
+      }
+
+      .slide_img.darken {
+        .bg_img {
+          &#sliderImg_01 {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), 60%, rgba(0, 0, 0, 0) ), url("~@/assets/img/slider/main-bg-1.jpeg") !important;
+          }
+          &#sliderImg_02 {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), 70%, rgba(0, 0, 0, 0) ), url("~@/assets/img/slider/main-bg-2.jpeg") !important;
+          }
+          &#sliderImg_03 {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), 80%, rgba(0, 0, 0, 0) ), url("~@/assets/img/slider/main-bg-3.jpeg") !important;
+          }
+          &#sliderImg_04 {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), 60%, rgba(0, 0, 0, 0) ), url("~@/assets/img/slider/main-bg-4.jpeg") !important;
           }
         }
       }

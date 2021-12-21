@@ -34,7 +34,7 @@
 
         <div class="content_board">
           <div class="tabs">
-            <v-tabs v-model="tab" centered icons-and-text color="#93bc3b">
+            <v-tabs v-model="tab" centered icons-and-text color="#f7c45f">
               <v-tabs-slider></v-tabs-slider>
 
               <v-tab href="#tab-1" dark>
@@ -186,8 +186,8 @@
                         <v-list-item>
                           <v-list-item-content>
                             <v-list-item-title>
-                              <v-avatar color="amber">
-                                <v-icon color="deep-orange">mdi-phone</v-icon>
+                              <v-avatar color="">
+                                <v-icon color="#ea002c">mdi-phone</v-icon>
                               </v-avatar>
                               <span class="con_details"
                                 >02) 2008 - 2008</span
@@ -199,8 +199,8 @@
                         <v-list-item>
                           <v-list-item-content>
                             <v-list-item-title>
-                              <v-avatar color="amber">
-                                <v-icon color="deep-orange">mdi-email</v-icon>
+                              <v-avatar color="">
+                                <v-icon color="#ea002c">mdi-email</v-icon>
                               </v-avatar>
                               <span class="con_details"
                                 >someemail.email.com</span
@@ -215,8 +215,8 @@
                             <!-- </div> -->
 
                             <v-list-item-title>
-                              <v-avatar color="amber">
-                                <v-icon color="deep-orange"
+                              <v-avatar color="">
+                                <v-icon color="#ea002c"
                                   >mdi-map-marker</v-icon
                                 >
                               </v-avatar>

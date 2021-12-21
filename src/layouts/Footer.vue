@@ -1,12 +1,12 @@
 <template>
   <div>
     <v-footer padless id="footer">
-      <v-card flat tile class="footer_up white--text text-center" style="width: 100%;">
+      <v-card flat tile class="footer_up text-center" style="width: 100%;">
         <v-card-text>
           <v-btn
             v-for="link in links"
             :key="link.icon"
-            class="mx-4 white--text"
+            class="mx-4"
             icon
           >
             <v-icon size="24px">
@@ -15,11 +15,11 @@
           </v-btn>
         </v-card-text>
 
-        <v-card-text class="white--text pt-0" v-html="$t('footer.text')">
+        <v-card-text class=" pt-0" v-html="$t('footer.text')">
         </v-card-text>
         <v-divider></v-divider>
 
-        <v-card-text class="white--text footer_down">
+        <v-card-text class=" footer_down">
           {{ new Date().getFullYear() }} — <strong>SK Chemicals</strong>
         </v-card-text>
       </v-card>
@@ -43,12 +43,13 @@ export default {
   #footer {
     bottom: 0;
     // position: absolute;
+    color: #767171;
     .footer_up {
-      background-color: #3d3b3a;
+      background-color: #f4f4f4;
       border-top: 3px solid #E53935;
       
       .footer_down {
-        background-color: #302e2e;
+        background-color: #eceaea;
         // background-color: orange;
         // border-top: 5px solid #E53935;
         // color: #E53935;

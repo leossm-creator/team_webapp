@@ -2,7 +2,7 @@ export const SUPPORTED_LOCALES = [
   {
     code: 'kr',
     base: '',
-    flag: 'fr',
+    flag: 'kr',
     name: 'Korean',
     translations: '/translations/kr.json'
   },

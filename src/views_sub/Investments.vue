@@ -8,9 +8,9 @@
         height="100%"
       >
         <v-card-title class="pageHeadings">
-          <p class="pageTitle">{{$t("nav.investments.title")}}</p>
+          <p class="pageTitle">{{ $t("nav.investments.title") }}</p>
           <p class="pageSub">
-            {{$t("nav.investments.sub_title")}}
+            {{ $t("nav.investments.sub_title") }}
           </p>
         </v-card-title>
       </v-img>
@@ -22,78 +22,145 @@
         <div class="title_board">
           <v-row class="board">
             <v-col>
-              <div class="p_title" v-html="$t('investments.p_title')">
-              </div>
+              <div class="p_title" v-html="$t('investments.p_title')"></div>
             </v-col>
           </v-row>
         </div>
         <div class="text_board">
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 v-html="$t('investments.text_board.1.title')"></h3>
+              <h3
+                class="heading"
+                v-html="$t('investments.text_board.overview.title')"
+              ></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p v-html="$t('investments.text_board.1.description[0]')"> 
-              </p>
-              <p v-html="$t('investments.text_board.1.description[1]')">
-              </p>
-              <p v-html="$t('investments.text_board.1.description[2]')">
-              </p>
+              <p
+                class="content"
+                v-html="$t('investments.text_board.overview.description')"
+              ></p>
             </v-col>
           </v-row>
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 v-html="$t('investments.text_board.2.title')"></h3>
+              <h3
+                class="heading"
+                v-html="$t('investments.text_board.aim.title')"
+              ></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p v-html="$t('investments.text_board.2.description')">
-              </p>
+              <p
+                class="content"
+                v-html="$t('investments.text_board.aim.description')"
+              ></p>
             </v-col>
           </v-row>
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 v-html="$t('investments.text_board.3.title')"></h3>
+              <h3
+                class="heading"
+                v-html="$t('investments.text_board.fields.title')"
+              ></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p v-html="$t('investments.text_board.3.description')">
-              </p>
+              <p
+                class="content"
+                v-html="$t('investments.text_board.fields.description')"
+              ></p>
+              <v-row class="inner_list">
+                <v-col cols="6">
+                  <p
+                    class="list_title"
+                    v-html="$t('investments.text_board.fields.strategic.title')"
+                  ></p>
+                  <ul class="list">
+                    <li class="list_item">
+                      <p
+                        class="list_text"
+                        v-html="
+                          $t('investments.text_board.fields.strategic.list[0]')
+                        "
+                      ></p>
+                    </li>
+                    <li class="list_item">
+                      <p
+                        class="list_text"
+                        v-html="
+                          $t('investments.text_board.fields.strategic.list[1]')
+                        "
+                      ></p>
+                    </li>
+                  </ul>
+                </v-col>
+                <v-col cols="6">
+                  <p
+                    class="list_title"
+                    v-html="$t('investments.text_board.fields.future.title')"
+                  ></p>
+                  <ul class="list">
+                    <li class="list_item">
+                      <p
+                        class="list_text"
+                        v-html="
+                          $t('investments.text_board.fields.future.list[0]')
+                        "
+                      ></p>
+                    </li>
+                    <li class="list_item">
+                      <p
+                        class="list_text"
+                        v-html="
+                          $t('investments.text_board.fields.future.list[1]')
+                        "
+                      ></p>
+                    </li>
+                  </ul>
+                </v-col>
+              </v-row>
             </v-col>
           </v-row>
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 v-html="$t('investments.text_board.4.title')"></h3>
+              <h3
+                class="heading"
+                v-html="$t('investments.text_board.career.title')"
+              ></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p v-html="$t('investments.text_board.4.description')">
-              </p>
+              <p
+                class="content"
+                v-html="$t('investments.text_board.career.description')"
+              ></p>
             </v-col>
           </v-row>
         </div>
         <v-row class="board">
-          <v-img height="100vh" src="https://source.unsplash.com/EDj-oxXe4s8">
+          <v-img
+            contain
+            height="400"
+            :src="require(`@/assets/img/partners/partners_inv.png`)"
+          >
           </v-img>
         </v-row>
-        <v-row class="board">
+        <!-- <v-row class="board">
           <v-col class="d-flex justify-center align-center">
             <LineChart />
           </v-col>
           <v-col class="d-flex justify-center align-center">
             <LineChart />
           </v-col>
-        </v-row>
+        </v-row> -->
       </div>
     </div>
   </div>
 </template>
 <script>
-import LineChart from "../charts/Chart_01.vue";
-// import Breadcrumb from "../components/Breadcrumb.vue"
+// import LineChart from "../charts/Chart_01.vue";
 import Barnav from "../components/Barnav.vue";
 export default {
   name: "Investments",
   components: {
-    LineChart,
-    // Breadcrumb,
+    // LineChart,
     Barnav,
   },
   data() {
@@ -108,4 +175,32 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.inner_list {
+  margin-top: 120px;
+
+  .list_title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    padding-left: 0;
+    list-style: none;
+
+    .list_item {
+      padding-right: 40px;
+
+      .list_text {
+        margin-bottom: 30px;
+
+        &::before {
+          content: "· ";
+          position: relative;
+          left: 0;
+        }
+      }
+    }
+  }
+}
 </style>

@@ -2,6 +2,7 @@
   "app": {
     "title": "SK Chemicals Open Innovation"
   },
+
   "nav": {
     "title": "Open Innovation",
     "sub_title": "SK Chemicals Open Innovation",
@@ -38,9 +39,11 @@
       "sub_title": "R&D capabilities being on par with global standards"
     }
   },
+
   "footer": {
     "text": "310 Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do <br/> 463-400 Korea [13494]<br />Copyright(c) SK chemicals. All Rights Reserved."
   },
+
   "home": {
     "slide": {
       "1": {
@@ -61,6 +64,7 @@
       }
     }
   },
+
   "intro": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
@@ -78,6 +82,7 @@
       }
     }
   },
+
   "timeline": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
@@ -123,6 +128,7 @@
       }
     ]
   },
+
   "members": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "member_list": {
@@ -202,6 +208,7 @@
       ]
     }
   },
+
   "pharma": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
@@ -219,6 +226,7 @@
       }
     }
   },
+
   "research": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {
@@ -236,31 +244,45 @@
       }
     }
   },
+
   "investments": {
-    "p_title": "SK Chemicals is looking for <br class='pc_only'/> Bio-Ventures to share growth and future values",
+    "p_title": "SK Chemicals pursues <br class='pc_only'/> shared growth with the venture industry",
     "text_board": {
-      "1": {
+      "overview": {
         "title": "Overview",
-        "description": [
-          "Since 2020, SK Chemicals has been establishing a strategic cooperative relationship through investment by discovering promising domestic and foreign ventures as part of open innovation. Currently, we have completed the establishment of venture investment networks at home and abroad, and are looking for companies that can put their effort to share common growth and future values.",
-          "Through connections with more venture companies with global-level R&D capabilities, we want to continue expanding oour growth by sharing business strategies and future visions.",
-          "SK Chemicals is focusing on our key R&D areas while also opening up opportunities for possible future expansion areas, and intends to invest with open possibilities in the prelude to attracting investment from companies."
-        ]
+        "description": "The future of the pharmaceutical industry depends on cooperation, hence innovation requires investment. In order to solve the new problem of healthcare thrown by the rapidly changing era, <span class='ff_m'>SK</span> Chemicals actively supports promising bio-ventures at home and abroad."
       },
-      "2": {
+      "aim": {
         "title": "Aim",
-        "description": "For companies focusing on the key R&D areas selected by SK Chemicals, we are seeking to cooperate from the early stages of establishment (Seed), and for future business expansion we are exploring investment opportunities from the time when the nature of the business area is confirmed (Series B)."
+        "description": "SK Chemicals wants to cooperate as a strategic investor with bio venture companies with excellent R&D capabilities and technology. We are looking for a venture company that will share the fruits of its performance by jointly striving for the successful development and commercialization of technology and corporate growth."
       },
-      "3": {
-        "title": "Key Areas",
-        "description": "The company's key R&D areas include neurological diseases, musculoskeletal diseases, urological diseases, kidney diseases, and metabolic diseases, inflammatory diseases, and central nervous system diseases which are the fields that has been recognized by the market and has a commercial sales network."
+      "fields": {
+        "title": "Fields of research",
+        "description": "In addition to the key areas where SK Chemicals can fully utilize its experiences and capabilities, we are also actively considering future technology areas that will drive trends in the pharmaceutical industry.",
+        "strategic": {
+          "title": "Strategic focus areas",
+          "list": [
+            "Promising technologies that can be applied to NASH (non-alcoholic steatohepatitis), fibrosis disease, and rheumatoid arthritis, which are internal R&D focus areas.",
+            "New drug candidates in areas where SK Chemicals has an understanding of the market and diseases, such as nervous system, musculoskeletal system, and urinary system diseases, etc."
+          ]
+        },
+        "future": {
+          "title": "Future leading edge technology areas",
+          "list": [
+            "Future technologies that present new paradigms such as targeted protein decomposition, gene therapy, and cell therapy.",
+            "New drug candidates that have potential for diseases with high medical unmet demand, such as Alzheimer's disease, autoimmune disease, and cancer."
+          ]
+        }
       },
-      "4": {
-        "title": "Future<br class='pc_only' />Expansion Areas",
-        "description": "The company's future business expansion areas include diabetes complications, Alzheimer's dementia, autoimmune diseases, cancer diseases, and genome editing/genetic treatments, targeted proteolysis, and cell therapy, which are favorable to strengthening and expanding our sales network in the market."
+      "career": {
+        "title": "Investment History",
+        "description": "SK Chemicals is seeking various strategic investment opportunities.",
+        "fund": "Fund investment",
+        "strategic": "Strategic investment"
       }
     }
   },
+
   "contactUs": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "t_c": {
@@ -282,6 +304,7 @@
       "address": "310 Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do 463-400 Korea [13494]"
     }
   },
+
   "partnerships": {
     "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
     "text_board": {

@@ -5,27 +5,30 @@
         <v-progress-circular indeterminate size="32" color="#212121"></v-progress-circular>
       </v-overlay>
     </div>
-    <div v-else>
+    <div v-else id="page">
       <Header />
-      <div id="content" ref="content">
+      <!-- <div id="content" ref="content">
         <router-view />
         <Footer v-if="$route.name !== 'home'"></Footer>
-      </div>
+      </div> -->
+      <Content />
     </div>
   </v-app>
 </template>
 
 <script>
 import Header from "./layouts/Header.vue";
-import Footer from "./layouts/Footer.vue";
+// import Footer from "./layouts/Footer.vue";
 import EventBus from "@/EventBus";
+import Content from "./layouts/Content.vue";
 
 export default {
   name: "App",
 
   components: {
     Header,
-    Footer,
+    // Footer,
+    Content,
   },
 
   data: () => ({
@@ -43,13 +46,19 @@ export default {
   height: 100vh;
   width: 100vw;
   // overflow-y: scroll;
-  #content {
-    position: absolute;
-    top: 64px;
-    height: calc(100vh - 64px);
-    overflow-y: scroll;
-    overflow-x: auto;
-    width: 100%;
-  }
+  // #content {
+  //   position: absolute;
+  //   top: 64px;
+  //   height: calc(100vh - 64px);
+  //   overflow-y: scroll;
+  //   overflow-x: auto;
+  //   width: 100%;
+  // }
+
+  // #page {
+  //   height: 100vh;
+  //   width: 100vw;
+  //   overflow: scroll;
+  // }
 }
 </style>
