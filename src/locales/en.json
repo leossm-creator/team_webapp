@@ -210,37 +210,39 @@
   },
 
   "pharma": {
-    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "p_title": "SK Chemicals는 더 나은 신약을 만들기 위해 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
-      "1": {
-        "title": "Overview",
-        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
+      "aim": {
+        "title": "Goal",
+        "description": [
+          "Based on experts in each field, we aim to lead the success of developing new drugs and develops new global drugs to promote human health.",
+          "Through open innovation, joint research with promising ventures will be conducted, and based on this, the development of new drugs will lead to success."
+        ]
       },
-      "2": {
-        "title": "Quality by Design",
-        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
-      },
-      "3": {
-        "title": "Key Areas",
-        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
+      "fields": {
+        "title": "Fields of research",
+        "description": "The Open Innovation team selected <span class='ff_m'>NASH</span> (non-alcoholic steatohepatitis) and <span class='ff_m'>IPF</span> (Idiopathic pulmonary fibrosis) as key disease areas, focusing on discovery of First-in-Class drugs. Meanwhile, we are expanding our disease area to other indications that require strategic technological innovation in addition to the two diseases."
       }
     }
   },
 
   "research": {
-    "p_title": "SK Chemicals always looks <br class='pc_only'/> for ways to make better pharmaceutical products",
+    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
-      "1": {
-        "title": "Overview",
-        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
+      "aim": {
+        "title": "연구 목표",
+        "description": "효과적인 치료법이 없는 적응증을 중심으로 오픈 이노베이션을 통해 보다 효율적인 신약개발 연구에 초점을 두고 있습니다."
       },
-      "2": {
-        "title": "Quality by Design",
-        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
+      "strategy": {
+        "title": "연구 전략",
+        "description": "오픈 이노베이션을 통한 다양한 파트너사와의 공동연구를 바탕으로 인공지능(<span class= 'ff_m'>AI</span>) 신약 및 표적단백질 분해 (<span class= 'ff_m'>Targeted Protein Degradation</span>) 등의 차세대 기술을 이용하여 혁신적인 신약개발의 성공 가능성을 극대화하고 있습니다."
       },
-      "3": {
-        "title": "Key Areas",
-        "description": "R&D is the source of competitiveness for pharmaceutical companies. As such, SK Chemicals has committed its research capabilities in developing pharmaceutical products with global competitiveness. SK Chemicals Central Research Center holds outstanding competencies and expertise across all stages of pharmaceutical R&D including drug formulations research, analytical research, process development and manufacturing of various dosage forms."
+      "capacity": {
+        "title": "연구 역량",
+        "description": [
+          "연구 전문 인력을 중심으로 중점 질환을 극복할 수 있는 신규 타깃 발굴을 수행하고 있으며, 약효, 합성, 독성 및 <span class= 'ff_m'>PK</span> 전문인력들이 후보물질 도출과 검증을 진행하고 있습니다.",
+          "임상, 허가, 약가, 생산 및 마케팅 등 전문 부서와 협업하여 신약개발의 전 단계를 수행할 수 있는 역량을 보유하고 있습니다."
+        ]
       }
     }
   },
@@ -321,7 +323,8 @@
       {
         "name": "Standigm",
         "title": "Cure for rheumatoid arthritis",
-        "description": "Discovery of rheumatoid arthritis treatment substances in the new drug re-creation approach and patent application"
+        "description": "Discovery of rheumatoid arthritis treatment substances in the new drug re-creation approach and patent application",
+        "searchLink": "https://www.google.com/search?q=sk%EC%BC%80%EB%AF%B8%EC%B9%BC+%EC%8A%A4%ED%83%A0%EB%8B%A4%EC%9E%84+%EB%A5%98%EB%A7%88%ED%8B%B0%EC%8A%A4+%EA%B4%80%EC%A0%88%EC%97%BC&tbm=nws"
       },
       {
         "name": "J2H Biotech",

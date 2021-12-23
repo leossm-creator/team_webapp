@@ -2,7 +2,7 @@
   <div>
     <v-card flat tile class="thumbnail">
       <v-img
-        :src="require(`@/assets/img/thumbnails/sub_thumbnail-03.png`)"
+        :src="require(`@/assets/img/thumbnails/sub_thumbnail-13.jpg`)"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
@@ -30,28 +30,20 @@
         <div class="text_board">
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 class="heading" v-html="$t('pharma.text_board.1.title')"></h3>
+              <h3 class="heading" v-html="$t('pharma.text_board.aim.title')"></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p class="content" v-html="$t('pharma.text_board.1.description')">
+              <p class="content" v-html="$t('pharma.text_board.aim.description[0]')">
+              <p class="content" v-html="$t('pharma.text_board.aim.description[1]')">
               </p>
             </v-col>
           </v-row>
           <v-row class="board">
             <v-col cols="12" md="3">
-              <h3 class="heading" v-html="$t('pharma.text_board.2.title')"></h3>
+              <h3 class="heading" v-html="$t('pharma.text_board.fields.title')"></h3>
             </v-col>
             <v-col cols="12" md="9">
-              <p class="content" v-html="$t('pharma.text_board.2.description')">
-              </p>
-            </v-col>
-          </v-row>
-          <v-row class="board">
-            <v-col cols="12" md="3">
-              <h3 class="heading" v-html="$t('pharma.text_board.3.title')"></h3>
-            </v-col>
-            <v-col cols="12" md="9">
-              <p class="content" v-html="$t('pharma.text_board.3.description')">
+              <p class="content" v-html="$t('pharma.text_board.fields.description')">
               </p>
             </v-col>
           </v-row>

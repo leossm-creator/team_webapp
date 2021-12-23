@@ -2,7 +2,7 @@
   <div>
     <v-card flat tile class="thumbnail">
       <v-img
-        :src="require(`@/assets/img/thumbnails/sub_thumbnail-01.png`)"
+        :src="require(`@/assets/img/thumbnails/sub_thumbnail-10.jpg`)"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
@@ -31,13 +31,13 @@
             <v-col cols="12" md="3">
               <h3
                 class="heading"
-                v-html="$t('research.text_board.1.title')"
+                v-html="$t('research.text_board.aim.title')"
               ></h3>
             </v-col>
             <v-col cols="12" md="9">
               <p
                 class="content"
-                v-html="$t('research.text_board.1.description')"
+                v-html="$t('research.text_board.aim.description')"
               ></p>
             </v-col>
           </v-row>
@@ -45,13 +45,13 @@
             <v-col cols="12" md="3">
               <h3
                 class="heading"
-                v-html="$t('research.text_board.2.title')"
+                v-html="$t('research.text_board.strategy.title')"
               ></h3>
             </v-col>
             <v-col cols="12" md="9">
               <p
                 class="content"
-                v-html="$t('research.text_board.2.description')"
+                v-html="$t('research.text_board.strategy.description')"
               ></p>
             </v-col>
           </v-row>
@@ -59,26 +59,30 @@
             <v-col cols="12" md="3">
               <h3
                 class="heading"
-                v-html="$t('research.text_board.3.title')"
+                v-html="$t('research.text_board.capacity.title')"
               ></h3>
             </v-col>
             <v-col cols="12" md="9">
               <p
                 class="content"
-                v-html="$t('research.text_board.3.description')"
+                v-html="$t('research.text_board.capacity.description[0]')"
+              ></p>
+              <p
+                class="content"
+                v-html="$t('research.text_board.capacity.description[1]')"
               ></p>
             </v-col>
           </v-row>
         </div>
         <div class="img_board">
           <v-row style="margin-top: 120px">
-            <v-col cols="12" md="6">
-              <v-img src="https://source.unsplash.com/9vnACvX2748"></v-img>
+            <v-col cols="12" md="12">
+              <v-img width="600" contain :src="require(`@/assets/img/content/tree.png`)" style="margin-left: auto; margin-right: auto"></v-img>
             </v-col>
-            <v-col cols="12" md="6">
+            <!-- <v-col cols="12" md="6">
               <div class="img_heading"></div>
               <p></p>
-            </v-col>
+            </v-col> -->
           </v-row>
         </div>
       </div>
