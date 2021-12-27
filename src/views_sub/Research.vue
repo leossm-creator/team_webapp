@@ -74,17 +74,37 @@
             </v-col>
           </v-row>
         </div>
-        <div class="img_board">
-          <v-row style="margin-top: 120px">
-            <v-col cols="12" md="12">
-              <v-img width="600" contain :src="require(`@/assets/img/content/tree.png`)" style="margin-left: auto; margin-right: auto"></v-img>
-            </v-col>
-            <!-- <v-col cols="12" md="6">
-              <div class="img_heading"></div>
-              <p></p>
-            </v-col> -->
-          </v-row>
-        </div>
+        <v-row class="board gray">
+          <v-col cols="12">
+            <p class="heading">
+              <span class="ff_m">SK</span>케미칼 <span class="ff_m">R&D</span> 기반 혁신 신약 개발
+            </p>
+          </v-col>
+          <v-col cols="4" class="d-flex justify-center flex-column pa-15">
+            <v-img
+              contain
+              height="100"
+              :src="require(`@/assets/img/icons/develop.png`)"
+            ></v-img>
+            <div class="icon_heading">{{$t("research.text_board.icons.develop")}}</div>
+          </v-col>
+          <v-col cols="4" class="d-flex justify-center flex-column pa-15">
+            <v-img
+              contain
+              height="100"
+              :src="require(`@/assets/img/icons/focus.png`)"
+            ></v-img>
+            <div class="icon_heading">{{$t("research.text_board.icons.focus")}}</div>
+          </v-col>
+          <v-col cols="4" class="d-flex justify-center flex-column pa-15">
+            <v-img
+              contain
+              height="100"
+              :src="require(`@/assets/img/icons/coop.png`)"
+            ></v-img>
+            <div class="icon_heading">{{$t("research.text_board.icons.coop")}}</div>
+          </v-col>
+        </v-row>
       </div>
     </div>
   </div>
@@ -104,4 +124,10 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.icon_heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 45px;
+}
 </style>

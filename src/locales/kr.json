@@ -65,7 +65,7 @@
   },
 
   "intro": {
-    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
       "1": {
         "title": "개요",
@@ -83,7 +83,7 @@
   },
 
   "timeline": {
-    "p_title": "SK Chemicals 오픈 이노베이션은 <br class='pc_only' /> 계속 성장해왔습니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 성장하고 있습니다",
     "text_board": {
       "1": {
         "title": "",
@@ -140,7 +140,7 @@
   },
 
   "members": {
-    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "member_list": {
       "executives": [
         {
@@ -220,7 +220,7 @@
   },
 
   "pharma": {
-    "p_title": "SK Chemicals는 더 나은 신약을 만들기 위해 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
       "aim": {
         "title": "연구 목표",
@@ -237,7 +237,7 @@
   },
 
   "research": {
-    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
     "text_board": {
       "aim": {
         "title": "연구 목표",
@@ -253,6 +253,11 @@
           "연구 전문 인력을 중심으로 중점 질환을 극복할 수 있는 신규 타깃 발굴을 수행하고 있으며, 약효, 합성, 독성 및 <span class= 'ff_m'>PK</span> 전문인력들이 후보물질 도출과 검증을 진행하고 있습니다.",
           "임상, 허가, 약가, 생산 및 마케팅 등 전문 부서와 협업하여 신약개발의 전 단계를 수행할 수 있는 역량을 보유하고 있습니다."
         ]
+      },
+      "icons": {
+        "develop": "글로벌 투자를 통한 사업 확장",
+        "focus": "중점 질환 영역 집중",
+        "coop": "개방형 혁신으로 협업 극대화"
       }
     }
   },
@@ -297,7 +302,7 @@
 
 
   "contactUs": {
-    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 누구에게나 열려있습니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼 오픈이노베이션 팀은<br class='pc_only' /> 누구에게나 열려있습니다",
     "t_c": {
       "title": "SK케미칼 이용약관",
       "li_title": {
@@ -319,7 +324,7 @@
   },
 
   "partnerships": {
-    "p_title": "SK Chemicals 오픈이노베이션 팀은 <br class='pc_only' /> 끊임없이 고민하고 연구합니다",
+    "p_title": "<span class= 'ff_m'>SK</span>케미칼은 <br class='pc_only'> 벤처 업계와의 동반 성장을 추구합니다",
     "text_board": {
       "1": {
         "title": "개요",
@@ -355,6 +360,7 @@
         "description": "‘ARK’ 플랫폼 기술을 활용 AI기반 신약개발을 공동연구 및 개발 협약을 체결",
         "searchLink": "https://www.google.com/search?q=sk%EC%BC%80%EB%AF%B8%EC%B9%BC+%EB%8B%A5%ED%84%B0%EB%85%B8%EC%95%84+AI+%EA%B3%B5%EB%8F%99%EC%97%B0%EA%B5%AC&tbm=nws"
       }
-    ]
+    ],
+    "showArticle": "관련 기사 보기"
   }
 }

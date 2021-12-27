@@ -67,56 +67,52 @@
                 class="content"
                 v-html="$t('investments.text_board.fields.description')"
               ></p>
-              <v-row class="inner_list">
-                <v-col cols="6">
+            </v-col>
+          </v-row>
+          <v-row class="board inner_list gray">
+            <v-col cols="12" md="6" class="list_row">
+              <p
+                class="list_title"
+                v-html="$t('investments.text_board.fields.strategic.title')"
+              ></p>
+              <ul class="text_list">
+                <li class="list_item">
                   <p
-                    class="list_title"
-                    v-html="$t('investments.text_board.fields.strategic.title')"
+                    class="list_text"
+                    v-html="
+                      $t('investments.text_board.fields.strategic.list[0]')
+                    "
                   ></p>
-                  <ul class="list">
-                    <li class="list_item">
-                      <p
-                        class="list_text"
-                        v-html="
-                          $t('investments.text_board.fields.strategic.list[0]')
-                        "
-                      ></p>
-                    </li>
-                    <li class="list_item">
-                      <p
-                        class="list_text"
-                        v-html="
-                          $t('investments.text_board.fields.strategic.list[1]')
-                        "
-                      ></p>
-                    </li>
-                  </ul>
-                </v-col>
-                <v-col cols="6">
+                </li>
+                <li class="list_item">
                   <p
-                    class="list_title"
-                    v-html="$t('investments.text_board.fields.future.title')"
+                    class="list_text"
+                    v-html="
+                      $t('investments.text_board.fields.strategic.list[1]')
+                    "
                   ></p>
-                  <ul class="list">
-                    <li class="list_item">
-                      <p
-                        class="list_text"
-                        v-html="
-                          $t('investments.text_board.fields.future.list[0]')
-                        "
-                      ></p>
-                    </li>
-                    <li class="list_item">
-                      <p
-                        class="list_text"
-                        v-html="
-                          $t('investments.text_board.fields.future.list[1]')
-                        "
-                      ></p>
-                    </li>
-                  </ul>
-                </v-col>
-              </v-row>
+                </li>
+              </ul>
+            </v-col>
+            <v-col cols="12" md="6" class="list_row">
+              <p
+                class="list_title"
+                v-html="$t('investments.text_board.fields.future.title')"
+              ></p>
+              <ul class="text_list">
+                <li class="list_item">
+                  <p
+                    class="list_text"
+                    v-html="$t('investments.text_board.fields.future.list[0]')"
+                  ></p>
+                </li>
+                <li class="list_item">
+                  <p
+                    class="list_text"
+                    v-html="$t('investments.text_board.fields.future.list[1]')"
+                  ></p>
+                </li>
+              </ul>
             </v-col>
           </v-row>
           <v-row class="board">
@@ -176,30 +172,55 @@ export default {
 </script>
 <style scoped lang="scss">
 .inner_list {
-  margin-top: 120px;
 
-  .list_title {
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
+  .list_row {
+    padding: 30px;
 
-  .list {
-    padding-left: 0;
-    list-style: none;
+    .list_title {
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 60px;
+    }
 
-    .list_item {
-      padding-right: 40px;
+    .text_list {
+      padding-left: 0;
+      list-style: none;
 
-      .list_text {
-        margin-bottom: 30px;
+      .list_item {
+        padding-right: 40px;
+        margin-bottom: 45px;
 
-        &::before {
-          content: "· ";
-          position: relative;
-          left: 0;
+        .list_text {
+          &::before {
+            content: "· ";
+            position: relative;
+            left: 0;
+          }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .inner_list {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+
+    div:first-of-type {
+      margin-bottom: 45px;
+    }
+
+    .list_row {
+      padding: 0 !important;
+    }
+    .list_title {
+      margin-bottom: 30px !important;
+    }
+
+    .list_item {
+      padding-right: 0 !important;
+      margin-bottom: 30px !important;
     }
   }
 }

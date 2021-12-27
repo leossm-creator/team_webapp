@@ -5,7 +5,7 @@
         <v-progress-circular indeterminate size="32" color="#212121"></v-progress-circular>
       </v-overlay>
     </div>
-    <div v-else id="page">
+    <div v-else>
       <Header />
       <!-- <div id="content" ref="content">
         <router-view />

@@ -252,11 +252,11 @@ export default {
         let newFish;
         if (num === 0) {
           // 고래
-          alert("Whale!");
+          console.log("Whale!");
           newFish = new Whale(sk.mouseX, sk.mouseY);
         } else if (0 < num && num < 4) {
           // 해파리
-          alert("Jellyfish!");
+          console.log("Jellyfish!");
           newFish = new Jellyfish(sk.mouseX, sk.mouseY)
         } else {
           newFish = new Fish(sk.mouseX, sk.mouseY);

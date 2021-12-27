@@ -50,10 +50,10 @@
           </div>
           <div class="tab_content">
             <v-tabs-items v-model="tab">
+              <!-- Get In Touch -->
               <v-tab-item :value="'tab-1'">
                 <v-card flat>
                   <v-form ref="mailTo" @submit.prevent="mailTo" v-model="form">
-                    <!-- <h2>Get In Touch</h2> -->
                     <v-row class="board">
                       <v-col class="t_and_c">
                         <v-list color="amber lighten-5">
@@ -177,8 +177,8 @@
                 </v-card>
               </v-tab-item>
 
+              <!-- Contact Info -->
               <v-tab-item :value="'tab-2'">
-                <!-- <h2>Contact Info</h2> -->
                 <v-row class="board">
                   <v-col>
                     <v-card elevation="0" tile>
@@ -193,7 +193,6 @@
                                 >02) 2008 - 2008</span
                               ></v-list-item-title
                             >
-                            <!-- <v-list-item-subtitle>0452350726</v-list-item-subtitle> -->
                           </v-list-item-content>
                         </v-list-item>
                         <v-list-item>
@@ -304,9 +303,9 @@ export default {
       agree: false,
       mailData: {
         // Fix!
-        title: "연승주",
-        body: "show me the fishes",
-        subject: "etc",
+        title: "",
+        body: "",
+        subject: "",
       },
       tab: null,
 
@@ -435,6 +434,8 @@ export default {
 @media (max-width: 600px) {
   .tabs {
     margin-top: 60px !important;
+    margin-left: 7.5% !important;
+    margin-right: 7.5% !important;
   }
   .t_and_c {
     .li_title {

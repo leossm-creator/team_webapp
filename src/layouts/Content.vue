@@ -1,5 +1,5 @@
 <template>
-  <div id="content">
+  <div id="page">
     <router-view />
     <Footer v-if="$route.name !== 'home'"></Footer>
   </div>
@@ -17,7 +17,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-  #content {
+  #page {
     position: fixed;
     top: 64px;
     height: calc(100vh - 64px);

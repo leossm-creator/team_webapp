@@ -60,6 +60,7 @@
                 <p style="text-align: left">
                   {{ $t(`partnerships.partners[${index}].description`) }}
                 </p>
+                <a @click="openLink($t(`partnerships.partners[${index}].searchLink`))" class="related_articles">{{$t("partnerships.showArticle")}}</a>
               </div>
             </v-card>
           </v-col>
@@ -83,7 +84,7 @@ export default {
           name: "Standigm",
           link: "https://www.standigm.com/main",
           img: require(`@/assets/img/partners/standigm-01.png`),
-          searchLink: "https://www.google.com/search?q=sk%EC%BC%80%EB%AF%B8%EC%B9%BC+%EC%8A%A4%ED%83%A0%EB%8B%A4%EC%9E%84+%EB%A5%98%EB%A7%88%ED%8B%B0%EC%8A%A4+%EA%B4%80%EC%A0%88%EC%97%BC&tbm=nws"
+          // searchLink: "https://www.google.com/search?q=sk%EC%BC%80%EB%AF%B8%EC%B9%BC+%EC%8A%A4%ED%83%A0%EB%8B%A4%EC%9E%84+%EB%A5%98%EB%A7%88%ED%8B%B0%EC%8A%A4+%EA%B4%80%EC%A0%88%EC%97%BC&tbm=nws"
         },
         {
           name: "J2H Biotech",
@@ -146,6 +147,10 @@ export default {
       padding: 30px;
       min-height: 50%;
       max-height: 50%;
+
+      .related_articles {
+        margin-left: auto;
+      }
     }
   }
 }
