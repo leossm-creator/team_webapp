@@ -1,8 +1,10 @@
 <template>
   <div>
+    <!-- 페이지 톱 이미지 -->
     <v-card flat tile class="thumbnail">
+      <!-- :src="require(`@/assets/img/thumbnails/sub_thumbnail-12.jpg`)" -->
       <v-img
-        :src="require(`@/assets/img/thumbnails/sub_thumbnail-12.jpg`)"
+        :src="require(`@/assets/img/thumbnails/은서.png`)"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"
@@ -15,16 +17,18 @@
         </v-card-title>
       </v-img>
     </v-card>
+    <!-- 네비게이션 바 -->
     <Barnav />
     <div class="page_container">
       <div class="content_container" id="au_timeline" ref="au_timeline">
-        <!-- 성과 Timeline -->
+          <!-- 페이지 타이틀 문구 -->
           <v-row class="board title_board">
             <v-col>
               <div class="p_title" v-html="$t('timeline.p_title')">
               </div>
             </v-col>
           </v-row>
+          <!-- 페이지 콘텐츠 문구 -->
           <v-row class="board text_board">
             <v-col md="3" cols="12">
               <h3 class="heading" v-html="$t('timeline.text_board.1.title')"></h3>
@@ -34,6 +38,7 @@
               </p>
             </v-col>
           </v-row>
+          <!-- 타임라인: data(){} 에서 불러와 타임라인 제작 -->
           <v-row class="board">
             <v-col>
               <v-timeline class="timeline">

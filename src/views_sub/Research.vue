@@ -1,10 +1,11 @@
 <template>
   <div>
     <v-card flat tile class="thumbnail">
+      <!-- :src="require(`@/assets/img/thumbnails/sub_thumbnail-10.jpg`)" -->
       <v-img
-        :src="require(`@/assets/img/thumbnails/sub_thumbnail-10.jpg`)"
+        :src="require(`@/assets/img/thumbnails/승주.png`)"
         class="white--text align-end"
-        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.2)"
         height="100%"
       >
         <v-card-title class="pageHeadings">

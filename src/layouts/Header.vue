@@ -57,6 +57,8 @@
             <template v-slot:activator>
               <v-list-item-title>About Us</v-list-item-title>
             </template>
+
+            <!-- 소개 -->
             <v-list-item link :to="formatLink('/aboutUs/intro')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
@@ -67,6 +69,8 @@
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
+
+            <!-- 타임 라인 -->
             <v-list-item link :to="formatLink('/aboutUs/timeline')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
@@ -77,7 +81,10 @@
                 }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item link :to="formatLink('/aboutUs/members')">
+
+            <!-- 구성원 -->
+            
+            <!-- <v-list-item link :to="formatLink('/aboutUs/members')">
               <v-list-item-icon>
                 <v-icon> </v-icon>
               </v-list-item-icon>
@@ -86,7 +93,7 @@
                   $t("nav.members.title")
                 }}</v-list-item-title>
               </v-list-item-content>
-            </v-list-item>
+            </v-list-item> -->
           </v-list-group>
 
           <v-list-group

@@ -1,8 +1,9 @@
 <template>
   <div>
     <v-card flat tile class="thumbnail">
+      <!-- :src="require(`@/assets/img/thumbnails/sub_thumbnail-13.jpg`)" -->
       <v-img
-        :src="require(`@/assets/img/thumbnails/sub_thumbnail-13.jpg`)"
+        :src="require(`@/assets/img/thumbnails/종인.png`)"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="100%"

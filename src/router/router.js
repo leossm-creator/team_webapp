@@ -63,12 +63,12 @@ const routes = [
                 name: 'timeline',
               }
             },
-            {
-              text: 'members',
-              to: {
-                name: 'members',
-              }
-            },
+            // {
+            //   text: 'members',
+            //   to: {
+            //     name: 'members',
+            //   }
+            // },
           ]
         }
       },
@@ -91,12 +91,12 @@ const routes = [
                 name: 'timeline',
               }
             },
-            {
-              text: 'members',
-              to: {
-                name: 'members',
-              }
-            },
+            // {
+            //   text: 'members',
+            //   to: {
+            //     name: 'members',
+            //   }
+            // },
           ]
         }
       },
